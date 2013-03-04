@@ -1,0 +1,2422 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Xml;
+using System.Data;
+using TQOperate;
+using System.Runtime.InteropServices;
+namespace DynamicCodeGenerate
+{
+     public class dynamic
+     {
+public TQ tq = new TQ(1002,853);
+/// 注释
+/// <summary>
+/// 连接控制测试机
+/// </summary>
+/// <param name="i">测试机，主测是机:BaseMo,辅测试机：AddMo；</param>
+/// <returns></returns>
+public void switch_target_num(string i)
+{
+	LOG_RESULT(string.Format("switch_target_num({0});",i));
+	tq.switch_target_num(i);
+}
+
+/// 注释
+/// <summary>
+/// 用于Android或者P81平台的快速导航
+/// </summary>
+/// <param name="moudle">模块名</param>
+/// <param name="flat">平台名,有"P81"和"Android"</param>
+/// <returns></returns>
+public void navigate_to(string moudle,string flat)
+{
+    LOG_RESULT(string.Format("navigate_to({0},{1});",moudle,flat));
+	tq.navigate_to(moudle,flat);
+}
+
+/// 注释
+/// <summary>
+/// 根据导航路径的设置，快速从顶层导航到目的位置
+/// </summary>
+/// <param name="screen">目的路径的名称</param>
+/// <returns></returns>
+public void navigate_toscreen(string screen)
+{
+    LOG_RESULT(string.Format("navigate_toscreen({0});",screen));
+	tq.navigate_toscreen(screen,_num);
+}
+
+/// 注释
+/// <summary>
+/// 根据导航路径的设置，快速导航从起始位置到目的位置
+/// </summary>
+/// <param name="oriscreen">起始路径的名称</param>
+/// <param name="screen">目的路径的名称</param>
+/// <returns></returns>
+public void navigate_toscreen(string oriscreen,string screen)
+{
+    LOG_RESULT(string.Format("navigate_toscreen({0},{1});",oriscreen,screen));
+	tq.navigate_toscreen(oriscreen,screen,_num);
+}
+
+/// 注释
+/// <summary>
+/// 根据导航路径的设置，进行某操作
+/// </summary>
+/// <param name="operation">操作的名称</param>
+/// <returns></returns>
+public void navigate_operation(string operation)
+{
+    LOG_RESULT(string.Format("navigate_operation({0});",operation));
+	tq.navigate_operation(operation,_num);
+}
+
+/// 注释
+/// <summary>
+/// 按键操作
+/// </summary>
+/// <param name="Keys">按键名</param>
+/// <returns>按键是否成功</returns>
+public bool press_keys(string Keys)
+{
+    if(Keys == "<End>")
+		return true;
+	LOG_RESULT(string.Format("press_keys({0});",Keys));
+    if(!tq.press_keys(Keys))
+	{
+		//LOG_RESULT("按键：" + Keys + "失败");
+		//return tq.press_keys(Keys);
+	}
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 长按键操作
+/// </summary>
+/// <param name="Keys">按键名</param>
+/// <param name="milli">长按时间，毫秒单位</param>
+/// <returns></returns>
+public void press_keys_hold(string keys, int milli)
+{
+	LOG_RESULT(string.Format("press_keys_hold({0},{1});",keys,milli.ToString()));
+	tq.press_keys_hold(keys,milli);
+}
+
+/// 注释
+/// <summary>
+/// 翻转已显示的屏幕
+/// </summary>
+/// <param name="n">翻转的角度，有0，90，180，和270</param>
+/// <returns></returns>
+public void rotate_screen(int n)
+{
+	LOG_RESULT(string.Format("rotate_screen({0});",n.ToString()));
+	tq.rotate_screen(n);
+}
+
+/// 注释
+/// <summary>
+/// 点击触摸屏
+/// </summary>
+/// <param name="x">x轴坐标</param>
+/// <param name="y">y轴坐标</param>
+/// <returns>点击是否成功</returns>
+public bool Tap(int x,int y)
+{
+	LOG_RESULT(string.Format("Tap({0},{1});",x.ToString(),y.ToString()));
+    if(!tq.Tap(x,y))
+	{
+		//LOG_RESULT("触摸"：" + Keys + "失败");
+		//return tq.Tap(x,y);
+	}
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// Android，根据字符串点击触摸屏
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns></returns>
+public void Tap_AndroidStr(string text)
+{
+    LOG_RESULT(string.Format("Tap_AndroidStr({0});",text));
+	tq.Tap_AndroidStr(text);
+}
+
+/// 注释
+/// <summary>
+/// Android平台，根据字符串长点击点击触摸屏
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="milli">长点击的时间</param>
+/// <returns></returns>
+public bool Tap_AndroidStr_Hold(string text, int milli)
+{
+    LOG_RESULT(string.Format("Tap_AndroidStr_Hold({0},{1});",text,milli.ToString()));
+    return tq.Tap_AndroidStr_Hold(text,milli);
+}
+
+/// 注释
+/// <summary>
+/// 划动触摸屏，从一点划动到另一点
+/// </summary>
+/// <param name="x0">起始点的x坐标</param>
+/// <param name="y0">起始点的y坐标</param>
+/// <param name="x1">目标点的x坐标</param>
+/// <param name="y1">目标点的y坐标</param>
+/// <returns></returns>
+public void PTOP(int x0, int y0, int x1, int y1)
+{
+	LOG_RESULT(string.Format("PTOP({0},{1},{2},{3});",x0.ToString(),y0.ToString(),x1.ToString(),y1.ToString()));
+	tq.PTOP(x0,y0,x1,y1);
+}
+
+/// 注释
+/// <summary>
+/// P81平台，根据坐标得到字符串
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns>得到的字符串，取值不成功为""</returns>
+public string GetWidgetStr(int x,int y)
+{
+	LOG_RESULT(string.Format("GetWidgetStr({0},{1});",x.ToString(),y.ToString()));
+	return tq.GetWidgetStr(x,y);
+}
+
+/// 注释
+/// <summary>
+/// Android平台，根据坐标得到字符串
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns>得到的字符串，取值不成功为""</returns>
+public string GetAndroidStr(int x,int y)
+{
+	LOG_RESULT(string.Format("GetAndroidStr({0},{1});",x.ToString(),y.ToString()));
+	return tq.GetAndroidStr(x,y);
+}
+
+/// 注释
+/// <summary>
+/// Android平台，根据字符串得到坐标点
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns>得到的字符串，取值不成功为""</returns>
+public Point GetWidgetPoint(string text)
+{
+    LOG_RESULT(string.Format("GetWidgetPoint({0});",text));
+	return tq.GetWidgetPoint(text);
+}
+
+/// 注释
+/// <summary>
+/// 点击触摸屏操作，按下
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns></returns>
+public void StylusDown(int x,int y)
+{
+	LOG_RESULT(string.Format("StylusDown({0},{1});",x.ToString(),y.ToString()));
+	tq.StylusDown(x,y);
+}
+
+/// 注释
+/// <summary>
+/// 点击触摸屏操作，抬起
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public void StylusUp()
+{
+	LOG_RESULT(string.Format("StylusUp();"));
+	tq.StylusUp();
+}
+
+/// 注释
+/// <summary>
+/// 触摸屏操作，移动到某一点，必须和StylusDown、StylusUp联合使用
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns></returns>
+public void MoveTo(int x,int y)
+{
+	tq.MoveTo(x,y);
+}
+
+/// 注释
+/// <summary>
+/// 等待
+/// </summary>
+/// <param name="time">等待时间，以秒为单位</param>
+/// <returns></returns>
+public void pause(int time)
+{
+	LOG_RESULT(string.Format("pause({0});",time.ToString()));
+	tq.pause(time);
+}
+
+/// 注释
+/// <summary>
+/// 等待
+/// </summary>
+/// <param name="time">等待时间，以毫秒为单位</param>
+/// <returns></returns>
+public void Sleep(int time)
+{
+	LOG_RESULT(string.Format("Sleep({0});",time.ToString()));
+	tq.Sleep(time);
+}
+
+/// 注释
+/// <summary>
+/// 输入数字
+/// </summary>
+/// <param name="_num">数字串</param>
+/// <returns></returns>
+public void enter_number(string _num)
+{
+	LOG_RESULT(string.Format("enter_number({0});",_num));
+	tq.enter_number(_num);
+}
+
+/// 注释
+/// <summary>
+/// 输入字符串
+/// </summary>
+/// <param name="_num">字符串</param>
+/// <returns></returns>
+public void enter_text(string text)
+{
+	LOG_RESULT(string.Format("enter_text({0});",text));
+	tq.enter_text(text);
+}
+
+/// 注释
+/// <summary>
+/// 图片对比
+/// </summary>
+/// <param name="ImageName">图片名</param>
+/// <returns>是否对比成功</returns>
+public bool image_must_be(string ImageName)
+{
+	LOG_RESULT(string.Format("image_must_be({0})",ImageName));
+	if(tq.image_must_be(ImageName) == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 在一段时间内，图片对比
+/// </summary>
+/// <param name="ImageName">图片名</param>
+/// <param name="_time">对比持续时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_image(string ImageName, int _time)
+{
+	LOG_RESULT(string.Format("wait_for_image({0},{1});",ImageName,_time.ToString()));
+	if(tq.wait_for_image(ImageName,_time) == false)
+		return false;
+	return true;	
+}
+
+/// 注释
+/// <summary>
+/// 对比某一坐标点的字符串,目前用于P81，P99平台
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="_time">对比持续时间</param>
+/// <param name="x坐标">x</param>
+/// <param name="y坐标">对比持续时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_text(string text, int time,int x,int y)
+{
+    LOG_RESULT(string.Format("wait_for_text({0},{1},{2},{3});",text,time.ToString(),x.ToString(),y.ToString()));
+	return tq.wait_for_text(text,time,x,y);
+}
+
+/// 注释
+/// <summary>
+/// 对比字符串,目前用于Android平台
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="time">对比持续时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_androidtext(string text, int time)
+{
+    LOG_RESULT(string.Format("wait_for_androidtext({0},{1});",text,time.ToString()));
+	return tq.wait_for_androidtext(text,time);
+}
+
+/// 注释
+/// <summary>
+/// 根据截到的屏幕区域图片提取字符串
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="time">对比持续时间</param>
+/// <param name="left">区域左上的x坐标</param>
+/// <param name="top">区域左上的y坐标</param>
+/// <param name="right">区域右下的x坐标</param>
+/// <param name="bottom">区域右下的y坐标</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_ocr(string text, int time,int left,int top,int right,int bottom)
+{
+    LOG_RESULT(string.Format("wait_for_ocr({0},{1},{2},{3},{4},{5});",text,time.ToString(),left.ToString(),top.ToString(),right.ToString(),bottom.ToString()));
+	return tq.wait_for_ocr(text,time,left,top,right,bottom);
+}
+
+/// 注释
+/// <summary>
+/// 打印LOG信息
+/// </summary>
+/// <param name="text">LOG信息</param>
+/// <returns></returns>
+public void LOG_RESULT(string Log)
+{
+	tq.LOG_RESULT(Log);
+}
+
+/// 注释
+/// <summary>
+/// 打印内存信息
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public bool DumpMemoryInfo()
+{
+	LOG_RESULT(string.Format("DumpMemoryInfo();"));
+	if(tq.DumpMemoryInfo() == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 停止控制设备
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public void DeviceClose()
+{
+	LOG_RESULT(string.Format("DeviceClose();"));
+	tq.DeviceClose();
+}
+
+/// 注释
+/// <summary>
+/// 截取手机屏幕
+/// </summary>
+/// <param name="_img">截取屏幕保存的名字</param>
+/// <returns></returns>
+public bool save_screen(string _img)
+{
+    LOG_RESULT(string.Format("save_screen({0});",_img));
+	if(tq.save_screen(_img) == false)
+		return false;
+	return true;	
+}
+
+/// 注释
+/// <summary>
+/// 截取手机屏幕
+/// </summary>
+/// <param name="_img">截取屏幕保存的名字</param>
+/// <param name="_num">脚本的循环次数</param>
+/// <returns></returns>
+public bool save_screen(string _img,int _num)
+{
+    LOG_RESULT(string.Format("save_screen({0},{1});",_img,_num.ToString()));
+	if(tq.save_screen(_img,_num) == false)
+		return false;
+	return true;	
+}
+
+/// 注释
+/// <summary>
+/// 根据截到的屏幕全图提取字符串进行对比
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns>是否对比成功</returns>
+public bool OCR(string text)
+{
+    LOG_RESULT(string.Format("OCR({0});",text));
+	if(tq.OCR(text) == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 根据截到的屏幕全图提取字符串进行对比
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="_time">对比的超时时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_ocr(string text,int _time)
+{
+	LOG_RESULT(string.Format("wait_ocr({0},{1});",text,_time.ToString()));
+	if(tq.wait_ocr(text,_time) == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 根据OCR所得到的字符串去点击触摸屏
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns>是否得到相应的字符串</returns>
+public bool Tap_ocr(string text)
+{
+    LOG_RESULT(string.Format("Tap_ocr({0});",text));
+	if(tq.Tap_ocr(text) == false)
+	{
+		LOG_RESULT("根据OCR点击\"" + text + "\"失败");
+		return false;
+	}
+	return true;
+}
+
+public bool Tap_text(string text)
+{
+    LOG_RESULT(string.Format("Tap_text({0});",text));
+	if(tq.Tap_text(text) == false)
+	{
+		LOG_RESULT("根据控件信息点击\"" + text + "\"失败");
+		return false;
+	}
+	return false;
+}
+
+/// 注释
+/// <summary>
+/// 如果连接摄像头，打开录像
+/// </summary>
+/// <param name="num">脚本内的循环次数</param>
+/// <returns></returns>
+public void recordstart(int num)
+{
+	LOG_RESULT(string.Format("recordstart({0});",num.ToString()));
+	tq.recordstart(num);
+}
+
+/// 注释
+/// <summary>
+/// 如果连接摄像头已打开，关闭录像
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public void recordend()
+{
+	LOG_RESULT(string.Format("recordend();"));
+	tq.recordend();
+}
+
+public void ftpfunc(string para)
+{
+	LOG_RESULT(string.Format("ftpfunc({0});",para));
+	tq.ftpfunc(para);
+}
+
+public void GetError()
+{
+	tq.GetError();
+}
+
+public void CallFun(int lcid)
+{
+	tq.CallFun(lcid);
+}
+
+public bool wait_for_text(string text, int time)
+{
+    LOG_RESULT(string.Format("wait_for_text({0},{1});",text,time.ToString()));
+	return tq.wait_for_text(text,time);
+}
+
+public string GetCharcter(char c)
+{
+	return tq.GetCharcter(c);
+} 
+
+private int _num = 0;
+
+[DllImport("switchboard.dll",EntryPoint="Open")]
+public static extern int Open_Usb_Board();
+[DllImport("switchboard.dll",EntryPoint="Close")]
+public static extern int Close_Usb_Board();
+public void Delete_Contact_ALL()
+{
+/*************************************************
+函数功能描述：删除所有联系人
+函数输入变量：无
+函数返回值：无
+函数运行界面：任意。case每次自动导航到联系人模块
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+press_keys("<RightMost><RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("Contacts","Android");
+Sleep(2000);
+// A21合入了ATT的特殊联系人模块，登陆时间比较长,且多了一个确定的界面
+if(wait_for_androidtext("AT&T Address Book is a FREE backup service",120))
+{    
+    Tap(278,919);  // 点击确认Ok，进入联系人界面
+    Sleep(2000);    
+}
+else   // 在长时间如果还没弹出确定界面的话，直接back，也能进入联系人界面
+{
+    press_keys("<RightMost>"); 
+}       
+
+if(!wait_for_androidtext("No contacts.",5))        // 判断是否已经存在联系人
+{
+    Sleep(2000);
+    press_keys("<Sym>");    
+    Sleep(2000);
+    Tap_AndroidStr("Select");
+    Sleep(2000);
+    Tap_AndroidStr("All");                          // 选择全部联系人
+    Sleep(2000);    
+    Tap_AndroidStr("elete");
+    Sleep(2000);
+    Tap_AndroidStr("OK");    
+    Sleep(5000);    
+    if(wait_for_androidtext("No contacts.",5))      // 全部删除成功后,通过NoContact字符判断是否删除成功
+    {
+        LOG_RESULT("Delete All Contacts: Sucessful!");
+    } 
+    else
+    {
+        LOG_RESULT("Delete All Contacts: Failed!");
+    }
+}
+else
+{
+    LOG_RESULT("There is no contacts!");
+}
+press_keys("<RightMost><RightMost><RightMost>");
+Sleep(2000);
+
+}
+public void Delete_Contact_Single()
+{
+/*************************************************
+函数功能描述：删除第一个联系人
+函数输入变量：无
+函数返回值：无
+函数运行界面：任意。case每次自动导航到联系人模块
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+press_keys("<RightMost><RightMost><RightMost>");
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("Contacts","Android");
+Sleep(2000);
+// A21合入了ATT的特殊联系人模块，登陆时间比较长,且多了一个确定的界面
+if(wait_for_androidtext("AT&T Address Book is a FREE backup service",120))
+{    
+    Tap(278,919);  // 点击确认Ok，进入联系人界面
+    Sleep(2000);    
+}
+else   // 在长时间如果还没弹出确定界面的话，直接back，也能进入联系人界面
+{
+    press_keys("<RightMost>"); 
+}       
+
+
+
+
+if(!wait_for_androidtext("No contacts.",5))           // 判断当前是否有联系人
+{
+    // tap first contact
+    press_keys("<DownArrow><DownArrow><DownArrow>");  // 移动到第一个联系人
+    Sleep(500);
+    press_keys_hold("<Ok>",2000);                     // 长按当前选择的联系人
+    Sleep(500);   
+    Tap_AndroidStr("elete");                          // 点击Delete按键
+    Sleep(1000);
+    Tap_AndroidStr("OK");
+    Sleep(1000);
+    LOG_RESULT("Delete one Contacts: Successful!");
+}
+else
+{
+    LOG_RESULT("There is no contacts!");
+    Sleep(2000);
+}
+press_keys("<RightMost><RightMost>");
+Sleep(2000);
+
+
+}
+public bool Add_Contact_Single(string name,string num)
+{
+/*************************************************
+函数功能描述：新建一个联系人
+函数输入变量：
+1、name： 联系人的名称
+2、num：  联系人号码
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：联系人界面
+函数结束界面：联系人界面
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+
+
+// 无论任何时候，默认总是有一个联系人不可删除，为My info，新增联系人直接点击New
+// Tap_AndroidStr("New");
+Tap(273,907);
+Sleep(2000);
+
+enter_text(name);   // 输入联系人名称
+Sleep(1000);
+
+Tap(273,223);
+Sleep(1000);
+
+
+Tap(217,353);      // 点击电话号码区域, 坐标点要根据实际项目进行调整    (*) 
+Sleep(1000);
+Tap(217,353);      // 连续点击两次，目的是确保光标一定会在号码区域, 坐标点要根据实际项目进行调整    (*) 
+Sleep(1000);
+enter_text(num);   // 输入电话号码
+Sleep(1000);
+Tap_AndroidStr("Done");
+
+if(wait_for_androidtext("Save",3))            // 如果有相同号码或者名称的情况，会弹出确认界面
+{
+    Tap_AndroidStr("OK");
+}
+
+if(!wait_for_androidtext("Edit",3))           // 保存成功会到联系人界面，通过Edit字符进行判断
+{
+    if(IF_SCREEN_SAVE())
+    {
+        save_screen("Create_one_contact_failed.bmp",_num);
+    }   
+    LOG_RESULT("Create one contact:Failed");  // 失败的话，要重新进入联系人界面
+    
+    press_keys("<RightMost><RightMost><RightMost>");
+    press_keys("<Home>");
+    navigate_to("Contacts","AddPhone");     
+    
+    if(!wait_for_androidtext("Contacts",5))   // 如果没有出现contact，说明要等待下面界面
+    {
+        // A21合入了ATT的特殊联系人模块，登陆时间比较长,且多了一个确定的界面
+        if(wait_for_androidtext("AT&T Address Book is a FREE backup service",120))
+        {    
+            Tap(278,919);  // 点击确认Ok，进入联系人界面
+            Sleep(2000);    
+        }
+        else   // 在长时间如果还没弹出确定界面的话，直接back，也能进入联系人界面
+        {
+            press_keys("<RightMost>"); 
+        }       
+        
+        
+    }
+    return false;
+}
+else 
+{
+    LOG_RESULT("Create one contact:Successful!");
+    Sleep(1000);
+    press_keys("<RightMost>");                 // 退回联系人界面
+    return true;
+}
+
+
+
+}
+public bool CreatSMS_Single(string context,string num,int isToSelf)
+{
+/*************************************************
+函数功能描述：新建一条短信，并发送给辅测机
+函数输入变量：
+1、context 短信的内容()
+2、num：接受短信的号码
+3、isToSelf：是否发给自己 1表示发给自己即自发自收，0表示发给其他号码
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：任意界面
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+press_keys("<RightMost><RightMost><RightMost>");
+press_keys("<Home>");
+navigate_to("MMS","Android");
+Sleep(1000);
+Tap_AndroidStr("Compose");
+Sleep(2000);
+enter_text(num);             // 输入接收短信的号码
+Tap(232,172);                // 再次点击下收件人一栏，去除弹出的联系人选项，坐标点要根据实际项目进行调整    (*)
+Sleep(2000); 
+press_keys("<DownArrow>");   // 移动到输入短信内容的区域，要根据实际项目进行修改  (*)
+Sleep(1000);
+press_keys("<DownArrow>");
+Sleep(1000);
+press_keys("<Sym>");         // 通过选择第一个quick，完成短信内容的输入。预置条件中必须让预置的quick位于第一个
+Sleep(3000);
+Tap_AndroidStr("Quick Text");
+Sleep(2000);
+Tap(74,165);                 // 点击第一个quicktest, 坐标点要根据实际项目进行调整    (*) 
+Sleep(2000);
+Tap(494,909);                // 点击Send按键, 坐标点要根据实际项目进行调整    (*) 
+Sleep(1000);
+
+if(isToSelf==0)
+{
+    bool result=false;
+    result=CheckSMSIsSent(); // 如果不是自发自收，调用CheckSMSIsSent函数检查是否发送成功
+    return result;    
+}
+else                         // 如果是自发自收，需要检查消息是否接受到
+{
+    Sleep(5000);
+    bool result1=false;
+    result1=CheckMessageIsReceived(0);    // 0代表检查短信
+    return result1;
+    
+}
+
+
+
+
+
+
+
+}
+public bool DeleteMessageThread_ALL()
+{
+/*************************************************
+函数功能描述：删除所有的会话
+函数输入变量：无
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：任意界面
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+press_keys("<RightMost><RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("MMS","Android");
+Sleep(3000);
+press_keys("<Sym>");
+press_keys("<Sym>");
+press_keys("<Sym>");
+Sleep(1000);
+
+if(!wait_for_androidtext("Delete all threads",5))     // 通过菜单项Delete检查是否有已经有会话
+{
+    LOG_RESULT("There is no thread!");
+    return true;
+}
+else
+{
+    Tap_AndroidStr("elete");        // 点击delete按键
+    Sleep(1000);
+    Tap_AndroidStr("OK");
+    Sleep(5000);
+    
+    press_keys("<Sym>");            // 删除后，再次通过菜单项Delete检查是否已经删除成功
+    Sleep(1000);    
+    if(!wait_for_androidtext("Delete all threads",5))
+    {
+        LOG_RESULT("Delete Message Thread: Successful!");
+        return true;
+    }
+    else
+    {
+        LOG_RESULT("Delete Message Thread: Failed!");
+        return false;   
+    }
+}
+}
+public bool CreatMMS_Single(string filefolder,int index,string filename,string context,string num,int isToSelf)
+{
+/*************************************************
+函数功能描述：新建一条彩信，并发送
+函数输入变量：
+1、filefolder 彩信资源位于的SD卡上的文件夹名称
+2、index：彩信类型 1表示图片；2表示视频；3表示音频
+3、filename： 文件的名称
+4、context 短信的内容
+5、num：接受短信的号码
+6、isToSelf：是否发给自己 1表示发给自己即自发自收，0表示发给其他号码
+
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：任意界面
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+press_keys("<RightMost><RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("MMS","Android");
+Sleep(1000);
+Tap_AndroidStr("Compose");
+Sleep(2000);
+enter_text(num);                   // 输入接收彩信的号码
+Tap(232,172);                      // 再次点击下收件人一栏，去除弹出的联系人选项，坐标点要根据实际项目进行调整    (*)
+Sleep(2000);  
+press_keys("<DownArrow>");         // 移动到输入彩信内容的区域，要根据实际项目进行修改  (*)
+Sleep(1000);
+press_keys("<DownArrow>");
+Sleep(1000);
+press_keys("<Sym>");               // 通过选择第一个quick，完成短信内容的输入。预置条件中必须让预置的quick位于第一个
+Sleep(3000);
+Tap_AndroidStr("Quick Text");
+Sleep(2000);
+Tap(74,165);                       // 点击第一个quicktest, 坐标点要根据实际项目进行调整    (*) 
+Sleep(3000);
+Tap(40,921);                       // 点击附件Attach图标, 坐标点要根据实际项目进行调整    (*) 
+Sleep(1000);
+Tap_AndroidStr("Files");           // 点击File
+Sleep(1000);
+Tap_AndroidStr(filefolder);        // 点击资源作为的文件夹
+Sleep(1000);
+
+if(index==1)                       // 根据index，判断附件的类型
+{
+    Tap_AndroidStr(filename);
+}
+if(index==2)
+{
+    Tap_AndroidStr(filename);
+}
+if(index==3)
+{
+    Tap_AndroidStr(filename);
+}
+Sleep(5000);
+
+if(!wait_for_androidtext("1024K",10))   // 如果添加附件成功，会显示附件的大小，通过1024K来判断  (*)
+{
+    LOG_RESULT("CreatMMS: Failed!");
+    return false;
+}
+else
+{
+    // LOG_RESULT("CreatMMS: Successful!");
+    Tap(494,909);                // 点击Send按键, 坐标点要根据实际项目进行调整    (*) 
+    Sleep(10000);
+    
+    if(isToSelf==0)                   // 如果不是自发自收，调用CheckMMSIsSent函数检查是否发送成功
+    {
+        bool result=false;
+        result=CheckMMSIsSent();
+        return result;
+    }
+    else                              // 如果是自发自收，需要检查消息是否接收到
+    {
+        Sleep(10000);
+        bool result1=false;
+        result1=CheckMessageIsReceived(1);  // 1代表检查彩信
+        return result1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+public bool CheckMMSIsSent( )
+{
+/*************************************************
+函数功能描述：检查彩信是否发送成功，只能检查最近发送的彩信情况
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：
+1、在打开某一个会话的界面运行
+函数结束界面：
+1、会话打开界面
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+//int Count=18;                                 // 定义进行判断的次数
+//int i=0;
+//bool result=false;
+//Sleep(2000);
+press_keys("<RightMost><RightMost><RightMost>");  
+press_keys("<Home>");
+//Sleep(1000);
+//navigate_to("MMS","Android");
+//Sleep(2000);
+//Tap_AndroidStr("Customer");
+//while(i<Count)
+//{
+//     Sleep(2000);   
+/*int time;
+
+swhich(i){
+case 2: time=200000;
+case 3: time=150000;
+case 4: time=100000;
+default:time=200000;
+}*/
+
+if(!wait_for_image("20130228212244.bmp",200000))
+{
+save_screen("20130226172013.bmp",_num);
+LOG_RESULT("comparison fails, to save the current picture!!!" );
+return false;
+}else
+{
+LOG_RESULT("MMS Sent: Successful!");
+return true;
+}
+Sleep(500);
+
+
+
+/*if(wait_for_androidtext("SENDING",5))   // 通过SENDING字样判断是否已经发送
+    {
+        LOG_RESULT("MMS sent:pending..." );
+        Sleep(10000);                        // 延时10s后再检查
+        result=false;
+        i++;
+    }
+    else
+    {
+        LOG_RESULT("MMS Sent: Successful!");
+        result=true;
+        i=Count;
+    }      
+}
+if(result)
+{
+    // LOG_RESULT("SentMMS:Successful!");
+    return true;
+}
+else
+{
+    LOG_RESULT("SentMMS:Failed!");
+    return false;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+public bool CheckSMSIsSent()
+{
+/*************************************************
+函数功能描述：检查短信是否发送成功，只能检查最近发送的短信情况
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行条件：
+1、在打开某一个会话的界面运行
+函数结束界面：
+1、会话打开界面
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+int Count=5;                                 // 定义进行判断的次数
+int i=0;
+bool result=false;
+
+while(i<Count)
+{     
+    if(wait_for_androidtext("SENDING",3))    // 通过SENDING字样判断是否已经发送
+    {
+        LOG_RESULT("SMS sent:pending..." );
+        Sleep(10000);                        // 延时10s后再检查
+        result=false;
+        i++;
+    }
+    else
+    {
+        LOG_RESULT("SMS Sent: Successful!");        
+        result=true;
+        i=Count;
+    }     
+}
+
+if(result)
+{
+    // LOG_RESULT("SentSMS:Successful!");
+    return true;
+}
+else
+{
+    LOG_RESULT("SentSMS:Failed!");
+    return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+public string MESSAGE_CONTEXT()
+{
+/*************************************************
+函数功能描述：返回消息的正文内容
+函数返回值：
+1、context：消息的正文
+函数运行条件：
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+string CONTEXT="1234567890 1234567890 abcdefghij klmnopqrst uvwxyz7890 1234567890 1234567890 abcdefghij klmnopqrst uvwxyz1234512345678901234567890asdfghjklzxcvbnmqwertyuiop0poi";
+// string CONTEXT="123456adsf";
+return CONTEXT;
+}
+public bool CheckMessageIsReceived(int index)
+{
+/*************************************************
+函数功能描述：检查消息是否接收到，仅检查最新的一条
+函数输入变量：
+1、index 0代表短信，1代表彩信
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：
+1、必须在，点开某一个会话后出现的消息界面运行
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+
+int Count=5;                                      // 定义检查的次数
+int i=0;
+bool result=false;
+while(i<Count)
+{ 
+    Tap(52,784);                                  // 点击最新接收的消息（位于屏幕的左下角）, 坐标点要根据实际项目进行调整    (*) 
+    Sleep(2000);
+    if(wait_for_androidtext("View details",10))   // 若接收到，上一步点击后会出现菜单，检查菜单上的ViewDetails字符判断是否接收到
+    {   
+        
+        LOG_RESULT("Receive Message: successful!");
+        press_keys("<RightMost>");
+        result=true;
+        i=Count;    
+    }
+    else
+    {
+        Sleep(5000);                               // 还没有接收到消息，延时5s
+        i++;     
+    }    
+}
+
+if(result)
+{
+    // LOG_RESULT("SentMMS:Successful!");
+    return true;
+}
+else
+{
+    LOG_RESULT("Receive Message: failed!");
+    return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+public void SetSettingOfMessage()
+{
+press_keys("<RightMost>");
+press_keys("<RightMost>");
+press_keys("<RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+
+
+navigate_to("MMS","Android");
+Sleep(1000);
+
+press_keys("<Sym>");
+Sleep(1000);
+
+
+Tap_AndroidStr("Settings");
+Sleep(1000);
+
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");
+
+
+// Tap_AndroidStr("Delivery reports");
+Tap(405,173);
+Sleep(2000);
+// Tap_AndroidStr("Delivery reports");
+Tap(403,631);
+Sleep(2000);
+
+
+
+press_keys("<RightMost>");
+press_keys("<RightMost>");
+press_keys("<RightMost>");
+Sleep(1000);
+
+
+}
+public bool AddQuickText_ForMessage()
+{
+/*************************************************
+函数功能描述：删除所有的QuickTest，并增加测试需要的一条QuickTest
+函数输入变量：无
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+press_keys("<RightMost><RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("MMS","Android");
+Sleep(1000);
+press_keys("<RightMost><RightMost><RightMost>");
+Sleep(1000);
+navigate_to("MMS","Android");
+Sleep(1000);
+Tap_AndroidStr("Compose");
+Sleep(2000);
+
+press_keys("<DownArrow>");                   // 向下移动到正文的输入区域，在这调用菜单才能看到QuickTest
+Sleep(1000);
+press_keys("<DownArrow>");
+Sleep(1000);
+press_keys("<Sym>");                         // 调出菜单
+Sleep(2000);
+Tap_AndroidStr("Quick Text");                // 进入QuickTest界面
+Sleep(2000);
+
+press_keys("<Sym>");
+Sleep(2000);
+if(wait_for_androidtext("Multi-Select",5))   // 判断当前是否已经有QuickTest，如果有需要删除
+{
+    Tap_AndroidStr("Multi-Select");          // 全选，然后删除
+    Sleep(2000);
+    Tap_AndroidStr("All");
+    Sleep(2000);
+    Tap(245,755);                            // 点击删除按键, 坐标点要根据实际项目进行调整    (*) 
+    Sleep(2000);
+
+    Tap_AndroidStr("OK");
+    Sleep(2000);
+    press_keys("<Sym>");
+    Sleep(2000);
+}
+
+Tap_AndroidStr("New Quick Text");           // 新增测试需要的QuickText
+enter_text(MESSAGE_CONTEXT());              // 输入字符，具体内容可以通过变量MESSAGE_CONTEXT来设定  (*)
+Sleep(2000);
+Tap(355,327);                               // 点击OK按键, 坐标点要根据实际项目进行调整    (*) 
+Sleep(2000);
+
+press_keys("<Sym>");
+Sleep(2000);
+if(wait_for_androidtext("Multi-Select",5))  // 判断是否新建成功
+{
+    LOG_RESULT("Create QuickTest:Successful!");    
+    press_keys("<RightMost><RightMost><RightMost><RightMost>");
+    press_keys("<Home>");
+    Sleep(1000);
+    return true; 
+}
+else
+{
+    LOG_RESULT("Create QuickTest:Failed!");
+    return false;
+}
+
+
+}
+public void SentExistMessage(int index,int count_2g, int count_3g,int count_lte)
+{
+/*************************************************
+函数功能描述：对接收到的最后一条短信进行转发
+函数返回值：无
+函数输入变量：
+1、index：1代表短信，2代表音频彩信，3代表视频彩信，4代表图片彩信
+2、count_2g： 在2G网络下的循环次数
+2、count_3g： 在3G网络下的循环次数
+2、count_LTE： 在LTE网络下的循环次数 
+函数运行界面：
+1、在打开某一个会话的界面运行
+函数结束界面：
+1、会话打开界面
+
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+int COUNT_2G=count_2g;
+int COUNT_3G=count_3g;
+int COUNT_LTE=count_lte;
+int COUNT_TEMP=0;
+int COUNT_INDEX=0;
+int COUNT_FAILED_2G=0;
+int COUNT_FAILED_3G=0;
+int COUNT_FAILED_LTE=0;
+bool result=true;
+
+for(int i=2;i<5;i++)
+{
+    if(i==2) 
+    {
+        COUNT_TEMP=COUNT_2G; 
+    }
+    if(i==3)
+    {
+        COUNT_TEMP=COUNT_3G;
+    }
+    if(i==4) 
+    { 
+        COUNT_TEMP=COUNT_LTE;
+    }    
+    
+    if(COUNT_TEMP!=0)
+    {
+        // camp to network
+        bool result_network=CampToNetwork(i);
+       // bool result_network=true;        
+        if(result_network)
+        {      
+            
+            for(int j=0;j<COUNT_TEMP;j++)
+            {                        
+                press_keys("<RightMost><RightMost><RightMost>");  
+                press_keys("<Home>");
+                navigate_to("MMS","Android");
+                Sleep(2000);
+                
+                COUNT_INDEX++;
+                LOG_RESULT("==== Count ==>"+COUNT_INDEX.ToString());                             
+                if(index==1)          // 表示短信
+                {
+                    Tap_AndroidStr(SMS_TELNUM());
+                    Sleep(2000);
+                    Tap(232,638);
+                    Sleep(2700);
+                    Tap(141,405);
+                    Sleep(2000); 
+                    
+                    
+                }
+                if(index==2)           // 表示音频彩信
+                {
+                    Tap_AndroidStr("audio");
+                    Sleep(2000);
+                    Tap(355,580);
+                    Sleep(2000);
+                    Tap(175,407);
+                    Sleep(2000);
+                    
+                    /*   Tap(182,676);
+                    Sleep(2000);
+                    Tap(146,482);
+                    Sleep(2000);   */ 
+                    
+                    
+                }    
+                
+                if(index==3)           // 表示视频彩信
+                {
+                    Tap_AndroidStr("video");
+                    Sleep(2200);
+                    Tap(271,554);
+                    Sleep(2000);
+                    Tap(199,405);
+                    Sleep(2000);
+                    
+                    /* Tap(355,487);
+                    Sleep(2200);
+                    //   Tap(227,479);
+                    Sleep(2000);    */          
+                    
+                }  
+                if(index==4)           // 表示图片彩信
+                {
+                    Tap_AndroidStr("pic");
+                    Sleep(2000);
+                    
+                    Tap(194,561);
+                    Sleep(2000);
+                    Tap(163,398);
+                    Sleep(2000);        
+                    /* Tap(367,415);
+                    Sleep(1600);
+                    //   Tap(182,477);
+                    Sleep(2000); */                
+                }  
+                
+                Sleep(2000);                 
+                enter_text(MMS_TELNUM());  // 输入辅测机的电话号码
+                Sleep(2000);                 
+                Tap(232,172);                // 再次点击下收件人一栏，去除弹出的联系人选项，坐标点要根据实际项目进行调整    (*)
+                Sleep(2000);                 
+                
+                press_keys("<RightMost>");
+                Sleep(2000); 
+                Tap(506,911); //send
+                Sleep(2000); 
+                //Tap_AndroidStr("Send");
+                
+                if(index>1)                
+                {
+                    result=CheckMMSIsSent();   
+                }
+                else{
+                    // result=CheckSMSIsSent();
+                    Sleep(2000);
+                    LOG_RESULT("SMS Sent: Successful!"); 
+                }
+                
+                if(!result)
+                {
+                    if(i==2) 
+                    {
+                        COUNT_FAILED_2G++; 
+                    }
+                    if(i==3) 
+                    { 
+                        COUNT_FAILED_3G++; 
+                    }
+                    if(i==4) 
+                    { 
+                        COUNT_FAILED_LTE++; 
+                    }
+                }        
+            }
+        }
+        else  // camp failed
+        {        
+            LOG_RESULT("Out serivce! Network type:"+i.ToString());         
+            if(i==2)
+            {
+                COUNT_FAILED_2G=COUNT_2G; 
+            }
+            if(i==3) 
+            { 
+                COUNT_FAILED_3G=COUNT_3G; 
+            }
+            if(i==4) 
+            { 
+                COUNT_FAILED_LTE=COUNT_LTE; 
+            }           
+        }          
+    }
+    else  // count_temp=0
+    {
+        if(i==2) 
+        {
+            COUNT_FAILED_2G=0; 
+        }
+        if(i==3)
+        {
+            COUNT_FAILED_3G=0; 
+        }
+        if(i==4)
+        {
+            COUNT_FAILED_LTE=0; 
+        }        
+    }
+}
+
+int COUNT_FAILED_TEMP=COUNT_FAILED_2G+COUNT_FAILED_3G+COUNT_FAILED_LTE;
+int COUNT=COUNT_2G+COUNT_3G+COUNT_LTE;
+LOG_RESULT("==== All Case:"+COUNT.ToString()+"     "+"Failed Case:"+COUNT_FAILED_TEMP.ToString());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+public string ADDMO_EMAILACCOUNT()
+{
+/*************************************************
+函数功能描述：返回收件人的地址（最好设置成Gmail账号，后续测试要设计到文件夹，避免不同账号文件夹布局不同）
+函数输入变量：
+函数返回值：
+1、收件人的地址
+函数运行界面：
+函数结束界面：
+函数运行前提条件：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+string account="zteusatest200@gmail.com";
+return account;
+}
+public bool ForwardEmail()
+{
+/*************************************************
+函数功能描述：转发已有的邮件
+函数输入变量：
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：
+1、点击待转发的邮件，在该邮件的正文界面
+函数结束界面：
+1、该函数运行结束后，返回到inbox界面
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+Tap(441,194);                                // 点击动作菜单, 坐标点要根据实际项目进行调整    (*) 
+Sleep(2000);
+
+if(wait_for_androidtext("Forward",10))       // 判断是否调出Forward的菜单
+{
+    Tap_AndroidStr("Forward");               // 点击转发Forward按键, 坐标点要根据实际项目进行调整    (*) 
+    Sleep(1000);        
+    enter_text(ADDMO_EMAILACCOUNT());        // 输入接收方的地址，可以通过ADDMO_EMAILACCOUNT变量进行调整  (*)
+    Sleep(1000);
+    Tap(285,230);                            // 再次点击收件人一栏,避免联系人框影响
+    Sleep(1000);
+    press_keys("<RightMost>");               // 退出键盘
+    Sleep(1000);  
+    Tap(501,67);                             // 点击发送按键,坐标点要根据实际项目进行调整    (*) 
+    Sleep(10000);
+    
+    press_keys("<RightMost>");               // 返回到inbox界面
+    Sleep(1000);
+    
+    bool result=CheckEmailIsSent();         // 判断邮件是否发送成功        
+    if(result)
+    {        
+        // LOG_RESULT("Sent Email:Successful!");
+        return true;
+    }
+    else
+    {
+        // LOG_RESULT("Sent Email:Failed!");
+        return false;
+    }
+    
+}
+else
+{
+    // LOG_RESULT("Sent Email:Failed!");
+    return false; 
+}
+
+
+
+}
+public bool CheckEmailIsSent()
+{
+/*************************************************
+函数功能描述：检查邮件是否已经发送成功
+函数输入变量：
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：
+1、inbox界面
+函数结束界面：
+1、inbox界面
+函数运行前提条件：
+1、最好是Gmail账号，因为涉及文件夹的操作
+2、sentbox是清空的
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+        bool result=false;
+        Tap(352,926);                                        // 点击Folder图标, 坐标点要根据实际项目进行调整    (*)         
+        Sleep(2000);        
+        Tap_AndroidStr("Outbox");                              // 进入Folder，进入Outbox文件夹
+        Sleep(2000);
+        
+        if(wait_for_image("20130227174549.bmp",60))                   //如果邮件发送成功了，Outbox里内容为空，显示No messages
+        { 
+            LOG_RESULT("Email had sent!");
+            result=true;     
+        }                                         
+        else
+        {
+            LOG_RESULT("Email not sent");                     // 规定时间内在Outbox中还有邮件，即发送失败        
+            result=false;
+            Sleep(2000);  
+           //清空Outbox文件夹
+            Tap(28,163);                                    // 点击发送失败的邮件, 坐标点要根据实际项目进行调整    (*) 
+            Sleep(2000); 
+            Tap(50,926);                                    // 点击删除按键, 坐标点要根据实际项目进行调整    (*) 
+            Sleep(2000);
+            Tap_AndroidStr("OK");
+            Sleep(2000);   
+        }        
+        press_keys("<RightMost><RightMost>");      // 一次判断结束，返回inbox界面
+        Sleep(2000);        
+    
+
+if(result)  
+{
+    // LOG_RESULT("Sent Email:Successful!");
+    return true;
+}
+else
+{
+    // LOG_RESULT("Sent Email:Failed!");
+    return false;
+}
+
+
+}
+public bool CheckPageIsOpen()
+{
+/*************************************************
+函数功能描述：检查页面是否已经打开
+函数输入变量：
+函数返回值：
+1、true-成功； false-失败
+函数运行界面：
+1、在浏览器的主界面
+函数结束界面：
+1、在浏览器的主界面
+函数运行前提条件：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+int Count=5;                                              // 定义检查的次数
+int i=0;
+bool result=false;
+
+while(i<Count)
+{   
+    Tap(381,919);                                         // 点击浏览器主界面中的 Window按键, 坐标点要根据实际项目进行调整    (*) 
+    Sleep(2000);    
+    if(wait_for_androidtext("Webpage not available",2))   // 根据页面的标题来判断，如果还没有打开，有两种情况Webpage not available或者Loading
+    {  
+        Sleep(1000);                  
+        result=false;    
+        i=Count;                                          // Webpage not available出现就可以认为页面打开失败，要退出循环
+    }
+    else
+    {
+        if(wait_for_androidtext("Loading",2))             // 说明页面正在打开，延时10s
+        {
+            LOG_RESULT("Opening...");
+            Sleep(10000);
+            i++;
+            result=false;            
+        }
+        else
+        {
+            // LOG_RESULT("Open page: successful!");
+            result=true;                                  // 页面成功打开
+            i=Count;            
+        }    
+    }    
+    press_keys("<RightMost>");                            // 返回浏览器主界面
+    Sleep(2000);
+}
+
+if(result)  
+{
+    // LOG_RESULT("Open page:Successful!");
+    return true;
+}
+else
+{
+    // LOG_RESULT("Open page:Failed!");
+    return false;
+}
+}
+public bool ClearBrowserCache()
+{
+/*************************************************
+函数功能描述：清空浏览器的Cache
+函数输入变量：
+函数返回值：
+1、true-成功； false-失败
+函数运行界面：任意
+函数结束界面：
+函数运行前提条件：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+press_keys("<RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("Browser","Android");
+
+press_keys("<Sym>");
+Sleep(2000);
+Tap_AndroidStr("Settings");
+Sleep(2000);
+Tap_AndroidStr("Privacy & security");
+Sleep(2000);
+Tap_AndroidStr("Clear cache");                                                // 通过菜单，选择清空Cache按键，具体路径要根据项目调整      (*)
+Sleep(2000);
+
+if(wait_for_androidtext("Delete locally cached content and databases",5))     // 判断是否点击到Clear cache按键
+{
+    Tap_AndroidStr("OK");                                                     // 点击OK，完成清除
+    Sleep(2000);
+    LOG_RESULT("Clear browser cache: successful!");
+    press_keys("<RightMost><RightMost><RightMost>");
+    Sleep(1000);
+    press_keys("<Home>");
+    Sleep(1000);    
+    return true;
+}
+else
+{
+    if(IF_SCREEN_SAVE())
+    {
+        save_screen("Clear_browser_cache_failed.bmp",_num);
+    } 
+    LOG_RESULT("Clear browser cache: failed!");
+    return false;
+}
+}
+public string CALENDER_MESSAGE()
+{
+string str="TEST";
+return str;
+}
+public int AddOneCalender()
+{
+/*************************************************
+函数功能描述：在某个日期中添加约会，成功后删除这个约会
+函数输入变量：
+函数返回值：
+1、返回1：添加成功、删除也成功
+2、返回-1：添加成功，但是删除失败
+3、返回0：添加失败
+
+函数运行界面：
+1、点击某个日期后进入的页面
+函数结束界面：
+1、
+
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+Tap_AndroidStr("New");                // 点击添加按键，具体要更加项目进行调整 (*)
+Sleep(1000);
+Tap(76,220);                          // 点击输入内容的区域, 坐标点要根据实际项目进行调整    (*) 
+Sleep(1000);
+Tap(76,220);                          // 连续两次是为了确保能聚焦到输入区域
+Sleep(1000);
+enter_text(CALENDER_MESSAGE());       // 输入约会的内容，可以根据变量CALENDER_MESSAGE进行调整 (*)
+Sleep(1000);
+Tap(434,69);                          // 点击SAVE, 坐标点要根据实际项目进行调整    (*) 
+LOG_RESULT("Add one Appointment: successful!");
+Sleep(2000);
+
+
+Tap(477,895);
+// 成功后，点击Agenda界面
+
+Sleep(2000);
+press_keys("<Sym>");         
+Sleep(2000);
+Tap_AndroidStr("Clear all events");
+Sleep(2000);
+Tap_AndroidStr("OK");
+Sleep(2000);
+LOG_RESULT("Del one Appointment: successful!");
+return 1;
+
+/*
+}
+else
+{
+if(IF_SCREEN_SAVE())
+{
+    save_screen("Del_calender_failed.bmp",_num);
+} 
+// LOG_RESULT("delete calender:failed!");   
+return -1;  
+}
+/*
+else
+{
+if(IF_SCREEN_SAVE())
+{
+    save_screen("Add_calender_failed.bmp",_num);
+} 
+// LOG_RESULT("Add calender:failed!");
+return 0;
+}
+*/
+}
+public bool CheckWiFiStatus(int index)
+{
+/*************************************************
+函数功能描述：检查wifi当前的状态，
+函数输入变量：
+1、0表示检查wifi是否关闭
+2、1表示检查wifi是否打开
+函数返回值：
+1、true-检查成功； false-检查失败
+函数运行界面：
+1、在wifi的界面
+函数结束界面：
+函数运行前提条件：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+int CHECKCOUNT=5; // 定义检查的次数
+bool Status=false;
+int checktmp=0;
+
+while((!Status)&&(checktmp<CHECKCOUNT))      // 如果检查结果是fail，次数也没有到，继续循环
+{
+    if(index==0)                             // 检查wifi是否关闭
+    {      
+        if(wait_for_androidtext("To see available networks, turn Wi-Fi on.",10))
+        {
+            Status=true;
+        }
+        else
+        {
+            Sleep(5000);
+            checktmp++;            
+        } 
+    }    
+    if(index==1)                              // 检查wifi是否打开
+    {
+        if(!wait_for_androidtext("To see available networks, turn Wi-Fi on.",10))
+        {
+            Status=true;
+        }
+        else
+        {
+            Sleep(5000);
+            checktmp++;   
+        } 
+    }     
+}
+if(Status) 
+{
+    return true;
+}
+else
+{
+    return false;
+}
+
+
+
+
+
+
+
+}
+public bool CampToNetwork(int index)
+{
+/*************************************************
+函数功能描述：进入手机设置，选择网络类型
+函数输入变量：
+1、index：网络的类型。2代表2G，3代表3G，4代表LTE
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：任意。case每次自动导航到联系人模块
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+press_keys("<RightMost><RightMost><RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("Setting","Android");
+//press_keys("<RightMost>");
+//Sleep(1000);
+//navigate_to("Setting","Android");
+Sleep(1000);
+
+Tap_AndroidStr("networks");
+Sleep(1000);
+Tap_AndroidStr("Mode");
+Sleep(1000);
+
+if (index==2)
+{
+   Tap(455,693);
+ 
+  // 点击GSM Only,坐标点要根据实际项目进行调整    (*) 
+    Sleep(1000); 
+}
+if (index==3)
+{    
+Tap(460,619);
+     // 点击WCDMA Only,坐标点要根据实际项目进行调整    (*) 
+    Sleep(1000);
+}
+if (index==4)
+{    
+  Tap(215,475);     //点击LTE/WCDMA/GSM自动切换
+
+//Tap(463,398);// 点击LTE Only,坐标点要根据实际项目进行调整    (*)  
+    Sleep(1000);
+}
+
+if(CheckNetworkStatus(index))   // 判断是否成功注册到网络
+{
+    LOG_RESULT("CampToNetwork:OK!  Network Type:"+index.ToString());
+    return true;
+}
+else
+{
+    LOG_RESULT("CampToNetwork:Faild!  Network Type:"+index.ToString());
+    return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+public bool CheckNetworkStatus(int index)
+{
+/*************************************************
+函数功能描述：检查当前手机注册到的网络状态
+函数输入变量：
+1、index：网络的类型。2代表2G，3代表3G，4代表LTE
+函数返回值：
+1、true-发送成功； false-发送失败
+函数运行界面：任意。case每次自动导航到联系人模块
+函数结束界面：
+//担心影响脚本稳定性，所有的返回值均为TRUE
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+press_keys("<RightMost><RightMost><RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("Setting","Android");
+Sleep(1000);
+
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");press_keys("<DownArrow>");
+press_keys("<DownArrow>");
+
+int i=0;
+int COUNT=2;
+bool INDEX=true;
+
+while(i<COUNT)
+{    
+    Tap_AndroidStr("About phone");
+    Sleep(1000);    
+    Tap_AndroidStr("Status");
+    Sleep(1000);
+    
+    if(wait_for_androidtext("In service",5))      // 首先判断是否是服务状态
+    {
+        LOG_RESULT("UE status:In service"); 
+        return true;
+        
+        /*
+        if (index==2)
+        {  
+            if(wait_for_androidtext("GPRS:1",20))
+            {
+                LOG_RESULT("UE Campe to 2G:sucessful!"); 
+                i=COUNT;
+                press_keys("<RightMost><RightMost><RightMost>");
+                return true;
+            }
+            else
+            {
+                if(wait_for_androidtext("EDGE:",20))
+                {
+                    LOG_RESULT("UE Campe to 2G:sucessful!"); 
+                    i=COUNT;
+                    press_keys("<RightMost><RightMost><RightMost>");
+                    return true;
+                }
+            }   
+        }
+        if (index==3)
+        {        
+            if(wait_for_androidtext("HSPA:10",5))
+            {
+                LOG_RESULT("UE Campe to 3G:Sucessful!");
+                i=COUNT;
+                press_keys("<RightMost><RightMost><RightMost>");
+                return true;
+            }
+            else
+            {            
+                if(wait_for_androidtext("UMTS:3",5))
+                {
+                    LOG_RESULT("UE Campe to 3G:Sucessful!");
+                    i=COUNT;
+                    press_keys("<RightMost><RightMost><RightMost>");
+                    return true; 
+                }
+                else
+                {
+                    if(wait_for_androidtext("HSPA+:",5))
+                    {
+                        LOG_RESULT("UE Campe to 3G:Sucessful!");
+                        i=COUNT;
+                        press_keys("<RightMost><RightMost><RightMost>");
+                        return true; 
+                    }
+                }
+            }  
+        }
+        if (index==4)
+        {  
+            if(wait_for_androidtext("**",20))
+            {
+                LOG_RESULT("UE Campe to LTE:Sucessful!"); 
+                i=COUNT;
+                press_keys("<RightMost><RightMost><RightMost>");
+                return true;
+            }   
+        } 
+        LOG_RESULT("Unkown network type!"); 
+        i=COUNT;
+        press_keys("<RightMost><RightMost><RightMost>");
+        //return false;
+        return true;
+        */     
+    }
+    else
+    {
+        LOG_RESULT("UE is out service!");
+       // INDEX=false;
+        press_keys("<RightMost>");
+        press_keys("<RightMost>");
+        Sleep(10000);
+        i++;
+    }
+    
+}
+
+return INDEX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+public string ADDMO_TELNUM()
+{
+/*************************************************
+函数功能描述：返回辅测机的电话号码
+函数输入变量：无
+函数返回值：
+1、num:辅测机的电话号码
+函数运行界面：
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+
+
+
+
+// String num="13501744551";
+// String num="14118000344";
+// String num="18621780601";
+String num="4255807887";
+return num;
+}
+public string SELF_TELNUM()
+{
+/*************************************************
+函数功能描述：返回测试机的电话号码
+函数输入变量：无
+函数返回值：
+1、num:测试机的电话号码
+函数运行界面：
+函数结束界面：
+
+脚本开发人员：
+开发日期：
+维护操作和日期：
+**************************************************/
+// String num="18621088306";
+// String num="14118000346";
+String num="(469)-571-2482";
+return num;
+}
+public bool IF_SCREEN_SAVE()
+{
+bool ifScreenSave=true;
+return ifScreenSave;
+}
+public void checkCall()
+{
+press_keys("<RightMost><RightMost><RightMost>");            
+press_keys("<Home>");
+Tap(88,899);
+Sleep(2000);
+if(wait_for_image("20130226151619.bmp",20))
+{
+Tap(254,280);
+Sleep(4000);
+Tap_AndroidStr("End");
+Sleep(2000);
+}
+press_keys("<RightMost><RightMost><RightMost>"); 
+press_keys("<Home>");        
+}
+public string MMS_TELNUM()
+{
+String num="8009019878";
+return num;
+}
+public void Back(int i)
+{
+int j=0;
+while(j<i){
+press_keys("<RightMost>");
+j++;
+}
+Sleep(1000);
+}
+public string SMS_TELNUM()
+{
+String num="762-5113"; //(214)762-5113
+return num;
+
+}
+
+int Count = 0;
+string CallNum = "10086";
+int sleepTime = 4000;
+string SIMNUM = "18705169493";
+string deviceID = "ZTE_SP920";
+string emailAttachmentName = "Amr100k";
+string emailReceiveAddress = "ztep1801@gmail.com";
+string emailPassword = "zte11111111";
+int curwidth = 480;
+int curheight = 800;
+int SimSmsMemo = 60;
+
+         public string OutPut()
+         {
+int Loop = 1;int Interval = 5;string Video = "N";
+
+switch_target_num("BaseMo");
+for (int _num = 0; _num < Loop;_num++ )
+{
+Console.WriteLine("||| MESSAGE ||| {0}{1}{2}",tq.lg.Language("lp"),_num+1,tq.lg.Language("loopstart"));
+this._num = _num;
+/*************************************************
+用例描述：通过浏览器打开Homepage (2G:5  3G:20  LTE:25)
+脚本开发人员：
+开发日期：
+维护操作和日期：
+
+用例预置条件：
+1、已经设置好主页地址,可以通过预置条件5.1.5浏览器完成
+**************************************************/
+
+int COUNT_2G=5;
+int COUNT_3G=20;
+int COUNT_LTE=25;
+int COUNT_TEMP=0;
+int COUNT_INDEX=0;
+
+int COUNT_FAILED_2G=0;
+int COUNT_FAILED_3G=0;
+int COUNT_FAILED_LTE=0;
+
+LOG_RESULT("==== 5.1.5.1 Open browser to Homepage:start!");
+for(int i=2;i<5;i++)
+{    
+    if(i==2)
+    { 
+        COUNT_TEMP=COUNT_2G; 
+    }
+    if(i==3) 
+    { 
+        COUNT_TEMP=COUNT_3G;
+    }
+    if(i==4)
+    { 
+        COUNT_TEMP=COUNT_LTE;
+    }
+    
+    if(COUNT_TEMP!=0)
+    {
+        // camp to network
+         bool result_network=CampToNetwork(i);
+      //  bool result_network=true;
+        if(result_network)                                     // 成功注册到网络
+        {     
+            for(int j=0;j<COUNT_TEMP;j++)
+            {                
+                COUNT_INDEX++;
+                LOG_RESULT("==== Count ==>"+COUNT_INDEX.ToString());
+                
+                press_keys("<RightMost><RightMost><RightMost>");
+                Sleep(1000);
+                press_keys("<Home>");
+                Sleep(1000);
+                navigate_to("Browser","Android");
+
+                /*
+                press_keys("<Sym>");                           // 调用菜单，选择Home选项，需要要根据项目进行调整 (*)
+                Sleep(2000);
+                Tap_AndroidStr("Home");
+                */
+                Sleep(5000);               
+                
+                if(CheckPageIsOpen())                          // 检查页面是否成功打开
+                {
+                    LOG_RESULT("Open Homepage:Successful!");
+                }
+                else
+                {
+                    LOG_RESULT("Open Homepage:Failed!");                  
+                    if(i==2)
+                    {
+                        COUNT_FAILED_2G++; 
+                    }
+                    if(i==3)
+                    { 
+                        COUNT_FAILED_3G++; 
+                    }
+                    if(i==4) 
+                    { 
+                        COUNT_FAILED_LTE++; 
+                    }                                                                             
+                }
+                
+                press_keys("<Sym>");                           // 调用菜单的Exit选项，关闭浏览器  (*)
+                Sleep(2000);
+                Tap_AndroidStr("Exit");
+                Sleep(2000);
+                Tap_AndroidStr("OK");
+                Sleep(2000);
+            } // for
+        }
+        else                 // 注册网络失败
+        {
+            LOG_RESULT("Out serivce! Network type:"+i.ToString());         
+            if(i==2)
+            { 
+                COUNT_FAILED_2G=COUNT_2G;  
+            }
+            if(i==3) 
+            { 
+                COUNT_FAILED_3G=COUNT_3G;  
+            }
+            if(i==4) 
+            {
+                COUNT_FAILED_LTE=COUNT_LTE; 
+            }
+        }
+    }
+    else  // count_temp=0
+    {
+        if(i==2) 
+        { 
+            COUNT_FAILED_2G=0; 
+        }
+        if(i==3)
+        { 
+            COUNT_FAILED_3G=0;  
+        }
+        if(i==4) 
+        {
+            COUNT_FAILED_LTE=0; 
+        }
+    }
+}
+ClearBrowserCache();         // 清空浏览器的cache
+press_keys("<RightMost><RightMost><RightMost>");
+int COUNT_FAILED_TEMP=COUNT_FAILED_2G+COUNT_FAILED_3G+COUNT_FAILED_LTE;
+int COUNT=COUNT_2G+COUNT_3G+COUNT_LTE;
+LOG_RESULT("======== All Case:"+COUNT.ToString()+"     "+"Failed Case:"+COUNT_FAILED_TEMP.ToString());
+LOG_RESULT("======== 5.1.5.1 Open browser to Homepage:Finished!");
+
+
+tq.pause(Interval);
+}
+recordend();
+DeviceClose();
+              return "Run Success!";              Console.ReadLine();
+         }
+     }
+}

@@ -1,0 +1,7 @@
+# Script to start "input" on the device, which has a very rudimentary
+# shell.
+#
+base=/data
+export CLASSPATH=$base/InjectAgent1.jar
+exec app_process /system/bin com.zte.autotest.Main $*
+

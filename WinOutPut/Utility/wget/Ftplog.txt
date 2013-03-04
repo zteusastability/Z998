@@ -1,0 +1,42 @@
+--09:40:05--  http://and/
+           => `"D://Documents/index.html'
+Resolving and... failed: Unknown host.
+Settings\linanming\桌面\root-手动测试-TestManual\ -r -nH --cut-dirs=3 "ftp://10.61.7.80/Resourcepool/P60A二期/TestPro/Phone_Public\: Unsupported scheme.
+
+FINISHED --09:40:08--
+Downloaded: 0 bytes in 0 files
+--09:40:40--  http://and/
+           => `"D:/Documents/index.html'
+Resolving and... failed: Unknown host.
+Settings\linanming\桌面\root-手动测试-TestManual\ -r -nH --cut-dirs=3 "ftp://10.61.7.80/Resourcepool/P60A二期/TestPro/Phone_Public\: Unsupported scheme.
+
+FINISHED --09:40:43--
+Downloaded: 0 bytes in 0 files
+--09:42:15--  http://and/
+           => `/D://Documents/index.html'
+Resolving and... failed: Unknown host.
+--09:42:17--  http://settings%5Clinanming%5C%D7%C0%C3%E6%5Croot-%CA%D6%B6%AF%B2%E2%CA%D4-testmanual%5C%5C/
+           => `/D://Documents/index.html'
+Resolving settings\linanming\\327\300\303\346\root-\312\326\266\257\262\342\312\324-testmanual\\... failed: Unknown host.
+\ftp://10.61.7.80/Resourcepool/P60A二期/TestPro/Phone_Public\: Unsupported scheme.
+
+FINISHED --09:42:17--
+Downloaded: 0 bytes in 0 files
+--09:51:06--  http://and/
+           => `'D://Documents/index.html'
+Resolving and... failed: Unknown host.
+--09:51:09--  http://settings%5Clinanming%5C%D7%C0%C3%E6%5Croot-%CA%D6%B6%AF%B2%E2%CA%D4-testmanual%5C'/
+           => `'D://Documents/index.html'
+Resolving settings\linanming\\327\300\303\346\root-\312\326\266\257\262\342\312\324-testmanual\'... failed: Unknown host.
+--09:51:09--  ftp://10.61.7.80/Resourcepool/P60A%B6%FE%C6%DA/TestPro/Phone_Public
+           => `'D://Documents/.listing'
+Connecting to 10.61.7.80:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD /Resourcepool/P60A\266\376\306\332/TestPro ... done.
+==> PASV ... done.    ==> LIST ... done.
+'D://Documents: Invalid argument'D://Documents/.listing: Invalid argument
+unlink: Invalid argument
+
+FINISHED --09:51:09--
+Downloaded: 0 bytes in 0 files

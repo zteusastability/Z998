@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Order>
+	<Stress>
+		<script name="11" Tag="123" Key="34" Type="4"/>
+		<script name="11" Tag="123" Key="34" Type="4"/>
+		<script name="11" Tag="123" Key="34" Type="4"/>
+		<script name="11" Tag="123" Key="34" Type="4"/>
+		<script name="11" Tag="123" Key="34" Type="4"/>
+		<script name="11" Tag="123" Key="34" Type="4"/>
+		<script name="11" Tag="123" Key="34" Type="4"/>
+	</Stress>
+	<Records>
+		<script name="" Tag="" Key="" Type=""/>
+	</Records>
+	<Smoky>
+		<script name="" Tag="" Key="" Type=""/>
+	</Smoky>	
+</Order>

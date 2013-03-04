@@ -1,0 +1,125 @@
+1.本工具用于运行手机侧的脚本
+
+2.使用工具的部分功能的前提：
+(1) 如果手机侧脚本涉及到字符比对和根据字符串点击的功能，则被测
+    样机的软件版本必须添加工具科开发的android源码
+(2) 如果是不涉及上述两个功能的脚本，则没有上述要求
+
+3.使用本工具前请做如下准备工作：
+(1) 请将被测样机通过数据线连上PC,运行PC侧的EasyTest工具,并启动
+    Agent程序(此为必须,否则手机侧无法启动测试程序)
+(2)	打开EasyTest工具,点击Project菜单下的Convert Script按钮，打开
+    脚本转换工具,也可以单独开启此工具,使用此工具将在ET侧运行顺利
+	的脚本转换成手机侧的脚本,被转换的脚本必须遵循一定的规则(详见
+	ET脚本书写规则),需要转换的脚本都列在右侧的list box中,可根据需
+	要点击左侧浏览按钮增加需要换的脚本,或点击删除去掉不需要转换的
+	脚本
+(3) 点击Convert Script工具上的开始转换按钮,开始脚本的转换，右侧进
+    度条显示目前脚本转换的完成情况,脚本转换完成后，所有完成转换的
+    脚本都显示在浏览转换结果右侧的list box中,双击后可打开脚本查看,
+    建议对手机侧脚本进行检查,如未发现错误,点击"下载脚本至手机"按钮,
+	脚本将被自动下载到手机T卡的/sdcard/TestcaseFolder目录下	
+(4) 如果在手机侧还没有安装EasyTestProject这个APK程序，请使用脚本
+    转换工具上的"下载APK程序至手机T卡"按钮,自动将APK程序下载至
+	T卡的sdcard目录下,点击此文件后进行安装
+(5) 运行手机侧的EasyTestProject这个APK程序,按MENU按钮可点击查看软件的
+    使用说明和版本说明，界面上显示了所有的备选的测试脚本,即/sdcard/TestcaseFolder
+	目录下的所有脚本，默认是所有脚本都进行测试的，用户可根据需要勾选要
+	测试的脚本，点击"开始测试"后脚本开始运行
+(6) 脚本运行过程中的LOG被记录在/sdcard/Log目录下，每一个脚本对应一个
+    与脚本同名的日志文件，此LOG文件记录了脚本开始运行的时间和结束的
+	时间，以及在脚本运行过程中比对点的比对结果，如比对失败则将比对点截图
+	并保存在/sdcard/capture目录下，并结束此条脚本的运行并转换到下一条脚本
+	继续运行，脚本运行结束后将返回EasyTestProject的主界面
+(7)	如用户想在脚本运行过程中停止脚本的运行，则可在手机连接上PC的情况下
+    点击脚本转换工具界面上的"停止脚本运行按钮"
+    
+4. 关于ET脚本书写规则
+(1) 首先ET的脚本是在ET上能成功运行的脚本
+(2) 脚本名以及脚本内容中最好不要涉及中文，转换之后会变成乱码，其中最需要注意的
+    是LOG_RESULT后的内容
+(2) PC端ET支持的脚本功能，在PC侧不一定支持，不支持的功能包括:
+    DoubleTap,MoveBy,switch_target_num,wait_for_image,OCR,wait_ocr,Tap_ocr	
+	DumpMemoryInfo,press_keys_hold,wait_for_ocr,wait_for_text
+(3) 脚本书写中其它语句的书写与平常无异，最好是一行写一条脚本语句，但需要特别注意的是以下四种语句：
+    1.navigate_to语句，例：navigate_to("MMS","Android"); => navigateto("am start -n com.android.mms/.ui.ConversationList")
+	以上转换过程能顺利进行，但是目前支持转换的模块仅限于MMS,Browser,Camera,Music,Filer,Alarm,Setting,StopWatch,TaskManager
+	Call,Calculator,Contacts, 而类似navigateto("am start -n zte.com.cn.filer/.FilerActivity","false");语句则都可以正常进行
+	转换，因此在书写过程中最好使用navigateto语句进行导航
+    2.对于MoveTo语句的使用有严格的规定，一行中可以写多条MoveTo,还可以和Sleep语句搭配使用，当然仅限于Sleep语句,例如,
+      写摄像脚本的语句如下是符合规范的：
+     StylusDown(25,419);
+     MoveTo(25,419);Sleep(100);MoveTo(25,419);Sleep(100);MoveTo(27,419);Sleep(100);MoveTo(29,419);
+     Sleep(100);MoveTo(31,419);Sleep(100);MoveTo(33,419);Sleep(100);MoveTo(35,419);Sleep(100);
+     MoveTo(39,419);Sleep(100);MoveTo(41,419);Sleep(100);MoveTo(43,419);Sleep(100);MoveTo(47,419);Sleep(100);
+     StylusUp();
+     3. 对于循环，支持for(int i = 0; i < 100; i++)  for(int i = 0; i <= 100; i++)
+	                  {                             {
+					     ......                      .......    
+					  }                             }
+	                  for(int i = 100; i > 0; i--)  for(int i = 100; i >= 0; i--)
+			          {                             {
+					     ......                      .......    
+					  }                             }
+		四种格式，{和}必须单独成行,目前不支持while循环
+	 4. 对于if语句,目前仅支持类似  if(!fetchstr("sdcard","false"))  和  if(fetchstr("sdcard","false")) 的语句
+			                       {                                    {
+					                   ......                               .......    
+					               }                                    }						 
+        其中的{和}必须单独成行,并且不支持类似if(a > b)之类的语句
+
+		
+5.脚本的转换规则如下,在转换之后可自行检查脚本,保证大体上不出错：
+(1)press_keys("<Key>");  =>   key/0/KeyValue
+							  key/1/KeyValue
+例：press_keys("<RightMost>"); => key/0/4
+                                  key/1/4
+对于大写字母,采用小写字母搭配shift的组合
+例：press_keys("<A>"); =>  key/0/59
+                           key/1/59
+						   key/0/29
+						   key/1/29
+	press_keys("<End>");则不进行转换					   
+(2)对于Tapstr,Tap_AndroidStr,Tap_text统一处理成对于Tapstr
+例：Tap_AndroidStr("Call");  => Tapstr("Call") 
+(3)Tap(237,78);  =>   pointer/10/10/0/237/78/-1	
+                      pointer/10/10/1/237/78/-1	
+(4)navigateto("am start -n com.zte.smartdialer/.DialerApp","false");  =>  navigateto("am start -n com.zte.smartdialer/.DialerApp")
+(5)navigate_to("MMS","Android");  =>  navigateto("am start -n com.android.mms/.ui.ConversationList")  
+(6)Sleep(2000);  =>  sleep/2000
+(7)pause(2);  =>  sleep/2000  
+(8)enter_text("10086")  =>  key/0/8
+                            key/1/8
+							key/0/7
+							key/1/7
+							key/0/15
+							key/1/15
+							key/0/13
+							key/1/13
+(9)enter_number和enter_text一致
+(10)LOG_RESULT("Compare faile!"); => AddLog("Compare faile!") 
+(11)save_screen("smoke2-1.jpg",0);  =>  capture1/smoke2-1.jpg	
+(12)MoveTo(742,211);  =>  pointer/10/10/2/742/211/-1	
+(13)StylusDown(125,276);  =>  pointer/10/10/0/125/276/-1
+(14)StylusUp(564,184);	=>  pointer/10/10/1/564/184/-1	
+(15){和}原样不变，if和for原样不变	
+(16)其余内容部进行转换
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+   
+   
+   

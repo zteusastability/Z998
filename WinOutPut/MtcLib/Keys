@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<MyTQ>
+   <ConfigVer version="1.0"></ConfigVer>
+   <KeyDevice name="ZTEC500">
+          <key name="0"  val="48"  Info="0 key"  />
+          <key name="1"  val="49"  Info="1 key"  />
+		  <key name="2"  val="50"  Info="2 key"  />
+		  <key name="3"  val="51"  Info="3 key"  />
+		  <key name="4"  val="52"  Info="4 key"  />
+		  <key name="5"  val="53"  Info="5 key"  />
+		  <key name="6"  val="54"  Info="6 key"  />
+		  <key name="7"  val="55"  Info="7 key"  />
+		  <key name="8"  val="56"  Info="8 key"  />
+		  <key name="9"  val="57"  Info="9 key"  />
+          <key name="*"  val="35"  Info="* key"   />	
+  		  <key name="#"  val="42"  Info="1 key"   />
+		  
+          <key name="LeftMost"     val="158"  Info="Left Most menu key"   />
+          <key name="RightMost"    val="159"  Info="Right Most menu key"  />
+
+	      <key name="UpArrow"      val="84"   Info="UpArrow menu key"     />
+		  <key name="DownArrow"    val="85"   Info="DownArrow  menu key"  />
+		  <key name="LeftArrow"    val="11"   Info="Left menu key"        />
+		  <key name="RightArrow"   val="12"   Info="Right menu key"       />
+		  <key name="Ok"           val="112"  Info="Select menu key"      />
+		  <key name="Back"         val="82"  Info="Back menu key"        />
+		  <key name="Clear"        val="82"  Info="Clear menu key"       />
+		  <key name="Send"         val="80"   Info="Send menu key"        />
+		  <key name="Home"         val="81"   Info="Home menu key"        />
+		  <key name="SPECIAL"      val="199"  Info="Using in enter_text2_of..."  />
+		  <key name="NULL"         val="0"    Info="NULL Key" />	
+   </KeyDevice>
+</MyTQ>
+
+
+
+
+
+
+
+

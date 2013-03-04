@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestExpressInfo>
+  <CommonException>
+    <ErrorList Summary="底层异常">
+	   <Error ID="0001" Title="" Content="Access AddOneItem Error"/>
+	   <Error ID="0002" Title="" Content="Access DeleteOneItem Error"/>
+	   <Error ID="0003" Title="" Content="Access GetItemInfo Error"/>
+	   <Error ID="0004" Title="" Content="Access UpdateItemInfo Error"/>
+	   <Error ID="0005" Title="" Content="Access GetList Error"/>
+	   <Error ID="0006" Title="" Content="Sqlserver AddOneItem Error"/>
+	   <Error ID="0007" Title="" Content="Sqlserver DeleteOneItem Error"/>
+	   <Error ID="0008" Title="" Content="Sqlserver GetItemInfo Error"/>
+	   <Error ID="0009" Title="" Content="读取节点信息时出错，本地数据与服务器未同步!"/>
+	   <Error ID="0010" Title="" Content="Sqlserver UpdateItemInfo Error"/>
+	   <Error ID="0011" Title="" Content="Sqlserver GetList Error"/>
+	   <Error ID="0012" Title="" Content="UpdateTestCase Parameter Error"/>
+	   <Error ID="0013" Title="" Content="GetSubLists Parameter Error"/>
+	   <Error ID="0014" Title="" Content="GetSubLists Oper Error"/>
+	   <Error ID="0015" Title="" Content="GetListsItem Parameter Error"/>
+	   <Error ID="0016" Title="" Content="UpdateList Parameter Error"/>
+	   <Error ID="0017" Title="" Content="UpdateList Oper Error:没有找到匹配的记录"/>
+	   <Error ID="0018" Title="" Content="InsertList Parameter Error"/>
+	   <Error ID="0019" Title="" Content="删除列表信息失败"/>
+	   <Error ID="0020" Title="" Content="AddOneCaseBug Parameter Error"/>
+	   <Error ID="0021" Title="" Content="AddOneCaseBug Oper Error"/>
+	   <Error ID="0022" Title="" Content="DeleteCaseBug Failed"/>
+	   <Error ID="0023" Title="" Content="UpdateCaseBug Parameter Error"/>
+	   <Error ID="0024" Title="" Content="UpdateCaseBug Oper Error : 没有找到匹配的记录"/>
+	   <Error ID="0025" Title="" Content="GetCaseBug Parameter Error"/>
+	   <Error ID="0026" Title="" Content="GetCaseBugs Error"/>
+	   <Error ID="0027" Title="" Content="Excel Connection Failed"/>
+	   <Error ID="0028" Title="" Content="加载工作表记录信息时出错"/>
+	   <Error ID="0029" Title="" Content="Excel DisConnection Failed"/>
+	   <Error ID="0030" Title="" Content="GetMapInfoByID Parameter Error"/>
+	   <Error ID="0031" Title="" Content="AddOneMap Parameter Error"/>
+	   <Error ID="0032" Title="" Content="AddOneMap Oper Error"/>
+	   <Error ID="0033" Title="" Content="UpdateMapFieldInfo Parameter Error"/>
+	   <Error ID="0034" Title="" Content="DeleteMapConfiguer Failed"/>
+	   <Error ID="0035" Title="" Content="AddOnePrjTreePrivilege Parameter Error"/>
+	   <Error ID="0036" Title="" Content="AddOnePrjTreePrivilege Oper Error"/>
+	   <Error ID="0037" Title="" Content="DeletePrjTreePrivilege Failed"/>
+	   <Error ID="0038" Title="" Content="GetPrjTreePrivilegeInfo Oper Error"/>
+	   <Error ID="0039" Title="" Content="GetCaseFieldInfo Parameter Error"/>
+	   <Error ID="0040" Title="" Content="UpdateCaseField Parameter Error"/>
+	   <Error ID="0041" Title="" Content="AddOneTestCase Parameter Error"/>
+	   <Error ID="0042"	Title="" Content="上传文件失败"/>
+	   <Error ID="0043"	Title="" Content="上传文件夹失败"/>
+	   <Error ID="0044"	Title="" Content="下载文件失败"/>
+	   <Error ID="0045"	Title="" Content="下载文件夹失败"/>
+	   <Error ID="0046"	Title="" Content="拷贝文件操作失败"/>
+	   <Error ID="0047"	Title="" Content="获取文件夹下文件列表操作失败"/>
+	   <Error ID="0048"	Title="" Content="删除文件操作失败"/>
+	   <Error ID="0049"	Title="" Content="创建文件夹目录失败"/>
+	   <Error ID="0050"	Title="" Content="删除文件夹目录失败"/>
+	   <Error ID="0051"	Title="" Content="批量删除文件夹失败"/>
+	   <Error ID="0052"	Title="" Content="获取文件大小操作失败"/>
+	   <Error ID="0053"	Title="" Content="文件改名操作失败"/>
+	   <Error ID="0054"	Title="" Content="拷贝文件夹操作失败"/>
+	   <Error ID="0055"	Title="" Content="读取文件字符串操作目录失败"/>
+	   <Error ID="0056"	Title="" Content="Fill DataSet Failed"/>
+	   <Error ID="0057"	Title="" Content="Read Export Path Error"/>
+	   <Error ID="0058"	Title="" Content="GetTestExecuteDataSet Exception"/>
+	   <Error ID="0059" Title="" Content="GetItemsByFilters Oper Error"/>
+	   <Error ID="0060" Title="" Content="读取数据库的连接字符串失败!"/>
+	   <Error ID="0061" Title="" Content="该类型的节点不能再添加子节点了!"/>
+	   <Error ID="0062" Title="" Content="父节点不能拷贝到子节点里面!"/>
+	   <Error ID="0063" Title="" Content="GetSonNodeDataSet 参数错误!"/>
+	   <Error ID="0064" Title="" Content="节点类型错误!"/>
+	   <Error ID="0065" Title="" Content="数据错误：丢失ItemKey!"/>
+	   <Error ID="0066" Title="" Content="该节点下不能添加非文件夹类型节点!"/>
+	   <Error ID="0067" Title="" Content="加载测试工程Grid配置文件时出错!"/>
+	   <Error ID="0068" Title="" Content="创建项目数据库失败"/>
+	   <Error ID="0069"	Title="" Content="删除项目数据库失败"/>
+	   <Error ID="0070" Title="" Content="获取数据库信息失败"/>
+	   <Error ID="0071" Title="" Content="获取连接字符串失败"/>
+	   <Error ID="0072" Title="" Content="删除数据库信息失败"/>
+	   <Error ID="0073" Title="" Content="新建数据库信息失败"/>
+	   <Error ID="0074" Title="" Content="更新数据库信息失败"/>
+	   <Error ID="0075" Title="" Content="获取用户组信息失败"/>
+	   <Error ID="0076" Title="" Content="新建用户组信息失败"/>
+	   <Error ID="0077" Title="" Content="获取参数错误"/>
+	   <Error ID="0078" Title="" Content="新增资源失败"/>
+	   <Error ID="0079" Title="" Content="更新资源失败"/>
+	   <Error ID="0080" Title="" Content="获取数据库信息失败"/>
+	   <Error ID="0081" Title="" Content="获取数据库字段信息失败"/>
+	   <Error ID="0082" Title="" Content="加载树失败，可能原因未能找到项目对应的数据库!"/>
+	   <Error ID="0083" Title="" Content="树深度超过50，或者存在循环!"/>
+	   <Error ID="0084" Title="" Content="[TreeNodeHelper::DeleteOneNode]--DeleteType Error!"/>
+	   <Error ID="0085" Title="" Content="[TreeNodeHelper::PasteOneNode]-- NodeIDSon Error!"/>
+	   <Error ID="0086" Title="" Content="[TreeNodeHelper::InsertOneNode]--ITEM类型的节点不能添加子节点!"/>
+	   <Error ID="0087" Title="" Content="[TreeNodeHelper::InsertOneNode]--NodeType Error!"/>
+	   <Error ID="0088" Title="" Content="重名错误!"/>
+	   <Error ID="0089" Title="" Content="插入的Gather类型错误!"/>
+	   <Error ID="0090" Title="" Content="GetSonNodeDataSet 参数错误!"/>
+	   <Error ID="0091" Title="" Content="子树中包含父节点，数据库中出现循环树.请与管理员联系!"/>
+	   <Error ID="0092" Title="" Content="默认Gather表名错误!"/>
+	   <Error ID="0093" Title="" Content="Gather表名错误!"/>
+	   <Error ID="0094" Title="" Content="TestExpress.TreeNodeOper.Factory Error!"/>
+	   <Error ID="0095" Title="" Content="加载数据集错误"/>
+	   <Error ID="0096" Title="" Content="将 varchar 值 NULL 转换为数据类型为 int 的列时发生语法错误"/>
+	   <Error ID="0097" Title="" Content="导入项目用例失败：无权限!"/>
+	   <Error ID="0098" Title="" Content="GetNodeInfo Error"/>
+	   <Error ID="0099" Title="" Content="GetTestCaseInfo Error"/>
+	   <Error ID="0100" Title="" Content="GetDataset Error"/>
+	   <Error ID="0101" Title="" Content="GetUserByGroup Error"/>
+	   <Error ID="0102" Title="" Content="AddOneLog Error"/>
+	   <Error ID="0103" Title="" Content="DelOneLog Error"/>
+	   <Error ID="0104" Title="" Content="GetLogDataSet Error"/>
+	   <Error ID="0105" Title="" Content="数据记录更新未成功"/>
+	   <Error ID="0106" Title="" Content=" Build filter expression Error"/>
+	   <Error ID="0107" Title="" Content="TestProHelper :Parameter Error"/>
+	   <Error ID="0108" Title="" Content="获取区域信息失败"/>
+	   <Error ID="0109" Title="" Content="获取一条记录信息失败"/>
+	   <Error ID="0110" Title="" Content="删除区域失败"/>
+	   <Error ID="0111" Title="" Content="插入一条记录失败"/>
+	   <Error ID="0112" Title="" Content="更新失败"/>
+	   <Error ID="0113" Title="" Content="数据库连接错误"/>
+	   <Error ID="0114" Title="" Content="测试集中包含运行过的用例"/>
+	 </ErrorList>
+  </CommonException>
+  <TestScript>
+    <ErrorList Summary="错误提示">
+      <Error ID="1001" Title="错误" Content="存在重名节点，请检查"/>
+	  <Error ID="1002" Title="错误" Content="根目录下不能创建脚本节点"/>
+	  <Error ID="1003" Title="错误" Content="上传失败，造成原因可能是用例不存在或所选脚本无效"/>
+	  <Error ID="1004" Title="错误" Content="服务器上无对应的文件夹或脚本，请检查"/>
+	  <Error ID="1005" Title="错误" Content="目标文件不存在或已经被删除"/>
+	  <Error ID="1006" Title="错误" Content="目标文件与源文件相同，请检查"/>
+	  <Error ID="1007" Title="错误" Content="命名不符合规范，请检查"/>
+	  <Error ID="1008" Title="错误" Content="程序出现异常，请检查"/>
+	  <Error ID="1009" Title="错误" Content="父节点不能剪切到子节点下"/>
+	  <Error ID="1010" Title="警告" Content="无符合条件的节点"/>
+	  <Error ID="1011" Title="错误" Content="无法与服务器建立连接，请检查服务器是否可用"/>
+	  <Error ID="1012" Title="错误" Content="节点类型不同，不允许相互拷贝"/>
+	  <Error ID="1013" Title="提示" Content="脚本上传成功"/>
+	  <Error ID="1014" Title="提示" Content="脚本上传失败"/>
+	  <Error ID="1015" Title="错误" Content="新建操作失败"/>
+	  <Error ID="1016" Title="提示" Content="无匹配用例，关联失败"/>
+	  <Error ID="1017" Title="提示" Content="请选择过滤条件"/>
+	  <Error ID="1018" Title="错误" Content="查询的起始时间要小于结束时间"/>
+	  <Error ID="1019" Title="警告" Content="有特殊字符存在，请检查"/>
+	  <Error ID="1020" Title="警告" Content="查找内容以及查找范围不能为空，请检查"/>
+	  <Error ID="1021" Title="警告" Content="没有要查找的节点"/>
+    </ErrorList>
+	<PromptList Summary="用户确认">
+	  <Prompt ID="1101" Title="确认" Content="确定删除当前选定内容么！？"/>
+	  <Prompt ID="1102" Title="确认" Content="确定清空回收站么！？"/>
+	  <Prompt ID="1103" Title="过滤" Content="无匹配节点，请重新设置过滤条件"/>
+	  <Prompt ID="1104" Title="确认" Content="删除的内容将无法恢复，确定删除么！？"/>
+    </PromptList>
+  </TestScript>
+  <TestExecute>
+    <ErrorList Summary="错误提示">
+      <Error ID="2001" Title="错误" Content="名字不允许为空"/>
+	  <Error ID="2002" Title="错误" Content="存在特殊字符，请重新输入"/>
+	  <Error ID="2003" Title="错误" Content="必须选择一个资源"/>
+	  <Error ID="2004" Title="错误" Content="不能选择All节点"/>
+	  <Error ID="2005" Title="错误" Content="读取Xml配置文件发生错误"/>
+	  <Error ID="2006" Title="错误" Content="文件操作或写Xml文件时发生错误"/>
+	  <Error ID="2007" Title="错误" Content="无法完成导入用例功能：所选择的节点下没有用例"/>
+	  <Error ID="2008" Title="警告" Content="无法完成导入用例功能：用例没有关联脚本或用例已经被删除"/>
+	  <Error ID="2009" Title="警告" Content="请选择用例节点"/>
+	  <Error ID="2010" Title="错误" Content="所选数据节点已经从数据库上删除，请刷新界面"/>
+	  <Error ID="2011" Title="错误" Content="文件打开失败，无法获取所需信息"/>
+	  <Error ID="2012" Title="错误" Content="路径不能为空"/>
+	  <Error ID="2013" Title="提示" Content="如果您对需要导入的excel工作表有做修改,请通过单击,上一步,来获取最新信息"/>
+	  <Error ID="2014" Title="错误" Content="超过系统最高支持的字符长度"/>
+	  <Error ID="2015" Title="错误" Content="父节点属性中的 测试资源 信息不正确"/>
+	  <Error ID="2016" Title="错误" Content="无脚本关联，不能运行自动测试"/>
+	  <Error ID="2017" Title="错误" Content="数据节点已经从数据库上删除"/>
+	  <Error ID="2018" Title="错误" Content="请检查本机是否安装Qtp以及MultiTestManager两款软件，缺一不可！"/>
+	  <Error ID="2019" Title="错误" Content="生成Qtp工程文件出错，请重新下载。"/>
+	  <Error ID="2020" Title="警告" Content="无相关操作权限，请联系管理员"/>
+	  <Error ID="2021" Title="提示" Content="保存成功！"/>
+	  <Error ID="2022" Title="错误" Content="文件夹名不允许为空"/>
+	  <Error ID="2023" Title="错误" Content="测试人员为空，请添加后再进行权限分配。"/>
+	  <Error ID="2024" Title="错误" Content="手机自动测试集，不能拷贝到当前工程外部。"/>
+	  <Error ID="2025" Title="警告" Content="所选自动用例无关联脚本，无法下载！！"/>
+	  <Error ID="2026" Title="错误" Content="获取自动测试工程信息失败，请检查数据库连接"/>
+	  <Error ID="2027" Title="错误" Content="运行所需配置文件不存在，请确认Qtp运行依赖库是否存在！"/>
+	  <Error ID="2028" Title="错误" Content="所选可执行文件不存在，请检查，是否有网卡资源！"/>
+	  <Error ID="2029" Title="警告" Content="标题为红色字段代表必填项，请完成所有必填项！"/>
+	  <Error ID="2030" Title="警告" Content="附件上传失败，请检查！"/>
+	  <Error ID="2031" Title="提示" Content="登录失败，请检查网络是否可用及用户名密码是否填写正确！"/>
+	  <Error ID="2032" Title="错误" Content="测试集已经开始运行，不能进行删除操作."/>
+	  <Error ID="2033" Title="错误" Content="版本号不能为空，请填写."/>
+    </ErrorList>
+	<PromptList Summary="用户确认">
+	  <Prompt ID="2101" Title="用户确认" Content="确定要删除所选的记录？"/>
+	  <Prompt ID="2102" Title="用户确认" Content="您所选择的结点下有重复的用例被导入\n是否导入重复的用例？"/>
+	  <Prompt ID="2103" Title="用户确认" Content="执行结果项将被重置，是否继续？"/>
+	  <Prompt ID="2104" Title="用户确认" Content="此操作将丢失所有已填写数据，是否继续！？"/>
+	  <Prompt ID="2105" Title="用户确认" Content="确定版本号为空？"/>
+	  <Prompt ID="2106" Title="用户确认" Content="注意：用例信息有所修改，是否保存修改？"/>
+	  <Prompt ID="2107" Title="用户确认" Content="注意：实测结果有所修改，是否保存修改？"/>
+	  <Prompt ID="2108" Title="用户确认" Content="是否要清空原有测试结果等信息？"/>
+	  <Prompt ID="2109" Title="用户确认" Content="您所选择粘帖的测试集下有重复的用例\n是否粘帖重复的用例？"/>
+    </PromptList>
+  </TestExecute>
+  <Privilege>
+	<ErrorList Summary="错误提示">
+	   <Error ID="3001" Title="错误" Content="不允许出现空的数据区。。占位。"/>
+	   <Error ID="3002" Title="错误" Content="加载权限失败！"/>
+	   <Error ID="3003" Title="错误" Content="没有选中权限！"/>
+	   <Error ID="3004" Title="错误" Content="组名重名！"/>
+	   <Error ID="3005" Title="错误" Content="组名不允许为空！"/>
+	</ErrorList>
+	<PromptList Summary="用户确认">
+	   <Prompt ID="3101" Title="删除确认" Content="#确认要删除此用户？#"/>
+	   <Prompt ID="3102" Title="删除确认" Content="确认要删除所选的组？"/>
+	   <Prompt ID="3103" Title="删除确认" Content="确认要删除选中的用户组？"/>
+	</PromptList>
+	<WarningList>
+		<Warning ID="3201" Title="警告" Content="管理员权限不允许被修改！"/>
+	</WarningList>
+  </Privilege>
+  <TestReport>
+  	<ErrorList Summary="错误提示">
+         <Error ID="4001" Title="错误" Content="此节点下存在同名节点"/>
+         <Error ID="4002" Title="错误" Content="包含特殊字符，请检查"/>	
+         <Error ID="4003" Title="错误" Content="存在重名节点，请检查"/>
+         <Error ID="4004" Title="错误" Content="该字段已经存在！"/>
+         <Error ID="4005" Title="错误" Content="新建名不允许空!"/>
+         <Error ID="4006" Title="错误" Content="新建名不允许全是空格"/>
+         <Error ID="4007" Title="错误" Content="信息未填完全!"/>
+         <Error ID="4008" Title="警告" Content="故障对应的用例不存在!"/>	
+         <Error ID="4009" Title="警告" Content="故障对应的项目不存在!"/>	
+         <Error ID="4010" Title="警告" Content="该条故障已被删除"/>
+         <Error ID="4011" Title="错误" Content="你没有处理这条故障的权限"/>
+         <Error ID="4012" Title="错误" Content="加载报表错误"/>
+         <Error ID="4013" Title="错误" Content="树节点拖动错误"/>
+         <Error ID="4014" Title="提示" Content="报表导出完成"/>
+         <Error ID="4015" Title="警告" Content="你还没有定义显示的字段"/>	
+         <Error ID="4016" Title=""     Content="构造树错误"/>	
+         <Error ID="4017" Title=""     Content="删除节点错误"/>
+         <Error ID="4018" Title="错误" Content="绑定GRID错误"/>
+		 <Error ID="4019" Title="导出错误" Content="导出文件已打开，请关闭"/> 
+         <Error ID="4020" Title="错误" Content="导出失败"/>
+         <Error ID="4021" Title="警告" Content="此字段已存在，不能重复拖动"/>
+         <Error ID="4022" Title="警告" Content="此字段只能拖放在树的第一，二层"/> 
+         <Error ID="4023" Title="警告" Content="故障不能删除"/> 
+         <Error ID="4024" Title="用户确认" Content="是否确定删除当前故障记录？"/>
+         <Error ID="4025" Title="警告" Content="故障不能修改"/>
+         <Error ID="4026" Title="错误" Content="运行失败"/> 
+         <Error ID="4027" Title="错误" Content="故障提交失败"/> 
+         <Error ID="4028" Title="错误" Content="获取过滤条件失败"/> 
+         <Error ID="4029" Title="警告" Content="该节点不能导入，只有测试集节点才能导入"/> 		
+		 <Error ID="4030" Title="提示" Content="导入测试集完成"/>
+		 <Error ID="4031" Title="警告" Content="X轴，分组方式，函数不能为空"/>
+		 <Error ID="4032" Title="错误" Content="属性窗体初始化失败"/>
+		 <Error ID="4033" Title="错误" Content="属性设置失败"/>
+		 <Error ID="4034" Title="警告" Content="包含其他项目的用例，无法导入，请重新选择！"/>
+		 <Error ID="4035" Title="警告" Content="选择的类型错误"/>
+	</ErrorList>
+	<PromptList Summary="用户确认">
+	   <Prompt ID="4101" Title="删除确认" Content="是否确定删除当前节点？"/>
+	   <Prompt ID="4102" Title="保存报表" Content="你还没有保存测试报表，是否保存？"/>
+	</PromptList>
+  </TestReport>
+  <TestCase>
+    <ErrorList Summary="错误提示">
+	   <Error ID="5001" Title="错误" Content="文件内容为空!"/>
+	   <Error ID="5002" Title="错误" Content="文件打开失败，无法获取所需信息!"/>
+	   <Error ID="5003" Title="错误" Content="路径不能为空!"/>
+	   <Error ID="5004" Title="错误" Content="Excel栏不能为空!"/>
+	   <Error ID="5005" Title="错误" Content="至少有一级目录!"/>
+	   <Error ID="5006" Title="错误" Content="新建映射名称不能为空!"/>
+	   <Error ID="5007" Title="错误" Content="新建名称包含了非法字符!"/>
+	   <Error ID="5008" Title="错误" Content="重名错误!"/>
+	   <Error ID="5009" Title="错误" Content="用例名不允许空!"/>
+	   <Error ID="5010" Title="错误" Content="请选择过滤的字段!"/>
+	   <Error ID="5011" Title="错误" Content="请选择过滤的条件!"/>
+	   <Error ID="5012" Title="错误" Content="没有选择查找范围!"/>
+	   <Error ID="5013" Title="错误" Content="没有输入查找的关键字!"/>
+	   <Error ID="5014" Title="错误" Content="没有查找的节点!"/>
+	   <Error ID="5015" Title="错误" Content="没有相关权限,请联系管理员!"/>
+	   <Error ID="5016" Title="错误" Content="数据节点已经从数据库上删除!"/>
+	   <Error ID="5017" Title="错误" Content="拷贝错误：无法读取源文件!"/>
+	   <Error ID="5018" Title="错误" Content="目标文件夹与源文件夹相同!"/>
+	   <Error ID="5019" Title="错误" Content="更新映射文件时出错!"/>
+	   <Error ID="5020" Title="错误" Content="目标节点类型与源节点类型不一致!"/>
+	   <Error ID="5021" Title="错误" Content="目标项目即是当前项目!"/>
+	   <Error ID="5022" Title="错误" Content="输入查找的关键字非法!"/>
+	   <Error ID="5023" Title="错误" Content="输入的文件后缀名错误"/>
+	   <Error ID="5024" Title="错误" Content="更新用例失败!"/>
+	   <Error ID="5025" Title="错误" Content="没有选择映射文件，不能导出!"/>
+	   <Error ID="5026" Title="错误" Content="提交源项目故障失败!"/>
+	   <Error ID="5027" Title="错误" Content="此用例在工程模块已被执行，故无法删除!"/>
+	</ErrorList>
+	<PromptList Summary="用户确认">
+	   <Prompt ID="5101" Title="用户确认" Content="需要导入的工作表中，有的记录不符合导入规则\r\n是否继续导入？"/>
+	   <Prompt ID="5102" Title="用户确认" Content="郑重提示：删除用例节点会造成其他模块中已经导入的用例亦被删除。是否删除？"/>
+	   <Prompt ID="5103" Title="用户确认" Content="是否清空回收站？"/>
+	   <Prompt ID="5104" Title="用户确认" Content="确定要删除当前选中的映射文件吗？"/>
+	</PromptList>
+  </TestCase>
+  <CaseFields>
+    <ErrorList Summary="错误提示">
+	   <Error ID="6001" Title="错误" Content="重名错误!"/>
+	   <Error ID="6002" Title="错误" Content="用例字段的数据类型不能为空!"/>
+	   <Error ID="6003" Title="错误" Content="输入的字符串长度只能在‘0- 800’之间!"/>
+	   <Error ID="6004" Title="错误" Content="当前为系统内容，不能执行删除操作!"/>
+	   <Error ID="6005" Title="错误" Content="输入的名称不允许为空!"/>
+	   <Error ID="6006" Title="错误" Content="新名称中包含了非法字符!"/>
+	   <Error ID="6007" Title="错误" Content="添加列表时出错!"/>
+	   <Error ID="6008" Title="错误" Content="与现有的名称相同!"/>
+	   <Error ID="6009" Title="错误" Content="重命名操作失败!"/>
+	   <Error ID="6010" Title="错误" Content="当前为系统内容，不能执行重命名操作!"/>
+	   <Error ID="6011" Title="错误" Content="最多只能添加 10 个字段信息!"/>
+	   <Error ID="6012" Title="提示" Content="如有更新请重启：获取最新信息!"/>
+	</ErrorList>
+	<PromptList Summary="用户确认">
+	   <Prompt ID="6101" Title="用户确认" Content="确定要删除当前字段吗？"/>
+	</PromptList>
+  </CaseFields>
+  <Login>
+    <ErrorList Summary="错误提示">
+	   <Error ID="7001" Title="错误" Content="你没有登陆该平台的权限，请与管理员联系!"/>
+	   <Error ID="7002" Title="错误" Content="用户名或密码错误登陆失败!"/>
+	   <Error ID="7003" Title="错误" Content="远程服务器连接失败!"/>
+	   <Error ID="7004" Title="错误" Content="读取配置文件错误!"/>
+	   <Error ID="7005" Title="错误" Content="没有选中用户!"/>
+	   <Error ID="7006" Title="错误" Content="邮件地址不正确!"/>
+	   <Error ID="7007" Title="错误" Content="发送邮件失败!"/>
+	   <Error ID="7008" Title="错误" Content="邮件地址不能为空!"/>
+	   <Error ID="7009" Title="提示" Content="无系统登录权限，请联系管理员开通"/>
+	   <Error ID="7010" Title="提示" Content="新密码和密码确认的长度必须保持一致"/>
+	   <Error ID="7011" Title="提示" Content="密码长度必须大于或等于六"/>
+	   <Error ID="7012" Title="错误" Content="邮件格式不正确，请重新输入"/>
+    </ErrorList>
+    <PromptList Summary="用户确认">
+	   <Prompt ID="7101" Title="错误" Content="不允许出现空的数据区。。占位。"/>
+	   <Prompt ID="7102" Title="用户确认" Content="问题已提交"/>
+    </PromptList>
+  </Login>
+  <TestRes>
+	<ErrorList Summary="错误提示">
+	   <Error ID="8001" Title="错误" Content="输入的字符长度应小于20，请重新输入。"/>
+	   <Error ID="8002" Title="错误" Content="没有相关权限,请联系管理员。"/>
+	   <Error ID="8003" Title="错误" Content="系统未找到相关资源！"/>
+	</ErrorList>
+	<PromptList Summary="用户确认">
+	   <Prompt ID="8101" Title="删除确认" Content="是否删除选中的手机？"/>
+	</PromptList>
+	<WarningList>
+		<Warning ID="8201" Title="警告" Content="此手机已存在！"/>
+	</WarningList>
+  </TestRes>
+  <SemiAutoTest>
+	<ErrorList Summary="错误提示">
+	   <Error ID="9001" Title="错误" Content="缺少图片项，请检查当前待比对的是否为两幅图片"/>
+	   <Error ID="9002" Title="提示" Content="结果上传成功！"/>
+	   <Error ID="9003" Title="错误" Content="上传失败，请检查原因！"/>
+	   <Error ID="9004" Title="提示" Content="当前工程尚未运行，请运行后再上传！"/>
+	   <Error ID="9005" Title="提示" Content="增加至标准库操作成功！"/>
+	   <Error ID="9006" Title="提示" Content="图片名、颜色容差、像素容差为必填字段，请填写!!"/>
+	   <Error ID="9007" Title="错误" Content="存在同名区域，请重命名！"/>
+	   <Error ID="9008" Title="提示" Content="新增区域成功！"/>
+	   <Error ID="9009" Title="提示" Content="更新区域成功！"/>
+	   <Error ID="9010" Title="错误" Content="界面与数据库信息不同步，请重新导入区域！"/>
+	   <Error ID="9011" Title="提示" Content="请先关闭子窗口！"/>
+	   <Error ID="9012" Title="提示" Content="图片大小不一致无法进行比对"/>
+	   <Error ID="9013" Title="错误" Content="操作失败"/>
+	</ErrorList>
+	<PromptList Summary="用户确认">
+	   <Prompt ID="9101" Title="确认" Content="点击“是”，开始在图片上提取需要颜色，“否”不选"/>
+	   <Prompt ID="9102" Title="确认" Content="重置操作将重置所有测试结果，确定执行重置操作吗？！"/>
+	</PromptList>
+  </SemiAutoTest>
+</TestExpressInfo>

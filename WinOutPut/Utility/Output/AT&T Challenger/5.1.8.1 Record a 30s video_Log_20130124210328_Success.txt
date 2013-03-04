@@ -1,0 +1,31 @@
+2013-1-24 星期四 21:02:35: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? shell service call window 1 i32 8888 
+2013-1-24 星期四 21:02:35: Result: Parcel(00000000 00000000   '........')
+2013-1-24 星期四 21:02:35: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? forward tcp:4063  tcp:8888 
+2013-1-24 星期四 21:02:35: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? forward tcp:2063  tcp:1324 
+2013-1-24 星期四 21:02:35: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 320 --ei height 480 --ei delay 0 --ei bpp 2 
+2013-1-24 星期四 21:02:35: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-1-24 星期四 21:02:36: Broadcast completed: result=0
+2013-1-24 星期四 21:02:36: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-1-24 星期四 21:02:36: 请按任意键继续. . . 
+2013-1-24 星期四 21:02:43: compile successfully, ready to run:
+2013-1-24 星期四 21:02:43: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-1-24 星期四 21:02:43: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-1-24 星期四 21:02:44: ||| MESSAGE ||| AddMo phone connecting.......
+2013-1-24 星期四 21:02:44: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-1-24 星期四 21:02:44: ||| MESSAGE ||| switch to BaseMo phone:
+2013-1-24 星期四 21:02:44: ||| MESSAGE ||| loop 1 Start:
+2013-1-24 星期四 21:02:44: ||| MESSAGE ||| navigate_to(Camera,Android);
+2013-1-24 星期四 21:02:47: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:02:49: ||| MESSAGE ||| Tap(292,457);
+2013-1-24 星期四 21:02:49: ||| MESSAGE ||| Sleep(3000);
+2013-1-24 星期四 21:02:52: ||| MESSAGE ||| Tap(166,446);
+2013-1-24 星期四 21:02:52: ||| MESSAGE ||| pause(31);
+2013-1-24 星期四 21:03:23: ||| MESSAGE ||| Tap(166,446);
+2013-1-24 星期四 21:03:23: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:03:25: ||| MESSAGE ||| Record a 30s video successfully****
+2013-1-24 星期四 21:03:25: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:03:25: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:03:27: ||| MESSAGE ||| recordend();
+2013-1-24 星期四 21:03:27: ||| MESSAGE ||| end of the video collection:
+2013-1-24 星期四 21:03:27: ||| MESSAGE ||| DeviceClose();
+2013-1-24 星期四 21:03:27: Run Success!

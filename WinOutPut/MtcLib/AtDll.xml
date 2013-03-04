@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ZTE MTC Dll Define File -->
+<MtcDll>
+   <ConfigVer version="1.0"></ConfigVer>
+   <DLL name="AtDllD.dll">
+        <GUID val="ZTE-MTC-20100710"/>
+		    <ITYPE val="1" inf="串口连接类型"/>
+        <OPERATIONS>
+		      <Item val="0x01" info="Basic Operation" />
+       	</OPERATIONS>
+		    <INFO val="英飞凌固定台用的Dll描述文件" /> 
+   </DLL>
+   <CONFIG>
+		<PARAMETERS>
+		  <Item name="BAUD" val="115200" inf="串口波特率" />   
+		  <Item name="NSTOPBIT" val="1" inf="串口NBit"/>
+		  <Item name="DATABIT" val="8" inf="串口DataBit"/>			  
+      <item name="SDRAM" val="64" inf="总内存M数"/>  	  
+		</PARAMETERS>
+   </CONFIG>
+</MtcDll>
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+2013-3-2 13:38:57: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-2 13:38:57: Result: Parcel(00000000 00000000   '........')
+2013-3-2 13:38:57: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-2 13:38:57: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-2 13:38:57: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-2 13:38:58: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-2 13:38:58: Broadcast completed: result=0
+2013-3-2 13:38:58: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-2 13:38:58: Press any key to continue . . . 
+2013-3-2 13:39:05: compile successfully, ready to run:
+2013-3-2 13:39:05: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-2 13:39:05: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-2 13:39:07: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-2 13:39:07: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-2 13:39:07: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-2 13:39:07: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-2 13:39:07: ||| MESSAGE ||| loop 1 Start:
+2013-3-2 13:39:07: ||| MESSAGE ||| ==== 5.1.4 IM Stability
+2013-3-2 13:39:07: ||| MESSAGE ||| Tap(143,223);
+2013-3-2 13:39:07: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:39:10: ||| MESSAGE ||| press_keys(<Sym>);
+2013-3-2 13:39:11: ||| MESSAGE ||| wait_for_androidtext(Friend info,20);
+2013-3-2 13:39:13: ||| MESSAGE ||| Tap(163,549);
+2013-3-2 13:39:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-2 13:39:15: ||| MESSAGE ||| Tap_AndroidStr(Remove);
+2013-3-2 13:39:17: ||| MESSAGE ||| Delete friend successful!
+2013-3-2 13:39:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-2 13:39:19: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:39:24: ||| MESSAGE ||| Tap(143,223);
+2013-3-2 13:39:24: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:39:27: ||| MESSAGE ||| press_keys(<Sym>);
+2013-3-2 13:39:28: ||| MESSAGE ||| wait_for_androidtext(Friend info,20);
+2013-3-2 13:39:30: ||| MESSAGE ||| Tap(163,549);
+2013-3-2 13:39:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-2 13:39:32: ||| MESSAGE ||| Tap_AndroidStr(Remove);
+2013-3-2 13:39:34: ||| MESSAGE ||| Delete friend successful!
+2013-3-2 13:39:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-2 13:39:36: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:39:39: ||| MESSAGE ||| Tap(22,48);
+2013-3-2 13:39:39: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:39:40: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:39:40: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:39:46: ||| MESSAGE ||| recordend();
+2013-3-2 13:39:46: ||| MESSAGE ||| end of the video collection:
+2013-3-2 13:39:46: ||| MESSAGE ||| DeviceClose();
+2013-3-2 13:39:46: Run Success!

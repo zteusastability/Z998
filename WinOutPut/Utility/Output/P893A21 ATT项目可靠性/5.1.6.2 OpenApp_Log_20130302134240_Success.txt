@@ -1,0 +1,41 @@
+2013-3-2 13:41:48: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-2 13:41:48: Result: Parcel(00000000 00000000   '........')
+2013-3-2 13:41:48: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-2 13:41:48: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-2 13:41:48: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-2 13:41:48: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-2 13:41:49: Broadcast completed: result=0
+2013-3-2 13:41:50: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-2 13:41:50: Press any key to continue . . . 
+2013-3-2 13:41:57: compile successfully, ready to run:
+2013-3-2 13:41:57: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-2 13:41:57: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-2 13:41:58: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-2 13:41:58: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-2 13:41:58: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-2 13:41:58: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-2 13:41:58: ||| MESSAGE ||| loop 1 Start:
+2013-3-2 13:41:58: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:42:03: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-2 13:42:04: ||| MESSAGE ||| navigate_to(Playstore,Android);
+2013-3-2 13:42:06: ||| MESSAGE ||| wait_for_androidtext(Google Play,20);
+2013-3-2 13:42:08: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:42:09: ||| MESSAGE ||| Tap(503,69);
+2013-3-2 13:42:09: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:42:11: ||| MESSAGE ||| enter_text(Adobe Connect Mobile);
+2013-3-2 13:42:24: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:42:25: ||| MESSAGE ||| Tap(515,914);
+2013-3-2 13:42:25: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:42:28: ||| MESSAGE ||| Tap(64,235);
+2013-3-2 13:42:28: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:42:29: ||| MESSAGE ||| wait_for_androidtext(Open,200);
+2013-3-2 13:42:31: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:42:32: ||| MESSAGE ||| Open application successful!
+2013-3-2 13:42:32: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:42:33: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:42:33: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:42:34: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:42:40: ||| MESSAGE ||| recordend();
+2013-3-2 13:42:40: ||| MESSAGE ||| end of the video collection:
+2013-3-2 13:42:40: ||| MESSAGE ||| DeviceClose();
+2013-3-2 13:42:40: Run Success!

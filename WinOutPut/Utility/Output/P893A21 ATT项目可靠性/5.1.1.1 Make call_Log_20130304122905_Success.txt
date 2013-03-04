@@ -1,0 +1,897 @@
+2013-3-4 12:02:02: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-4 12:02:03: Result: Parcel(00000000 00000000   '........')
+2013-3-4 12:02:03: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-4 12:02:03: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-4 12:02:03: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-4 12:02:03: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-4 12:02:03: Broadcast completed: result=0
+2013-3-4 12:02:03: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-4 12:02:04: Press any key to continue . . . 
+2013-3-4 12:02:10: compile successfully, ready to run:
+2013-3-4 12:02:11: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-4 12:02:11: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-4 12:02:12: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-4 12:02:12: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-4 12:02:12: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-4 12:02:12: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-4 12:02:12: ||| MESSAGE ||| loop 1 Start:
+2013-3-4 12:02:12: ||| MESSAGE ||| ==== 5.1.1.1 Make call from book: Start!
+2013-3-4 12:02:12: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-4 12:02:14: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:02:15: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:02:15: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:02:16: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-4 12:02:19: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:02:20: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-4 12:02:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:02:23: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-4 12:02:25: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:02:26: ||| MESSAGE ||| Tap(455,693);
+2013-3-4 12:02:26: ||| MESSAGE ||| Sleep(5000);
+2013-3-4 12:02:31: ||| MESSAGE ||| CampToNetwork: 2G
+2013-3-4 12:02:31: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-4 12:02:33: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:02:33: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:02:35: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:02:35: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:02:37: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:02:38: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:02:39: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:02:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:02:41: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:02:43: ||| MESSAGE ||| ==== Count ==>1
+2013-3-4 12:02:43: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:02:43: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:02:44: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:02:45: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:02:46: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:02:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:02:48: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:02:49: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:03:00: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:03:00: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:03:03: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:03:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:03:07: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:03:08: ||| MESSAGE ||| ==== Count ==>2
+2013-3-4 12:03:08: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:03:09: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:03:20: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:03:21: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:03:21: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:03:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:03:25: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:03:26: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:03:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:03:28: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:03:29: ||| MESSAGE ||| ==== Count ==>3
+2013-3-4 12:03:29: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:03:30: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:03:31: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:03:32: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:03:33: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:03:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:03:36: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:03:37: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:03:46: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:03:46: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:03:49: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:03:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:03:53: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:03:54: ||| MESSAGE ||| ==== Count ==>4
+2013-3-4 12:03:54: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:03:55: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:03:56: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:03:56: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:03:57: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:03:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:04:00: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:04:01: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:04:12: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:04:12: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:04:15: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:04:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:04:19: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:04:20: ||| MESSAGE ||| ==== Count ==>5
+2013-3-4 12:04:20: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:04:20: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:04:21: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:04:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:04:23: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:04:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:04:26: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:04:27: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:04:38: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:04:38: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:04:41: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:04:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:04:45: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:04:46: ||| MESSAGE ||| ==== Count ==>6
+2013-3-4 12:04:46: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:04:46: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:04:47: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:04:48: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:04:49: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:04:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:04:52: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:04:52: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:05:04: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:05:04: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:05:07: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:05:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:05:11: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:05:11: ||| MESSAGE ||| ==== Count ==>7
+2013-3-4 12:05:11: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:05:12: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:05:24: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:05:25: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:05:26: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:05:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:05:30: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:05:31: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:05:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:05:33: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:05:34: ||| MESSAGE ||| ==== Count ==>8
+2013-3-4 12:05:34: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:05:34: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:05:35: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:05:36: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:05:37: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:05:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:05:40: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:05:40: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:05:52: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:05:52: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:05:55: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:05:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:05:59: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:05:59: ||| MESSAGE ||| ==== Count ==>9
+2013-3-4 12:05:59: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:06:00: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:06:01: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:06:02: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:06:03: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:06:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:06:05: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:06:06: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:06:17: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:06:17: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:06:20: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:06:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:06:24: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:06:25: ||| MESSAGE ||| ==== Count ==>10
+2013-3-4 12:06:25: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:06:25: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:06:26: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:06:27: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:06:28: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:06:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:06:31: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:06:31: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:06:42: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:06:42: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:06:45: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:06:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:06:49: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:06:50: ||| MESSAGE ||| ==== Count ==>11
+2013-3-4 12:06:50: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:06:50: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:06:51: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:06:52: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:06:53: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:06:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:06:56: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:06:57: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:07:08: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:07:08: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:07:11: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:07:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:07:15: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:07:15: ||| MESSAGE ||| ==== Count ==>12
+2013-3-4 12:07:15: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:07:16: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:07:17: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:07:18: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:07:19: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:07:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:07:21: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:07:22: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:07:33: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:07:33: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:07:36: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:07:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:07:40: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:07:41: ||| MESSAGE ||| ==== Count ==>13
+2013-3-4 12:07:41: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:07:42: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:07:53: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:07:54: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:07:55: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:07:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:07:59: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:08:00: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:08:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:08:02: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:08:03: ||| MESSAGE ||| ==== Count ==>14
+2013-3-4 12:08:03: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:08:03: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:08:04: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:08:05: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:08:06: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:08:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:08:09: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:08:09: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:08:21: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:08:21: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:08:24: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:08:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:08:28: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:08:29: ||| MESSAGE ||| ==== Count ==>15
+2013-3-4 12:08:29: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:08:29: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:08:30: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:08:31: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:08:32: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:08:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:08:35: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:08:35: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:08:47: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:08:47: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:08:50: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:08:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:08:54: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:08:55: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-4 12:08:57: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:08:58: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:08:58: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:08:59: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-4 12:09:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:09:02: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-4 12:09:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:09:05: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-4 12:09:08: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:09:09: ||| MESSAGE ||| Tap(460,619);
+2013-3-4 12:09:09: ||| MESSAGE ||| Sleep(5000);
+2013-3-4 12:09:14: ||| MESSAGE ||| CampToNetwork: 3G
+2013-3-4 12:09:14: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-4 12:09:16: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:09:16: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:09:17: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:09:18: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:09:20: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:09:21: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:09:22: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:09:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:09:24: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:09:25: ||| MESSAGE ||| ==== Count ==>16
+2013-3-4 12:09:25: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:09:26: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:09:27: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:09:27: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:09:28: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:09:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:09:31: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:09:32: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:09:43: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:09:43: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:09:46: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:09:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:09:50: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:09:51: ||| MESSAGE ||| ==== Count ==>17
+2013-3-4 12:09:51: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:09:51: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:09:52: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:09:53: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:09:54: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:09:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:09:57: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:09:57: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:10:09: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:10:09: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:10:12: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:10:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:10:16: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:10:17: ||| MESSAGE ||| ==== Count ==>18
+2013-3-4 12:10:17: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:10:17: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:10:18: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:10:19: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:10:20: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:10:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:10:23: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:10:23: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:10:35: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:10:35: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:10:38: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:10:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:10:42: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:10:43: ||| MESSAGE ||| ==== Count ==>19
+2013-3-4 12:10:43: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:10:43: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:10:44: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:10:45: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:10:46: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:10:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:10:49: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:10:49: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:11:01: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:11:01: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:11:04: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:11:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:11:08: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:11:09: ||| MESSAGE ||| ==== Count ==>20
+2013-3-4 12:11:09: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:11:09: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:11:10: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:11:11: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:11:12: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:11:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:11:15: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:11:16: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:11:27: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:11:27: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:11:30: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:11:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:11:34: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:11:35: ||| MESSAGE ||| ==== Count ==>21
+2013-3-4 12:11:35: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:11:35: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:11:36: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:11:37: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:11:38: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:11:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:11:41: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:11:41: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:11:53: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:11:53: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:11:56: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:11:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:12:00: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:12:01: ||| MESSAGE ||| ==== Count ==>22
+2013-3-4 12:12:01: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:12:01: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:12:03: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:12:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:12:05: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:12:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:12:07: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:12:08: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:12:19: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:12:19: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:12:22: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:12:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:12:27: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:12:27: ||| MESSAGE ||| ==== Count ==>23
+2013-3-4 12:12:27: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:12:28: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:12:29: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:12:30: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:12:31: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:12:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:12:33: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:12:34: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:12:45: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:12:45: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:12:48: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:12:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:12:53: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:12:53: ||| MESSAGE ||| ==== Count ==>24
+2013-3-4 12:12:53: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:12:54: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:12:55: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:12:56: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:12:57: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:12:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:12:59: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:13:00: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:13:10: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:13:10: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:13:13: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:13:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:13:17: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:13:17: ||| MESSAGE ||| ==== Count ==>25
+2013-3-4 12:13:17: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:13:18: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:13:29: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:13:31: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:13:31: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:13:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:13:35: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:13:37: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:13:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:13:39: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:13:40: ||| MESSAGE ||| ==== Count ==>26
+2013-3-4 12:13:40: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:13:40: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:13:41: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:13:42: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:13:43: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:13:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:13:46: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:13:46: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:14:01: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:14:01: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:14:04: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:14:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:14:08: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:14:09: ||| MESSAGE ||| ==== Count ==>27
+2013-3-4 12:14:09: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:14:09: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:14:10: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:14:11: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:14:12: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:14:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:14:15: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:14:15: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:14:27: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:14:27: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:14:30: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:14:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:14:34: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:14:35: ||| MESSAGE ||| ==== Count ==>28
+2013-3-4 12:14:35: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:14:35: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:14:36: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:14:37: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:14:38: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:14:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:14:40: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:14:41: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:14:53: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:14:53: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:14:56: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:14:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:15:00: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:15:01: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-4 12:15:03: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:04: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:15:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:05: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-4 12:15:07: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:08: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-4 12:15:10: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:11: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-4 12:15:14: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:15: ||| MESSAGE ||| Tap(215,475);
+2013-3-4 12:15:15: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:16: ||| MESSAGE ||| CampToNetwork: LTE
+2013-3-4 12:15:16: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-4 12:15:18: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:15:18: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:15:20: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:15:20: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:15:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:23: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:15:24: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:15:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:15:26: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:15:27: ||| MESSAGE ||| ==== Count ==>29
+2013-3-4 12:15:27: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:15:28: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:15:29: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:15:30: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:31: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:15:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:15:33: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:15:34: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:15:45: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:15:45: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:15:48: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:15:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:15:53: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:15:53: ||| MESSAGE ||| ==== Count ==>30
+2013-3-4 12:15:53: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:15:54: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:15:55: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:15:56: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:15:57: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:15:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:15:59: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:16:00: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:16:11: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:16:11: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:16:14: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:16:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:16:18: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:16:19: ||| MESSAGE ||| ==== Count ==>31
+2013-3-4 12:16:19: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:16:19: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:16:21: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:16:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:16:23: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:16:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:16:25: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:16:27: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:16:36: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:16:36: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:16:39: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:16:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:16:43: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:16:44: ||| MESSAGE ||| ==== Count ==>32
+2013-3-4 12:16:44: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:16:44: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:16:56: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:16:57: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:16:58: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:17:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:17:02: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:17:03: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:17:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:17:05: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:17:06: ||| MESSAGE ||| ==== Count ==>33
+2013-3-4 12:17:06: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:17:06: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:17:07: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:17:08: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:17:09: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:17:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:17:12: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:17:12: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:17:24: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:17:24: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:17:27: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:17:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:17:31: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:17:32: ||| MESSAGE ||| ==== Count ==>34
+2013-3-4 12:17:32: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:17:32: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:17:33: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:17:34: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:17:35: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:17:36: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:17:38: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:17:38: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:17:51: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:17:51: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:17:54: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:17:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:17:58: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:17:58: ||| MESSAGE ||| ==== Count ==>35
+2013-3-4 12:17:58: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:17:59: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:18:00: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:18:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:18:02: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:18:02: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:18:04: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:18:05: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:18:26: ||| MESSAGE ||| save_screen(Call_failed.bmp,0);
+2013-3-4 12:18:27: ||| MESSAGE ||| Call_failed.bmp have been saved 
+2013-3-4 12:18:27: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:18:29: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:18:29: ||| MESSAGE ||| Tap(88,899);
+2013-3-4 12:18:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:18:31: ||| MESSAGE ||| wait_for_image(20130226151619.bmp,8);
+2013-3-4 12:18:40: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:18:41: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:18:42: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:18:43: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:18:43: ||| MESSAGE ||| ==== Count ==>36
+2013-3-4 12:18:43: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:18:44: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:18:55: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:18:56: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:18:56: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:18:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:19:01: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:19:02: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:19:02: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:19:04: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:19:05: ||| MESSAGE ||| ==== Count ==>37
+2013-3-4 12:19:05: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:19:05: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:19:06: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:19:07: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:19:08: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:19:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:19:11: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:19:11: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:19:22: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:19:22: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:19:25: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:19:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:19:30: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:19:30: ||| MESSAGE ||| ==== Count ==>38
+2013-3-4 12:19:30: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:19:31: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:19:32: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:19:33: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:19:34: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:19:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:19:36: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:19:37: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:19:48: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:19:48: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:19:51: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:19:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:19:55: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:19:56: ||| MESSAGE ||| ==== Count ==>39
+2013-3-4 12:19:56: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:19:56: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:19:57: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:19:58: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:19:59: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:19:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:20:01: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:20:02: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:20:23: ||| MESSAGE ||| save_screen(Call_failed.bmp,0);
+2013-3-4 12:20:24: ||| MESSAGE ||| Call_failed.bmp have been saved 
+2013-3-4 12:20:24: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:20:25: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:20:25: ||| MESSAGE ||| Tap(88,899);
+2013-3-4 12:20:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:20:27: ||| MESSAGE ||| wait_for_image(20130226151619.bmp,8);
+2013-3-4 12:20:36: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:20:37: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:20:38: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:20:39: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:20:39: ||| MESSAGE ||| ==== Count ==>40
+2013-3-4 12:20:39: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:20:40: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:20:51: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:20:52: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:20:53: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:20:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:20:57: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:20:58: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:20:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:21:00: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:21:01: ||| MESSAGE ||| ==== Count ==>41
+2013-3-4 12:21:01: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:21:02: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:21:03: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:21:03: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:21:04: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:21:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:21:07: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:21:08: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:21:19: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:21:19: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:21:22: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:21:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:21:26: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:21:27: ||| MESSAGE ||| ==== Count ==>42
+2013-3-4 12:21:27: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:21:27: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:21:28: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:21:29: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:21:30: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:21:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:21:33: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:21:33: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:21:44: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:21:44: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:21:47: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:21:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:21:51: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:21:52: ||| MESSAGE ||| ==== Count ==>43
+2013-3-4 12:21:52: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:21:53: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:21:54: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:21:54: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:21:55: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:21:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:21:58: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:21:59: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:22:11: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:22:11: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:22:14: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:22:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:22:19: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:22:19: ||| MESSAGE ||| ==== Count ==>44
+2013-3-4 12:22:19: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:22:20: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:22:21: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:22:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:22:23: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:22:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:22:25: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:22:26: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:22:37: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:22:37: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:22:40: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:22:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:22:44: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:22:45: ||| MESSAGE ||| ==== Count ==>45
+2013-3-4 12:22:45: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:22:45: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:22:46: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:22:47: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:22:48: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:22:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:22:51: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:22:51: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:23:02: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:23:02: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:23:05: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:23:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:23:10: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:23:10: ||| MESSAGE ||| ==== Count ==>46
+2013-3-4 12:23:10: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:23:11: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:23:12: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:23:12: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:23:13: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:23:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:23:16: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:23:17: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:23:28: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:23:28: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:23:31: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:23:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:23:35: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:23:36: ||| MESSAGE ||| ==== Count ==>47
+2013-3-4 12:23:36: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:23:36: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:23:37: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:23:38: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:23:39: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:23:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:23:42: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:23:42: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:24:02: ||| MESSAGE ||| save_screen(Call_failed.bmp,0);
+2013-3-4 12:24:03: ||| MESSAGE ||| Call_failed.bmp have been saved 
+2013-3-4 12:24:03: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:24:05: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:24:05: ||| MESSAGE ||| Tap(88,899);
+2013-3-4 12:24:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:24:07: ||| MESSAGE ||| wait_for_image(20130226151619.bmp,8);
+2013-3-4 12:24:16: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:24:17: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:24:17: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:24:18: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:24:19: ||| MESSAGE ||| ==== Count ==>48
+2013-3-4 12:24:19: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:24:19: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:24:31: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:24:32: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:24:33: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:24:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:24:37: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:24:38: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:24:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:24:40: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:24:41: ||| MESSAGE ||| ==== Count ==>49
+2013-3-4 12:24:41: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:24:41: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:24:43: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:24:44: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:24:45: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:24:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:24:47: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:24:48: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:24:59: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:24:59: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:25:02: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:25:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:25:06: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:25:07: ||| MESSAGE ||| ==== Count ==>50
+2013-3-4 12:25:07: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:25:07: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:25:08: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:25:09: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:25:10: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:25:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:25:13: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:25:14: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:25:25: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:25:25: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:25:28: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:25:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:25:32: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:25:33: ||| MESSAGE ||| ==== Count ==>51
+2013-3-4 12:25:33: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:25:33: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:25:34: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:25:35: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:25:36: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:25:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:25:39: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:25:39: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:25:51: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:25:51: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:25:54: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:25:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:25:58: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:25:59: ||| MESSAGE ||| ==== Count ==>52
+2013-3-4 12:25:59: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:25:59: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:26:00: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:26:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:26:02: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:26:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:26:05: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:26:06: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:26:17: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:26:17: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:26:20: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:26:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:26:24: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:26:25: ||| MESSAGE ||| ==== Count ==>53
+2013-3-4 12:26:25: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:26:25: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:26:26: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:26:27: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:26:28: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:26:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:26:31: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:26:31: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:26:43: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:26:43: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:26:46: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:26:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:26:50: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:26:51: ||| MESSAGE ||| ==== Count ==>54
+2013-3-4 12:26:51: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:26:52: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:26:53: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:26:54: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:26:55: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:26:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:26:57: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:26:58: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:27:09: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:27:09: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:27:12: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:27:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:27:17: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:27:17: ||| MESSAGE ||| ==== Count ==>55
+2013-3-4 12:27:17: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:27:18: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:27:29: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:27:31: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-4 12:27:31: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-4 12:27:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:27:35: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:27:36: ||| MESSAGE ||| Tap(343,74);
+2013-3-4 12:27:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:27:39: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:27:39: ||| MESSAGE ||| ==== Count ==>56
+2013-3-4 12:27:39: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:27:40: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:27:41: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:27:42: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:27:43: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:27:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:27:45: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:27:46: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:27:58: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:27:58: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:28:01: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:28:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:28:05: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:28:06: ||| MESSAGE ||| ==== Count ==>57
+2013-3-4 12:28:06: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:28:06: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:28:07: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:28:08: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:28:09: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:28:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:28:12: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:28:12: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:28:24: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:28:24: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:28:27: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:28:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:28:31: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:28:32: ||| MESSAGE ||| ==== Count ==>58
+2013-3-4 12:28:32: ||| MESSAGE ||| Sleep(500);
+2013-3-4 12:28:32: ||| MESSAGE ||| wait_for_image(20130304112704.bmp,10);
+2013-3-4 12:28:33: ||| MESSAGE ||| press_keys(<DownArrow><DownArrow>);
+2013-3-4 12:28:34: ||| MESSAGE ||| Sleep(1000);
+2013-3-4 12:28:35: ||| MESSAGE ||| press_keys(<Ok>);
+2013-3-4 12:28:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:28:38: ||| MESSAGE ||| press_keys(<Send>);
+2013-3-4 12:28:38: ||| MESSAGE ||| wait_for_image(20130302134846.bmp,20);
+2013-3-4 12:28:50: ||| MESSAGE ||| Make call :successful!
+2013-3-4 12:28:50: ||| MESSAGE ||| Sleep(3000);
+2013-3-4 12:28:53: ||| MESSAGE ||| Tap_AndroidStr(End);
+2013-3-4 12:28:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-4 12:28:57: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-4 12:28:57: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-4 12:28:59: ||| MESSAGE ||| ==== All Case:49     Failed Case:3
+2013-3-4 12:28:59: ||| MESSAGE ||| ==== 5.1.1.1 Make call from book: Finised!
+2013-3-4 12:29:04: ||| MESSAGE ||| recordend();
+2013-3-4 12:29:04: ||| MESSAGE ||| end of the video collection:
+2013-3-4 12:29:04: ||| MESSAGE ||| DeviceClose();
+2013-3-4 12:29:04: Run Success!

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MyTQ>
+   <Var name="Loop" value="1" title="循环次数" type="System.Int32" />
+   <Var name="Interval" value="5" title="间隔" type="System.Int32" />
+   <Var name="Video" value="N" title="录像（Y是N否）" type="System.String" />
+</MyTQ>

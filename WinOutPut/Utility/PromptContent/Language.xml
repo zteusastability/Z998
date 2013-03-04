@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Language>
+	<Log>
+		<txt value="connect" Eng=" phone connecting......." Chn="手机连接中......."/>
+		<txt value="connected" Eng=" phone connected!!!" Chn="手机连接成功!!!"/>
+		<txt value="connectfail" Eng=" phone connection failure" Chn="手机连接失败"/>
+	    <txt value="check" Eng="please check" Chn="请检查"/>
+		<txt value="connectovertime" Eng="timeout:" Chn="超时时间:"/>
+		<txt value="second" Eng="S" Chn="秒"/>
+		<txt value="registeredport" Eng="registered COM port:" Chn="可用端口有:"/>
+		<txt value="changebasemo" Eng="switch to BaseMo phone:" Chn="切换至BaseMo手机:"/>
+		<txt value="changeaddmo" Eng="switch to AddMo phone:" Chn="切换至AddMo手机:"/>
+		<txt value="connectfailcheck" Eng=" phone connection failure,plesae check!!!" Chn="手机连接失败,请检查!!!"/>
+		<txt value="connectnocheck" Eng=" Phone can not connect, please check!!!" Chn="手机无法连接,请检查!!!"/>		
+		<txt value="memoryfail" Eng="read memory failed!!!" Chn="读取内存失败!!!"/>
+		<txt value="noimage" Eng="comparison of the original image does not exist: " Chn="不存在原始对比图片: "/>
+		<txt value="restart" Eng=" phone restart occurred, please check!!!" Chn="手机发生过重启,请检查!!!"/>
+		<txt value="startvideo" Eng="start video capture: Loop " Chn="开始视频采集:第"/>
+		<txt value="loop" Eng="" Chn="次"/>
+		<txt value="lp" Eng="loop " Chn="第"/>
+		<txt value="loopstart" Eng=" Start:" Chn="次循环开始:"/>
+		<txt value="endvideo" Eng="end of the video collection:" Chn="结束视频采集:"/>
+		<txt value="startFTP" Eng="start FTP " Chn="启动FTP"/>
+		<txt value="saveimage" Eng="comparison fails, to save the current picture!!!" Chn="对比失败，保存当前图片!!!"/>
+		<txt value="compileerror" Eng="compile error:" Chn="编译错误:"/>
+		<txt value="compilesuccess" Eng="compile successfully, ready to run:" Chn="编译成功,准备执行:"/>
+		<txt value="runfailed" Eng="dynamic execution failed" Chn="动态执行失败"/>
+		<txt value="comparefail" Eng="comparison fails" Chn="对比失败"/>
+		<txt value="camerasuccess" Eng="start camera success!!!" Chn="启动摄像头成功!!!"/>
+		<txt value="camerafail" Eng="start camera failure!!!" Chn="启动摄像头失败!!!"/>
+	</Log>
+</Language>

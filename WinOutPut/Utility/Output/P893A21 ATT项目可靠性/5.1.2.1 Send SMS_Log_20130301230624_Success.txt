@@ -1,0 +1,1170 @@
+2013-3-1 22:37:02: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-1 22:37:03: Result: Parcel(00000000 00000000   '........')
+2013-3-1 22:37:03: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-1 22:37:03: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-1 22:37:03: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-1 22:37:03: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-1 22:37:03: Broadcast completed: result=0
+2013-3-1 22:37:04: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-1 22:37:04: Press any key to continue . . . 
+2013-3-1 22:37:11: compile successfully, ready to run:
+2013-3-1 22:37:11: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-1 22:37:11: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-1 22:37:12: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-1 22:37:12: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-1 22:37:12: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-1 22:37:12: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-1 22:37:12: ||| MESSAGE ||| loop 1 Start:
+2013-3-1 22:37:12: ||| MESSAGE ||| ==== 5.1.2.1 Send SMS : Start!
+2013-3-1 22:37:12: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 22:37:14: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:37:15: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:37:16: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:37:17: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-1 22:37:19: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:37:20: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-1 22:37:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:37:23: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-1 22:37:25: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:37:26: ||| MESSAGE ||| Tap(455,693);
+2013-3-1 22:37:26: ||| MESSAGE ||| Sleep(5000);
+2013-3-1 22:37:31: ||| MESSAGE ||| CampToNetwork: 2G
+2013-3-1 22:37:31: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 22:37:33: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:37:34: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:37:35: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:37:35: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:37:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:37:40: ||| MESSAGE ||| ==== Count ==>1
+2013-3-1 22:37:40: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:37:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:37:44: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:37:44: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:37:47: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:37:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:37:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:37:51: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:37:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:37:58: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:37:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:00: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:38:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:03: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:38:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:07: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:38:07: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:38:08: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:38:09: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:38:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:13: ||| MESSAGE ||| ==== Count ==>2
+2013-3-1 22:38:13: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:38:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:17: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:38:17: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:38:20: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:38:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:24: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:38:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:32: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:38:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:34: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:38:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:37: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:38:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:41: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:38:41: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:38:42: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:38:43: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:38:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:47: ||| MESSAGE ||| ==== Count ==>3
+2013-3-1 22:38:47: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:38:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:51: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:38:51: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:38:54: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:38:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:38:58: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:39:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:06: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:39:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:08: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:39:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:10: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:39:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:12: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:14: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:39:14: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:39:16: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:39:16: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:39:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:21: ||| MESSAGE ||| ==== Count ==>4
+2013-3-1 22:39:21: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:39:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:25: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:39:25: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:39:28: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:39:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:32: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:39:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:39: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:39:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:42: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:39:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:44: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:39:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:48: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:39:48: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:39:50: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:39:50: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:39:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:54: ||| MESSAGE ||| ==== Count ==>5
+2013-3-1 22:39:54: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:39:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:39:58: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:39:59: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:40:01: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:40:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:05: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:40:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:13: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:40:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:15: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:40:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:18: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:40:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:22: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:40:22: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 22:40:24: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:40:25: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:40:25: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:40:26: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-1 22:40:28: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:40:29: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-1 22:40:31: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:40:32: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-1 22:40:35: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:40:36: ||| MESSAGE ||| Tap(460,619);
+2013-3-1 22:40:36: ||| MESSAGE ||| Sleep(5000);
+2013-3-1 22:40:41: ||| MESSAGE ||| CampToNetwork: 3G
+2013-3-1 22:40:41: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 22:40:43: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:40:43: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:40:45: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:40:45: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:40:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:49: ||| MESSAGE ||| ==== Count ==>6
+2013-3-1 22:40:49: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:40:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:53: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:40:54: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:40:56: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:40:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:40:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:00: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:41:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:08: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:41:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:10: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:41:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:13: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:41:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:17: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:41:17: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:41:18: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:41:18: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:41:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:23: ||| MESSAGE ||| ==== Count ==>7
+2013-3-1 22:41:23: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:41:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:27: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:41:27: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:41:30: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:41:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:34: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:41:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:41: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:41:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:44: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:41:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:46: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:41:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:50: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:41:50: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:41:52: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:41:52: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:41:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:41:56: ||| MESSAGE ||| ==== Count ==>8
+2013-3-1 22:41:56: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:41:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:01: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:42:01: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:42:03: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:42:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:07: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:42:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:15: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:42:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:17: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:42:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:20: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:42:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:24: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:42:24: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:42:25: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:42:26: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:42:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:30: ||| MESSAGE ||| ==== Count ==>9
+2013-3-1 22:42:30: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:42:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:34: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:42:34: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:42:37: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:42:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:41: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:42:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:49: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:42:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:51: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:42:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:53: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:42:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:42:57: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:42:57: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:42:59: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:42:59: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:43:02: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:04: ||| MESSAGE ||| ==== Count ==>10
+2013-3-1 22:43:04: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:43:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:08: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:43:08: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:43:11: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:43:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:15: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:43:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:22: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:43:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:25: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:43:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:27: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:43:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:31: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:43:31: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:43:33: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:43:33: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:43:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:37: ||| MESSAGE ||| ==== Count ==>11
+2013-3-1 22:43:37: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:43:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:42: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:43:42: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:43:44: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:43:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:48: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:43:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:56: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:43:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:43:58: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:43:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:01: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:44:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:05: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:44:05: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:44:06: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:44:07: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:44:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:11: ||| MESSAGE ||| ==== Count ==>12
+2013-3-1 22:44:11: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:44:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:15: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:44:15: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:44:18: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:44:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:22: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:44:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:30: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:44:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:32: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:44:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:34: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:44:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:36: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:38: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:44:38: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:44:40: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:44:41: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:44:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:45: ||| MESSAGE ||| ==== Count ==>13
+2013-3-1 22:44:45: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:44:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:49: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:44:49: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:44:52: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:44:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:44:56: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:45:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:03: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:45:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:05: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:45:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:08: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:45:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:12: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:45:12: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:45:13: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:45:14: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:45:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:18: ||| MESSAGE ||| ==== Count ==>14
+2013-3-1 22:45:18: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:45:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:22: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:45:22: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:45:25: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:45:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:29: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:45:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:37: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:45:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:39: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:45:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:42: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:45:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:46: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:45:46: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:45:47: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:45:48: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:45:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:52: ||| MESSAGE ||| ==== Count ==>15
+2013-3-1 22:45:52: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:45:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:45:56: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:45:56: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:45:59: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:45:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:03: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:46:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:11: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:46:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:13: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:46:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:15: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:46:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:19: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:46:19: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:46:21: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:46:21: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:46:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:25: ||| MESSAGE ||| ==== Count ==>16
+2013-3-1 22:46:25: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:46:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:30: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:46:30: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:46:32: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:46:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:36: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:46:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:44: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:46:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:46: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:46:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:49: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:46:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:53: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:46:53: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:46:55: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:46:55: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:46:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:46:59: ||| MESSAGE ||| ==== Count ==>17
+2013-3-1 22:46:59: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:47:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:03: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:47:03: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:47:06: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:47:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:10: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:47:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:18: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:47:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:20: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:47:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:23: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:47:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:27: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:47:27: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:47:28: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:47:29: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:47:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:33: ||| MESSAGE ||| ==== Count ==>18
+2013-3-1 22:47:33: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:47:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:37: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:47:37: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:47:40: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:47:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:44: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:47:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:52: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:47:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:54: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:47:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:56: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:47:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:47:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:01: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:48:01: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:48:02: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:48:03: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:48:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:07: ||| MESSAGE ||| ==== Count ==>19
+2013-3-1 22:48:07: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:48:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:11: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:48:11: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:48:14: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:48:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:18: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:48:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:26: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:48:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:28: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:48:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:30: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:48:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:34: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:48:34: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:48:36: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:48:36: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:48:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:41: ||| MESSAGE ||| ==== Count ==>20
+2013-3-1 22:48:41: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:48:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:45: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:48:45: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:48:48: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:48:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:48:52: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:48:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:00: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:49:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:02: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:49:02: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:04: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:49:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:08: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:49:08: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:49:10: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:49:10: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:49:12: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:14: ||| MESSAGE ||| ==== Count ==>21
+2013-3-1 22:49:14: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:49:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:19: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:49:19: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:49:21: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:49:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:25: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:49:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:33: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:49:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:35: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:49:36: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:38: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:49:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:42: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:49:42: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:49:44: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:49:44: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:49:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:48: ||| MESSAGE ||| ==== Count ==>22
+2013-3-1 22:49:48: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:49:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:52: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:49:53: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:49:55: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:49:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:49:59: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:50:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:07: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:50:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:09: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:50:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:12: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:50:12: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:16: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:50:16: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:50:17: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:50:18: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:50:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:22: ||| MESSAGE ||| ==== Count ==>23
+2013-3-1 22:50:22: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:50:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:26: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:50:26: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:50:29: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:50:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:33: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:50:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:41: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:50:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:43: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:50:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:45: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:50:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:49: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:50:49: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:50:51: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:50:52: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:50:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:50:56: ||| MESSAGE ||| ==== Count ==>24
+2013-3-1 22:50:56: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:50:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:00: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:51:00: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:51:03: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:51:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:07: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:51:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:15: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:51:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:17: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:51:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:19: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:51:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:23: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:51:23: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:51:25: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:51:25: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:51:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:29: ||| MESSAGE ||| ==== Count ==>25
+2013-3-1 22:51:29: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:51:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:34: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:51:34: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:51:36: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:51:36: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:40: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:51:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:48: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:51:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:50: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:51:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:53: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:51:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:51:57: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:51:57: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 22:51:59: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:52:00: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:52:00: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:52:01: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-1 22:52:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:52:05: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-1 22:52:07: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:52:08: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-1 22:52:10: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:52:11: ||| MESSAGE ||| Tap(215,475);
+2013-3-1 22:52:11: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 22:52:12: ||| MESSAGE ||| CampToNetwork: LTE
+2013-3-1 22:52:12: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 22:52:14: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:52:15: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:52:16: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:52:16: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:52:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:21: ||| MESSAGE ||| ==== Count ==>26
+2013-3-1 22:52:21: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:52:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:25: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:52:25: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:52:28: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:52:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:32: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:52:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:39: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:52:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:41: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:52:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:44: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:52:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:48: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:52:48: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:52:50: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:52:50: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:52:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:54: ||| MESSAGE ||| ==== Count ==>27
+2013-3-1 22:52:54: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:52:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:52:59: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:52:59: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:53:01: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:53:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:05: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:53:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:13: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:53:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:15: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:53:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:18: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:53:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:22: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:53:22: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:53:24: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:53:24: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:53:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:28: ||| MESSAGE ||| ==== Count ==>28
+2013-3-1 22:53:28: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:53:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:32: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:53:33: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:53:35: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:53:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:39: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:53:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:47: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:53:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:49: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:53:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:52: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:53:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:53:56: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:53:56: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:53:57: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:53:58: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:54:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:02: ||| MESSAGE ||| ==== Count ==>29
+2013-3-1 22:54:02: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:54:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:06: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:54:06: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:54:09: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:54:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:13: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:54:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:21: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:54:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:23: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:54:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:25: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:54:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:29: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:54:29: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:54:31: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:54:31: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:54:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:35: ||| MESSAGE ||| ==== Count ==>30
+2013-3-1 22:54:35: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:54:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:40: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:54:40: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:54:42: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:54:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:47: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:54:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:54: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:54:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:56: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:54:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:54:59: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:54:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:03: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:55:03: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:55:05: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:55:05: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:55:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:09: ||| MESSAGE ||| ==== Count ==>31
+2013-3-1 22:55:09: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:55:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:13: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:55:13: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:55:16: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:55:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:20: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:55:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:28: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:55:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:30: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:55:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:33: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:55:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:37: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:55:37: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:55:38: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:55:39: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:55:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:43: ||| MESSAGE ||| ==== Count ==>32
+2013-3-1 22:55:43: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:55:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:47: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:55:47: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:55:50: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:55:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:55:54: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:56:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:02: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:56:02: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:04: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:56:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:06: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:56:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:11: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:56:11: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:56:12: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:56:13: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:56:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:17: ||| MESSAGE ||| ==== Count ==>33
+2013-3-1 22:56:17: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:56:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:21: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:56:21: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:56:24: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:56:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:28: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:56:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:36: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:56:36: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:38: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:56:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:40: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:56:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:44: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:56:44: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:56:46: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:56:46: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:56:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:50: ||| MESSAGE ||| ==== Count ==>34
+2013-3-1 22:56:50: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:56:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:56:55: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:56:55: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:56:57: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:56:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:02: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:57:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:09: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:57:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:11: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:57:12: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:14: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:57:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:18: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:57:18: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:57:20: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:57:20: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:57:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:24: ||| MESSAGE ||| ==== Count ==>35
+2013-3-1 22:57:24: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:57:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:28: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:57:28: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:57:31: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:57:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:35: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:57:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:43: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:57:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:45: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:57:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:47: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:57:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:52: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:57:52: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:57:53: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:57:54: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:57:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:57:58: ||| MESSAGE ||| ==== Count ==>36
+2013-3-1 22:57:58: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:58:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:02: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:58:02: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:58:05: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:58:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:09: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:58:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:17: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:58:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:19: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:58:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:21: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:58:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:25: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:58:25: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:58:27: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:58:27: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:58:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:31: ||| MESSAGE ||| ==== Count ==>37
+2013-3-1 22:58:31: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:58:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:36: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:58:36: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:58:38: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:58:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:43: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:58:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:50: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:58:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:52: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:58:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:55: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:58:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:58:59: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:58:59: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:59:01: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:59:01: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:59:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:05: ||| MESSAGE ||| ==== Count ==>38
+2013-3-1 22:59:05: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:59:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:09: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:59:09: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:59:12: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:59:12: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:16: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:59:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:24: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:59:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:26: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 22:59:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:29: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 22:59:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:33: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 22:59:33: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 22:59:34: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 22:59:35: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 22:59:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:39: ||| MESSAGE ||| ==== Count ==>39
+2013-3-1 22:59:39: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 22:59:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:43: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 22:59:43: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 22:59:46: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 22:59:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:50: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 22:59:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 22:59:58: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 22:59:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:00: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:00:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:02: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:00:02: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:06: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:00:06: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:00:08: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:00:09: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:00:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:13: ||| MESSAGE ||| ==== Count ==>40
+2013-3-1 23:00:13: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:00:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:17: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:00:17: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:00:20: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:00:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:24: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:00:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:31: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:00:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:34: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:00:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:36: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:00:36: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:40: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:00:40: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:00:42: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:00:42: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:00:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:46: ||| MESSAGE ||| ==== Count ==>41
+2013-3-1 23:00:46: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:00:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:51: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:00:51: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:00:53: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:00:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:00:57: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:01:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:05: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:01:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:07: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:01:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:10: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:01:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:12: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:14: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:01:14: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:01:15: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:01:16: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:01:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:20: ||| MESSAGE ||| ==== Count ==>42
+2013-3-1 23:01:20: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:01:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:24: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:01:24: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:01:27: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:01:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:29: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:31: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:01:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:39: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:01:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:41: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:01:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:44: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:01:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:48: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:01:48: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:01:49: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:01:50: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:01:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:54: ||| MESSAGE ||| ==== Count ==>43
+2013-3-1 23:01:54: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:01:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:01:58: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:01:58: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:02:01: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:02:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:05: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:02:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:13: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:02:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:15: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:02:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:17: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:02:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:21: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:02:21: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:02:23: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:02:24: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:02:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:28: ||| MESSAGE ||| ==== Count ==>44
+2013-3-1 23:02:28: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:02:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:32: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:02:32: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:02:35: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:02:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:39: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:02:45: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:47: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:02:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:49: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:02:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:51: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:02:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:02:55: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:02:55: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:02:57: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:02:57: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:02:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:01: ||| MESSAGE ||| ==== Count ==>45
+2013-3-1 23:03:01: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:03:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:06: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:03:06: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:03:08: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:03:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:12: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:03:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:20: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:03:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:22: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:03:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:25: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:03:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:29: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:03:29: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:03:30: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:03:31: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:03:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:35: ||| MESSAGE ||| ==== Count ==>46
+2013-3-1 23:03:35: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:03:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:39: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:03:39: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:03:42: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:03:42: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:46: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:03:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:54: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:03:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:56: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:03:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:03:58: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:03:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:00: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:02: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:04:02: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:04:04: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:04:04: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:04:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:08: ||| MESSAGE ||| ==== Count ==>47
+2013-3-1 23:04:08: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:04:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:13: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:04:13: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:04:15: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:04:16: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:20: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:04:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:27: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:04:27: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:29: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:04:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:32: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:04:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:36: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:04:36: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:04:37: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:04:38: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:04:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:42: ||| MESSAGE ||| ==== Count ==>48
+2013-3-1 23:04:42: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:04:44: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:46: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:04:46: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:04:49: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:04:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:51: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:04:53: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:04:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:01: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:05:01: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:03: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:05:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:05: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:05:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:10: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:05:10: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:05:11: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:05:11: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:05:14: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:16: ||| MESSAGE ||| ==== Count ==>49
+2013-3-1 23:05:16: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:05:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:20: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:05:20: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:05:23: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:05:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:27: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:05:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:34: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:05:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:36: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:05:37: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:39: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:05:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:43: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:05:43: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:05:45: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:05:45: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:05:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:49: ||| MESSAGE ||| ==== Count ==>50
+2013-3-1 23:05:49: ||| MESSAGE ||| Tap_AndroidStr(762-5113);
+2013-3-1 23:05:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:54: ||| MESSAGE ||| Tap(232,638);
+2013-3-1 23:05:54: ||| MESSAGE ||| Sleep(2700);
+2013-3-1 23:05:56: ||| MESSAGE ||| Tap(141,405);
+2013-3-1 23:05:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:05:58: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:06:00: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:06:06: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:06:08: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:06:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:06:10: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:06:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:06:13: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:06:13: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:06:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:06:17: ||| MESSAGE ||| SMS Sent: Successful!
+2013-3-1 23:06:17: ||| MESSAGE ||| ==== All Case:50     Failed Case:0
+2013-3-1 23:06:17: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:06:18: ||| MESSAGE ||| ==== 5.1.2.1 Send SMS : Finished!
+2013-3-1 23:06:23: ||| MESSAGE ||| recordend();
+2013-3-1 23:06:23: ||| MESSAGE ||| end of the video collection:
+2013-3-1 23:06:23: ||| MESSAGE ||| DeviceClose();
+2013-3-1 23:06:23: Run Success!

@@ -1,0 +1,209 @@
+2013-1-24 星期四 21:05:18: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? shell service call window 1 i32 8888 
+2013-1-24 星期四 21:05:18: Result: Parcel(00000000 00000000   '........')
+2013-1-24 星期四 21:05:18: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? forward tcp:4063  tcp:8888 
+2013-1-24 星期四 21:05:19: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? forward tcp:2063  tcp:1324 
+2013-1-24 星期四 21:05:19: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 320 --ei height 480 --ei delay 0 --ei bpp 2 
+2013-1-24 星期四 21:05:19: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-1-24 星期四 21:05:19: Broadcast completed: result=0
+2013-1-24 星期四 21:05:19: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-1-24 星期四 21:05:19: 请按任意键继续. . . 
+2013-1-24 星期四 21:05:26: compile successfully, ready to run:
+2013-1-24 星期四 21:05:26: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-1-24 星期四 21:05:26: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-1-24 星期四 21:05:27: ||| MESSAGE ||| AddMo phone connecting.......
+2013-1-24 星期四 21:05:27: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-1-24 星期四 21:05:27: ||| MESSAGE ||| switch to BaseMo phone:
+2013-1-24 星期四 21:05:27: ||| MESSAGE ||| loop 1 Start:
+2013-1-24 星期四 21:05:27: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:05:29: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:05:30: ||| MESSAGE ||| Tap_AndroidStr(DCIM);
+2013-1-24 星期四 21:05:32: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:05:34: ||| MESSAGE ||| Tap_AndroidStr(Camera);
+2013-1-24 星期四 21:05:37: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:05:39: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:05:39: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:05:39: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:05:50: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:05:50: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:05:51: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:05:51: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:05:53: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:05:56: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:05:57: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:05:57: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:05:57: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:06:07: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:06:07: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:06:08: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:06:09: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:06:11: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:06:13: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:06:14: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:06:14: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:06:15: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:06:25: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:06:25: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:06:26: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:06:27: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:06:29: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:06:31: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:06:32: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:06:32: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:06:33: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:06:43: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:06:43: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:06:44: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:06:45: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:06:47: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:06:49: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:06:50: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:06:50: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:06:51: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:07:02: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:07:02: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:07:03: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:07:03: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:07:05: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:07:08: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:07:09: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:07:09: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:07:09: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:07:20: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:07:20: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:07:21: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:07:21: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:07:23: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:07:26: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:07:27: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:07:27: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:07:27: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:07:38: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:07:38: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:07:39: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:07:39: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:07:41: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:07:44: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:07:45: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:07:45: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:07:45: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:07:56: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:07:56: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:07:57: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:07:58: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:08:00: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:08:02: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:08:03: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:08:03: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:08:03: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:08:14: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:08:14: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:08:15: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:08:15: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:08:17: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:08:20: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:08:21: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:08:21: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:08:21: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:08:32: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:08:32: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:08:33: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:08:34: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:08:36: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:08:38: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:08:39: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:08:39: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:08:39: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:08:50: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:08:50: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:08:51: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:08:51: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:08:53: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:08:56: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:08:57: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:08:57: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:08:57: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:09:08: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:09:08: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:09:09: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:09:09: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:09:11: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:09:14: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:09:15: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:09:15: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:09:15: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:09:26: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:09:26: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:09:27: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:09:27: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:09:29: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:09:32: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:09:33: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:09:33: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:09:33: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:09:44: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:09:44: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:09:45: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:09:45: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:09:47: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:09:50: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:09:51: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:09:51: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:09:51: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:10:02: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:10:02: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:10:03: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:10:03: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:10:05: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:10:07: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:10:08: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:10:09: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:10:09: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:10:19: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:10:19: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:10:20: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:10:21: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:10:23: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:10:25: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:10:26: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:10:26: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:10:27: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:10:38: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:10:38: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:10:39: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:10:39: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:10:41: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:10:44: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:10:45: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:10:45: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:10:45: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:10:55: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:10:55: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:10:56: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:10:57: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:10:59: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:11:01: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:11:02: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:11:02: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:11:03: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:11:13: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:11:13: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:11:14: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:11:15: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:11:17: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:11:19: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:11:20: ||| MESSAGE ||| Tap(134,103);
+2013-1-24 星期四 21:11:20: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:11:21: ||| MESSAGE ||| wait_for_image(20130123151250.bmp,10);
+2013-1-24 星期四 21:11:31: ||| MESSAGE ||| Open a picture failed****
+2013-1-24 星期四 21:11:31: ||| MESSAGE ||| Sleep(1000);
+2013-1-24 星期四 21:11:32: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-1-24 星期四 21:11:33: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:11:35: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-1-24 星期四 21:11:35: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:11:37: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-1-24 星期四 21:11:38: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:11:40: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:11:42: ||| MESSAGE ||| recordend();
+2013-1-24 星期四 21:11:42: ||| MESSAGE ||| end of the video collection:
+2013-1-24 星期四 21:11:42: ||| MESSAGE ||| DeviceClose();
+2013-1-24 星期四 21:11:42: Run Success!

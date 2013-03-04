@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ZTE MTC Dll Define File -->
+<MtcDll>
+   <ConfigVer version="1.0"></ConfigVer>
+   <DLL name="QualcommDllD.dll">
+        <GUID val="ZTE-MTC-20080414"/>
+		<ITYPE val="1" inf="串口连接类型"/>
+        <OPERATIONS>
+		  <Item val="0x01" info="Basic Operation" />
+       	</OPERATIONS>
+		<INFO val="高通(Qualcomm)F260系列手机用的Dll描述文件" /> 
+   </DLL>
+   <CONFIG>
+		<PARAMETERS>
+		  <Item name="BAUD" val="115200" inf="串口波特率"/>   
+		  <Item name="NSTOPBIT" val="1" inf="串口NBit"/>
+		  <Item name="DATABIT" val="8" inf="串口DataBit"/>	
+		  
+          <Item name="BAD_CMD_F" val="0x13" inf="错误返回码"/>
+          <Item name="SUBSYS_CMD_F" val="0x4B" inf="Subsystem command code" />	  
+          <Item name="SUBSYS_TESTQUEST" val="220" inf="AutoTest code" />	 		  
+		</PARAMETERS>
+   </CONFIG>
+</MtcDll>
+
+
+
+
+
+
+
+

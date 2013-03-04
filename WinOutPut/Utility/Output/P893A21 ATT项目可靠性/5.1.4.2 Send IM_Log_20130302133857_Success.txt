@@ -1,0 +1,46 @@
+2013-3-2 13:37:38: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-2 13:37:39: Result: Parcel(00000000 00000000   '........')
+2013-3-2 13:37:39: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-2 13:37:39: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-2 13:37:39: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-2 13:37:39: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-2 13:37:39: Broadcast completed: result=0
+2013-3-2 13:37:40: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-2 13:37:40: Press any key to continue . . . 
+2013-3-2 13:37:46: compile successfully, ready to run:
+2013-3-2 13:37:47: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-2 13:37:47: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-2 13:37:48: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-2 13:37:48: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-2 13:37:48: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-2 13:37:48: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-2 13:37:48: ||| MESSAGE ||| loop 1 Start:
+2013-3-2 13:37:48: ||| MESSAGE ||| ==== 5.1.4 IM Stability
+2013-3-2 13:37:48: ||| MESSAGE ||| Tap(143,223);
+2013-3-2 13:37:48: ||| MESSAGE ||| enter_text(Hello World);
+2013-3-2 13:37:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-2 13:37:58: ||| MESSAGE ||| Tap(501,904);
+2013-3-2 13:37:58: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:38:03: ||| MESSAGE ||| First fiend Send first msg successful!
+2013-3-2 13:38:03: ||| MESSAGE ||| enter_text(Hello World);
+2013-3-2 13:38:11: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:38:16: ||| MESSAGE ||| Tap(501,904);
+2013-3-2 13:38:16: ||| MESSAGE ||| First Friend Send second msg successful!
+2013-3-2 13:38:16: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:38:19: ||| MESSAGE ||| Tap(22,48);
+2013-3-2 13:38:19: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:38:22: ||| MESSAGE ||| Tap(184,340);
+2013-3-2 13:38:23: ||| MESSAGE ||| enter_text(Hello World);
+2013-3-2 13:38:30: ||| MESSAGE ||| Tap(501,904);
+2013-3-2 13:38:30: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:38:35: ||| MESSAGE ||| Second friend Send first msg successful!
+2013-3-2 13:38:35: ||| MESSAGE ||| enter_text(Hello World);
+2013-3-2 13:38:43: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:38:48: ||| MESSAGE ||| Tap(501,904);
+2013-3-2 13:38:48: ||| MESSAGE ||| Second friend Send second msg successful!
+2013-3-2 13:38:48: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:38:51: ||| MESSAGE ||| Tap(22,48);
+2013-3-2 13:38:56: ||| MESSAGE ||| recordend();
+2013-3-2 13:38:56: ||| MESSAGE ||| end of the video collection:
+2013-3-2 13:38:56: ||| MESSAGE ||| DeviceClose();
+2013-3-2 13:38:56: Run Success!

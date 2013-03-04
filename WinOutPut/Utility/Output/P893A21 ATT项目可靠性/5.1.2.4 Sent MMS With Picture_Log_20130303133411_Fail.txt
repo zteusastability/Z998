@@ -1,0 +1,172 @@
+2013-3-3 1:33:55: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-3 1:33:55: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-3 1:33:55: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-3 1:33:55: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-3 1:33:55: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-3 1:33:55: Press any key to continue . . . 
+2013-3-3 1:34:01: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-3 1:34:01: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-3 1:34:02: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-3 1:34:02: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-3 1:34:02: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-3 1:34:02: Press any key to continue . . . 
+2013-3-3 1:34:08: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-3 1:34:08: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-3 1:34:08: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-3 1:34:08: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-3 1:34:08: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-3 1:34:08: Press any key to continue . . . 
+2013-3-3 12:55:40: compile successfully, ready to run:
+2013-3-3 12:55:40: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-3 12:55:41: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:55:41: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:41: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-3 12:55:41: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-3 12:55:42: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:55:42: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:42: ||| MESSAGE ||| loop 1 Start:
+2013-3-3 12:55:42: ||| MESSAGE ||| ==== 5.1.2.3 Send MMS with Picture : Start!
+2013-3-3 12:55:42: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-3 12:55:43: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:55:43: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:43: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:44: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:55:44: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:44: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:46: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:55:46: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:46: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:47: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:55:47: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:47: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:47: ||| MESSAGE ||| Sleep(1000);
+2013-3-3 12:55:48: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-3 12:55:49: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:55:49: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:49: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:55:49: ||| MESSAGE ||| Sleep(1000);
+2013-3-3 12:55:50: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-3 12:55:52: ||| MESSAGE ||| Sleep(1000);
+2013-3-3 12:55:53: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-3 12:56:04: ||| MESSAGE ||| networks Not Find!!!
+2013-3-3 12:56:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-3 12:56:04: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-3 12:56:15: ||| MESSAGE ||| Mode Not Find!!!
+2013-3-3 12:56:15: ||| MESSAGE ||| Sleep(1000);
+2013-3-3 12:56:16: ||| MESSAGE ||| Tap(455,693);
+2013-3-3 12:56:17: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:17: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:17: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:17: ||| MESSAGE ||| Sleep(5000);
+2013-3-3 12:56:22: ||| MESSAGE ||| CampToNetwork: 2G
+2013-3-3 12:56:22: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-3 12:56:23: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:23: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:23: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:24: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:24: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:24: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:26: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:26: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:26: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:27: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:27: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:27: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:27: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-3 12:56:28: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:28: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:28: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:29: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-3 12:56:30: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:30: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:30: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:31: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:31: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:31: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:33: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:33: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:33: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:33: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-3 12:56:33: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:33: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:33: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:34: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-3 12:56:36: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:56:38: ||| MESSAGE ||| ==== Count ==>1
+2013-3-3 12:56:38: ||| MESSAGE ||| Tap_AndroidStr(pic);
+2013-3-3 12:56:49: ||| MESSAGE ||| pic Not Find!!!
+2013-3-3 12:56:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:56:51: ||| MESSAGE ||| Tap(194,561);
+2013-3-3 12:56:52: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:52: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:52: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:56:54: ||| MESSAGE ||| Tap(163,398);
+2013-3-3 12:56:55: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:56:55: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:55: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:56:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:56:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:56:59: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-3 12:57:00: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:00: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:00: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:01: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:01: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:01: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:02: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:02: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:02: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:04: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:04: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:04: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:05: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:05: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:05: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:06: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:06: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:06: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:08: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:08: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:08: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:09: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:09: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:09: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:10: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:10: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:10: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:11: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:11: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:11: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:12: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:57:14: ||| MESSAGE ||| Tap(232,172);
+2013-3-3 12:57:15: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:15: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:15: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:15: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:57:17: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-3 12:57:18: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:18: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:18: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:57:20: ||| MESSAGE ||| Tap(506,911);
+2013-3-3 12:57:21: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:21: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:21: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-3 12:57:23: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-3 12:57:24: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:24: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:24: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:25: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:25: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:25: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:26: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:26: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:26: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:26: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-3 12:57:27: ||| MESSAGE ||| No connection could be made because the target machine actively refused it
+2013-3-3 12:57:27: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:27: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2013-3-3 12:57:28: ||| MESSAGE ||| wait_for_image(20130228212244.bmp,200000);
+2013-3-3 13:34:11: dynamic execution failed

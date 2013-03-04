@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MyTQ>
+	<int name="Count" value="0" title="次数" type="System.Int32" />
+	<string name="CallNum" value="10086" title="电话号码" type="System.string" />
+</MyTQ>

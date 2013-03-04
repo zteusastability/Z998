@@ -1,0 +1,1 @@
+adb pull   /data/local/logs  %1_logs

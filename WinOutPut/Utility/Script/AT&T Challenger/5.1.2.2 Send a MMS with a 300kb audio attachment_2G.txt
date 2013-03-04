@@ -1,0 +1,667 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Xml;
+using System.Data;
+using TQOperate;
+using System.Runtime.InteropServices;
+namespace DynamicCodeGenerate
+{
+     public class dynamic
+     {
+public TQ tq = new TQ(1007,639);
+/// 注释
+/// <summary>
+/// 连接控制测试机
+/// </summary>
+/// <param name="i">测试机，主测是机:BaseMo,辅测试机：AddMo；</param>
+/// <returns></returns>
+public void switch_target_num(string i)
+{
+	LOG_RESULT(string.Format("switch_target_num({0});",i));
+	tq.switch_target_num(i);
+}
+
+/// 注释
+/// <summary>
+/// 用于Android或者P81平台的快速导航
+/// </summary>
+/// <param name="moudle">模块名</param>
+/// <param name="flat">平台名,有"P81"和"Android"</param>
+/// <returns></returns>
+public void navigate_to(string moudle,string flat)
+{
+    LOG_RESULT(string.Format("navigate_to({0},{1});",moudle,flat));
+	tq.navigate_to(moudle,flat);
+}
+
+/// 注释
+/// <summary>
+/// 根据导航路径的设置，快速从顶层导航到目的位置
+/// </summary>
+/// <param name="screen">目的路径的名称</param>
+/// <returns></returns>
+public void navigate_toscreen(string screen)
+{
+    LOG_RESULT(string.Format("navigate_toscreen({0});",screen));
+	tq.navigate_toscreen(screen,_num);
+}
+
+/// 注释
+/// <summary>
+/// 根据导航路径的设置，快速导航从起始位置到目的位置
+/// </summary>
+/// <param name="oriscreen">起始路径的名称</param>
+/// <param name="screen">目的路径的名称</param>
+/// <returns></returns>
+public void navigate_toscreen(string oriscreen,string screen)
+{
+    LOG_RESULT(string.Format("navigate_toscreen({0},{1});",oriscreen,screen));
+	tq.navigate_toscreen(oriscreen,screen,_num);
+}
+
+/// 注释
+/// <summary>
+/// 根据导航路径的设置，进行某操作
+/// </summary>
+/// <param name="operation">操作的名称</param>
+/// <returns></returns>
+public void navigate_operation(string operation)
+{
+    LOG_RESULT(string.Format("navigate_operation({0});",operation));
+	tq.navigate_operation(operation,_num);
+}
+
+/// 注释
+/// <summary>
+/// 按键操作
+/// </summary>
+/// <param name="Keys">按键名</param>
+/// <returns>按键是否成功</returns>
+public bool press_keys(string Keys)
+{
+    if(Keys == "<End>")
+		return true;
+	LOG_RESULT(string.Format("press_keys({0});",Keys));
+    if(!tq.press_keys(Keys))
+	{
+		//LOG_RESULT("按键：" + Keys + "失败");
+		//return tq.press_keys(Keys);
+	}
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 长按键操作
+/// </summary>
+/// <param name="Keys">按键名</param>
+/// <param name="milli">长按时间，毫秒单位</param>
+/// <returns></returns>
+public void press_keys_hold(string keys, int milli)
+{
+	LOG_RESULT(string.Format("press_keys_hold({0},{1});",keys,milli.ToString()));
+	tq.press_keys_hold(keys,milli);
+}
+
+/// 注释
+/// <summary>
+/// 翻转已显示的屏幕
+/// </summary>
+/// <param name="n">翻转的角度，有0，90，180，和270</param>
+/// <returns></returns>
+public void rotate_screen(int n)
+{
+	LOG_RESULT(string.Format("rotate_screen({0});",n.ToString()));
+	tq.rotate_screen(n);
+}
+
+/// 注释
+/// <summary>
+/// 点击触摸屏
+/// </summary>
+/// <param name="x">x轴坐标</param>
+/// <param name="y">y轴坐标</param>
+/// <returns>点击是否成功</returns>
+public bool Tap(int x,int y)
+{
+	LOG_RESULT(string.Format("Tap({0},{1});",x.ToString(),y.ToString()));
+    if(!tq.Tap(x,y))
+	{
+		//LOG_RESULT("触摸"：" + Keys + "失败");
+		//return tq.Tap(x,y);
+	}
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// Android，根据字符串点击触摸屏
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns></returns>
+public void Tap_AndroidStr(string text)
+{
+    LOG_RESULT(string.Format("Tap_AndroidStr({0});",text));
+	tq.Tap_AndroidStr(text);
+}
+
+/// 注释
+/// <summary>
+/// Android平台，根据字符串长点击点击触摸屏
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="milli">长点击的时间</param>
+/// <returns></returns>
+public bool Tap_AndroidStr_Hold(string text, int milli)
+{
+    LOG_RESULT(string.Format("Tap_AndroidStr_Hold({0},{1});",text,milli.ToString()));
+    return tq.Tap_AndroidStr_Hold(text,milli);
+}
+
+/// 注释
+/// <summary>
+/// 划动触摸屏，从一点划动到另一点
+/// </summary>
+/// <param name="x0">起始点的x坐标</param>
+/// <param name="y0">起始点的y坐标</param>
+/// <param name="x1">目标点的x坐标</param>
+/// <param name="y1">目标点的y坐标</param>
+/// <returns></returns>
+public void PTOP(int x0, int y0, int x1, int y1)
+{
+	LOG_RESULT(string.Format("PTOP({0},{1},{2},{3});",x0.ToString(),y0.ToString(),x1.ToString(),y1.ToString()));
+	tq.PTOP(x0,y0,x1,y1);
+}
+
+/// 注释
+/// <summary>
+/// P81平台，根据坐标得到字符串
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns>得到的字符串，取值不成功为""</returns>
+public string GetWidgetStr(int x,int y)
+{
+	LOG_RESULT(string.Format("GetWidgetStr({0},{1});",x.ToString(),y.ToString()));
+	return tq.GetWidgetStr(x,y);
+}
+
+/// 注释
+/// <summary>
+/// Android平台，根据坐标得到字符串
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns>得到的字符串，取值不成功为""</returns>
+public string GetAndroidStr(int x,int y)
+{
+	LOG_RESULT(string.Format("GetAndroidStr({0},{1});",x.ToString(),y.ToString()));
+	return tq.GetAndroidStr(x,y);
+}
+
+/// 注释
+/// <summary>
+/// Android平台，根据字符串得到坐标点
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns>得到的字符串，取值不成功为""</returns>
+public Point GetWidgetPoint(string text)
+{
+    LOG_RESULT(string.Format("GetWidgetPoint({0});",text));
+	return tq.GetWidgetPoint(text);
+}
+
+/// 注释
+/// <summary>
+/// 点击触摸屏操作，按下
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns></returns>
+public void StylusDown(int x,int y)
+{
+	LOG_RESULT(string.Format("StylusDown({0},{1});",x.ToString(),y.ToString()));
+	tq.StylusDown(x,y);
+}
+
+/// 注释
+/// <summary>
+/// 点击触摸屏操作，抬起
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public void StylusUp()
+{
+	LOG_RESULT(string.Format("StylusUp();"));
+	tq.StylusUp();
+}
+
+/// 注释
+/// <summary>
+/// 触摸屏操作，移动到某一点，必须和StylusDown、StylusUp联合使用
+/// </summary>
+/// <param name="x">x坐标</param>
+/// <param name="y">y坐标</param>
+/// <returns></returns>
+public void MoveTo(int x,int y)
+{
+	tq.MoveTo(x,y);
+}
+
+/// 注释
+/// <summary>
+/// 等待
+/// </summary>
+/// <param name="time">等待时间，以秒为单位</param>
+/// <returns></returns>
+public void pause(int time)
+{
+	LOG_RESULT(string.Format("pause({0});",time.ToString()));
+	tq.pause(time);
+}
+
+/// 注释
+/// <summary>
+/// 等待
+/// </summary>
+/// <param name="time">等待时间，以毫秒为单位</param>
+/// <returns></returns>
+public void Sleep(int time)
+{
+	LOG_RESULT(string.Format("Sleep({0});",time.ToString()));
+	tq.Sleep(time);
+}
+
+/// 注释
+/// <summary>
+/// 输入数字
+/// </summary>
+/// <param name="_num">数字串</param>
+/// <returns></returns>
+public void enter_number(string _num)
+{
+	LOG_RESULT(string.Format("enter_number({0});",_num));
+	tq.enter_number(_num);
+}
+
+/// 注释
+/// <summary>
+/// 输入字符串
+/// </summary>
+/// <param name="_num">字符串</param>
+/// <returns></returns>
+public void enter_text(string text)
+{
+	LOG_RESULT(string.Format("enter_text({0});",text));
+	tq.enter_text(text);
+}
+
+/// 注释
+/// <summary>
+/// 图片对比
+/// </summary>
+/// <param name="ImageName">图片名</param>
+/// <returns>是否对比成功</returns>
+public bool image_must_be(string ImageName)
+{
+	LOG_RESULT(string.Format("image_must_be({0})",ImageName));
+	if(tq.image_must_be(ImageName) == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 在一段时间内，图片对比
+/// </summary>
+/// <param name="ImageName">图片名</param>
+/// <param name="_time">对比持续时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_image(string ImageName, int _time)
+{
+	LOG_RESULT(string.Format("wait_for_image({0},{1});",ImageName,_time.ToString()));
+	if(tq.wait_for_image(ImageName,_time) == false)
+		return false;
+	return true;	
+}
+
+/// 注释
+/// <summary>
+/// 对比某一坐标点的字符串,目前用于P81，P99平台
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="_time">对比持续时间</param>
+/// <param name="x坐标">x</param>
+/// <param name="y坐标">对比持续时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_text(string text, int time,int x,int y)
+{
+    LOG_RESULT(string.Format("wait_for_text({0},{1},{2},{3});",text,time.ToString(),x.ToString(),y.ToString()));
+	return tq.wait_for_text(text,time,x,y);
+}
+
+/// 注释
+/// <summary>
+/// 对比字符串,目前用于Android平台
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="time">对比持续时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_androidtext(string text, int time)
+{
+    LOG_RESULT(string.Format("wait_for_androidtext({0},{1});",text,time.ToString()));
+	return tq.wait_for_androidtext(text,time);
+}
+
+/// 注释
+/// <summary>
+/// 根据截到的屏幕区域图片提取字符串
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="time">对比持续时间</param>
+/// <param name="left">区域左上的x坐标</param>
+/// <param name="top">区域左上的y坐标</param>
+/// <param name="right">区域右下的x坐标</param>
+/// <param name="bottom">区域右下的y坐标</param>
+/// <returns>是否对比成功</returns>
+public bool wait_for_ocr(string text, int time,int left,int top,int right,int bottom)
+{
+    LOG_RESULT(string.Format("wait_for_ocr({0},{1},{2},{3},{4},{5});",text,time.ToString(),left.ToString(),top.ToString(),right.ToString(),bottom.ToString()));
+	return tq.wait_for_ocr(text,time,left,top,right,bottom);
+}
+
+/// 注释
+/// <summary>
+/// 打印LOG信息
+/// </summary>
+/// <param name="text">LOG信息</param>
+/// <returns></returns>
+public void LOG_RESULT(string Log)
+{
+	tq.LOG_RESULT(Log);
+}
+
+/// 注释
+/// <summary>
+/// 打印内存信息
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public bool DumpMemoryInfo()
+{
+	LOG_RESULT(string.Format("DumpMemoryInfo();"));
+	if(tq.DumpMemoryInfo() == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 停止控制设备
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public void DeviceClose()
+{
+	LOG_RESULT(string.Format("DeviceClose();"));
+	tq.DeviceClose();
+}
+
+/// 注释
+/// <summary>
+/// 截取手机屏幕
+/// </summary>
+/// <param name="_img">截取屏幕保存的名字</param>
+/// <returns></returns>
+public bool save_screen(string _img)
+{
+    LOG_RESULT(string.Format("save_screen({0});",_img));
+	if(tq.save_screen(_img) == false)
+		return false;
+	return true;	
+}
+
+/// 注释
+/// <summary>
+/// 截取手机屏幕
+/// </summary>
+/// <param name="_img">截取屏幕保存的名字</param>
+/// <param name="_num">脚本的循环次数</param>
+/// <returns></returns>
+public bool save_screen(string _img,int _num)
+{
+    LOG_RESULT(string.Format("save_screen({0},{1});",_img,_num.ToString()));
+	if(tq.save_screen(_img,_num) == false)
+		return false;
+	return true;	
+}
+
+/// 注释
+/// <summary>
+/// 根据截到的屏幕全图提取字符串进行对比
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns>是否对比成功</returns>
+public bool OCR(string text)
+{
+    LOG_RESULT(string.Format("OCR({0});",text));
+	if(tq.OCR(text) == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 根据截到的屏幕全图提取字符串进行对比
+/// </summary>
+/// <param name="text">字符串</param>
+/// <param name="_time">对比的超时时间</param>
+/// <returns>是否对比成功</returns>
+public bool wait_ocr(string text,int _time)
+{
+	LOG_RESULT(string.Format("wait_ocr({0},{1});",text,_time.ToString()));
+	if(tq.wait_ocr(text,_time) == false)
+		return false;
+	return true;
+}
+
+/// 注释
+/// <summary>
+/// 根据OCR所得到的字符串去点击触摸屏
+/// </summary>
+/// <param name="text">字符串</param>
+/// <returns>是否得到相应的字符串</returns>
+public bool Tap_ocr(string text)
+{
+    LOG_RESULT(string.Format("Tap_ocr({0});",text));
+	if(tq.Tap_ocr(text) == false)
+	{
+		LOG_RESULT("根据OCR点击\"" + text + "\"失败");
+		return false;
+	}
+	return true;
+}
+
+public bool Tap_text(string text)
+{
+    LOG_RESULT(string.Format("Tap_text({0});",text));
+	if(tq.Tap_text(text) == false)
+	{
+		LOG_RESULT("根据控件信息点击\"" + text + "\"失败");
+		return false;
+	}
+	return false;
+}
+
+/// 注释
+/// <summary>
+/// 如果连接摄像头，打开录像
+/// </summary>
+/// <param name="num">脚本内的循环次数</param>
+/// <returns></returns>
+public void recordstart(int num)
+{
+	LOG_RESULT(string.Format("recordstart({0});",num.ToString()));
+	tq.recordstart(num);
+}
+
+/// 注释
+/// <summary>
+/// 如果连接摄像头已打开，关闭录像
+/// </summary>
+/// <param name=""></param>
+/// <returns></returns>
+public void recordend()
+{
+	LOG_RESULT(string.Format("recordend();"));
+	tq.recordend();
+}
+
+public void ftpfunc(string para)
+{
+	LOG_RESULT(string.Format("ftpfunc({0});",para));
+	tq.ftpfunc(para);
+}
+
+public void GetError()
+{
+	tq.GetError();
+}
+
+public void CallFun(int lcid)
+{
+	tq.CallFun(lcid);
+}
+
+public bool wait_for_text(string text, int time)
+{
+    LOG_RESULT(string.Format("wait_for_text({0},{1});",text,time.ToString()));
+	return tq.wait_for_text(text,time);
+}
+
+public string GetCharcter(char c)
+{
+	return tq.GetCharcter(c);
+} 
+
+private int _num = 0;
+
+[DllImport("switchboard.dll",EntryPoint="Open")]
+public static extern int Open_Usb_Board();
+[DllImport("switchboard.dll",EntryPoint="Close")]
+public static extern int Close_Usb_Board();
+public void Backhome()
+{
+press_keys("<RightMost><RightMost><RightMost>");
+Sleep(1000);
+press_keys("<Home>");
+Sleep(1000);
+}
+public void Back(int i)
+{
+while(i>0)
+{
+i--;
+press_keys("<RightMost>");
+Sleep(2000);
+}
+
+}
+public void findnumberinmsg(string str)
+{
+string [] numbers={"214-431-7055","214-535-2938","214-984-7331","(214)-533-6232"};
+if(!wait_for_androidtext(str,10))
+{
+press_keys("<Sym>");
+wait_for_androidtext("Multi-Select",10);
+Sleep(500);
+Tap_AndroidStr("Multi-Select");
+Sleep(1000);
+Tap(300,45);//select all
+Sleep(1000);
+for(int i=0;i<4;i++)
+{
+if(!wait_for_androidtext(numbers[i],10))
+{
+StylusDown(184,394);
+MoveTo(188,372);Sleep(100);MoveTo(175,222);Sleep(100);MoveTo(193,135);Sleep(100);
+Sleep(300);StylusUp();
+Sleep(1000);
+}
+Tap_AndroidStr(numbers[i]);
+Sleep(1000);
+}
+Tap(168,442);//delete
+Sleep(3000);
+Tap(236,320);//OK
+Sleep(3000);
+}
+
+}
+
+int Count = 0;
+string CallNum = "10086";
+int sleepTime = 4000;
+string SIMNUM = "18705169493";
+string deviceID = "ZTE_SP920";
+string emailAttachmentName = "Amr100k";
+string emailReceiveAddress = "ztep1801@gmail.com";
+string emailPassword = "zte11111111";
+int curwidth = 480;
+int curheight = 800;
+int SimSmsMemo = 60;
+
+         public string OutPut()
+         {
+int Loop = 10;int Interval = 1;string Video = "N";
+
+switch_target_num("BaseMo");
+for (int _num = 0; _num < Loop;_num++ )
+{
+Console.WriteLine("||| MESSAGE ||| {0}{1}{2}",tq.lg.Language("lp"),_num+1,tq.lg.Language("loopstart"));
+this._num = _num;
+
+press_keys("<Home>");
+Sleep(1000);
+navigate_to("MMS","Android");
+Sleep(500);
+wait_for_androidtext("Compose",20);
+Sleep(500);
+string number="214-535-2938";
+findnumberinmsg(number);
+Tap_AndroidStr(number);//根据发送方的号码选择消息
+Sleep(500);
+wait_for_androidtext("Send",10);
+Sleep(500);
+Tap(40,345);//点击彩信空白区域，调出菜单
+wait_for_androidtext("Message options",10);
+Sleep(500);
+Tap(126,261);//选择forward
+Sleep(500);
+wait_for_androidtext("Compose",15);
+Sleep(500);
+enter_number("8009019878");
+Sleep(2000);
+Tap(292,242);//点击send
+Sleep(1000);
+Back(2);
+Backhome();
+if(wait_for_image("20130121152602.bmp",90))
+{
+LOG_RESULT("MMS with a audio has been sent successfully**********************************");
+}
+else
+{
+LOG_RESULT("MMS has been sent failed");
+}
+
+
+tq.pause(Interval);
+}
+recordend();
+DeviceClose();
+              return "Run Success!";              Console.ReadLine();
+         }
+     }
+}

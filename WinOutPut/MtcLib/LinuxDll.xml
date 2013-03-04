@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ZTE MTC Dll Define File -->
+<MtcDll>
+   <ConfigVer version="1.0"></ConfigVer>
+   <DLL name="LinuxDllD.dll">
+        <GUID val="ZTE-MTC-20080414"/>
+		<ITYPE val="2" inf="以太网连接类型"/>		
+        <OPERATIONS>
+		       <Item val="0x01" info="Basic Operation" />
+		       <Item val="0x02" info="TouchScreen Operation" />
+       	</OPERATIONS>
+		<INFO val="Linux平台用的Dll描述文件" /> 
+   </DLL>
+   <CONFIG>
+		<PARAMETERS>
+			  <Item name="PORT" val="150" inf="端口号"/>
+		      <Item name="IP" val="192.168.1.1" inf="地址"/>	
+		</PARAMETERS>
+   </CONFIG>
+</MtcDll>
+
+
+
+
+
+
+
+

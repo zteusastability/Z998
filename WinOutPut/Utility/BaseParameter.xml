@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="gb2312"?>
+<BaseParameter>
+   <Scr>
+      <Screen Name="TapScreen"/>
+      <Screen Name="Screen"/>
+      <Screen Name="None"/>
+   </Scr>
+   <Kb>
+      <Keyboard Name="Full"/>
+   </Kb>
+   <L>
+      <Lib Name="LinuxDllD.dll"/>
+      <Lib Name="WinMobileDllD.dll"/>
+      <Lib Name="TDAtDllD.dll"/>
+      <Lib Name="QualcommDllD.dll"/>
+	  <Lib Name="InfoSysD.dll"/>
+	  <Lib Name="ZTES100V2DllD.dll"/>
+	  <Lib Name="ZTES100V3DllD.dll"/>
+	  <Lib Name="MTKAtDllD.dll"/>
+	  <Lib Name="Android2_V8DV1.dll"/>
+	  <Lib Name="AtDllD.dll"/>
+	  <Lib Name="MTKCatcherDllD.dll"/>
+	  <Lib Name="AndroidDllD.dll"/>
+	  <Lib Name="QualcommDllD_P99.dll"/>
+   </L>
+</BaseParameter>

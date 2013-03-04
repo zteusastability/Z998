@@ -1,0 +1,57 @@
+2013-3-1 23:06:24: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-1 23:06:24: Result: Parcel(00000000 00000000   '........')
+2013-3-1 23:06:24: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-1 23:06:24: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-1 23:06:24: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-1 23:06:25: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-1 23:06:25: Broadcast completed: result=0
+2013-3-1 23:06:25: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-1 23:06:25: Press any key to continue . . . 
+2013-3-1 23:06:32: compile successfully, ready to run:
+2013-3-1 23:06:32: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-1 23:06:32: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-1 23:06:33: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-1 23:06:33: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-1 23:06:33: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-1 23:06:33: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-1 23:06:33: ||| MESSAGE ||| loop 1 Start:
+2013-3-1 23:06:33: ||| MESSAGE ||| ==== 5.1.2.3 Send MMS with Video : Start!
+2013-3-1 23:06:33: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 23:06:35: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 23:06:36: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:06:37: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 23:06:38: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-1 23:06:40: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 23:06:41: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-1 23:06:43: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 23:06:44: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-1 23:06:46: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 23:06:47: ||| MESSAGE ||| Tap(455,693);
+2013-3-1 23:06:47: ||| MESSAGE ||| Sleep(5000);
+2013-3-1 23:06:52: ||| MESSAGE ||| CampToNetwork: 2G
+2013-3-1 23:06:52: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-1 23:06:54: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:06:55: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:06:56: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:06:57: ||| MESSAGE ||| navigate_to(MMS,Android);
+2013-3-1 23:06:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:01: ||| MESSAGE ||| ==== Count ==>1
+2013-3-1 23:07:01: ||| MESSAGE ||| Tap_AndroidStr(audio);
+2013-3-1 23:07:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:05: ||| MESSAGE ||| Tap(355,580);
+2013-3-1 23:07:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:07: ||| MESSAGE ||| Tap(175,407);
+2013-3-1 23:07:07: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:11: ||| MESSAGE ||| enter_text(8009019878);
+2013-3-1 23:07:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:19: ||| MESSAGE ||| Tap(232,172);
+2013-3-1 23:07:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:21: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 23:07:22: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:24: ||| MESSAGE ||| Tap(506,911);
+2013-3-1 23:07:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 23:07:26: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 23:07:27: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 23:07:28: ||| MESSAGE ||| wait_for_image(20130228212244.bmp,200000);
+2013-3-3 1:33:55: dynamic execution failed

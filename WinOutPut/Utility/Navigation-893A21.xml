@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Navigation>
+	<P81>
+		<Value module="Contacts" path="16806145"/>
+		<Value module="MusicPlayer" path="16806148"/>
+		<Value module="Messages" path="16806149"/>
+	    <Value module="Email" path="16806280"/>
+		<Value module="Setting" path="16806153"/>
+		<Value module="VideoPlayer" path="16806156"/>
+		<Value module="MainMenu" path="16806155"/>
+		<Value module="Filer" path="16806159"/>
+		<Value module="MapBrowser" path="16806160"/>
+		<Value module="Camera" path="16806161"/>
+		<Value module="DV" path="16806162"/>
+		<Value module="CallLogs" path="16806163"/>
+		<Value module="VideoCall" path="16806167"/>
+		<Value module="BlueTooth" path="16806242"/>
+		<Value module="Record" path="16806168"/>
+		<Value module="Notes" path="16806172"/>
+		<Value module="Alarm" path="16806177"/>
+		<Value module="Calculator" path="16806179"/>
+		<Value module="WorldTime" path="16806178"/>
+		<Value module="StopWatch" path="16806180"/>
+		<Value module="Calendar" path="16806183"/>
+		<Value module="Radio" path="16806186"/>
+	</P81>
+	
+	
+	<AddPhone>
+	<Value module="CallLog" path="com.android.contacts/.RecentCallsLauncherActivity" /> 	
+	<Value module="Contacts" path="com.android.contacts/.DialtactsContactsEntryActivity" /> 
+	</AddPhone>
+
+
+<Android>
+	<Value module="Alarm" path="zte.com.cn.alarmclock/.AlarmClock"/>
+	<Value module="Browser" path="com.android.browser/.BrowserActivity"/>
+	<Value module="Calculator" path="com.android.calculator2/.Calculator"/>
+	<Value module="Camera" path="zte.com.cn.camera/.Camera"/>
+	<Value module="Camcorder" path="zte.com.cn.camera/.VideoCamera"/>
+        <Value module="Gallery" path="com.cooliris.media/com.cooliris.media.Gallery"/>
+	  <Value module="Contacts" path="com.android.contacts/.activities.PeopleActivity" /> 
+	  <Value module="CallLog" path="com.android.contacts/.CallLogLauncherActivity" /> 
+	<Value module="Call" path="com.android.contacts/.activities.DialtactsActivity"/>
+        <Value module="Dialer" path="com.android.contacts/.DialtactsActivity -a android.intent.action.MAIN"/>
+	<Value module="Filer" path="zte.com.cn.filer/.FilerActivity"/>
+	<Value module="MMS" path="com.android.mms/.ui.ConversationList"/>
+	<Value module="Music" path="cn.zte.music/.MusicBrowserActivity"/>
+	<Value module="Setting" path="com.android.settings/.Settings"/>
+	<Value module="StopWatch" path="com.zte.stopwatch/.StopWatchActivity"/>
+	<Value module="TaskManager" path="zte.com.cn.taskmanager/.MyTabActivity"/>
+	<Value module="FMRadio" path="zte.com.cn.fmradio/.FMRadio"/>
+	<Value module="Soundrecorder" path="cn.zte.recorder/.SoundRecorder"/>
+	<Value module="NotePad" path="zte.com.cn.notepad/.NotesList"/>
+	<Value module="Gmail" path="com.google.android.gm/.ConversationListActivity"/>
+    <Value module="Email" path="com.android.email/.activity.EmailActivity"/>
+	<Value module="EmailWelcome" path="com.android.email/.activity.Welcome"/>
+	<Value module="APNSetting" path="com.android.settings/.ApnSettings"/>
+       <Value module="Calendar" path="com.android.calendar/.AllInOneActivity"/>
+       <Value module="SupperBoat" path="SupperBoat.wireless/.MainMenu"/>
+       <Value module="Video" path="com.android.music/.VideoBrowserActivity"/>
+	   <Value module="Videoplayer" path="com.zte.videoplayer/.VideoBrowserActivity"/>
+       <Value module="rthunder2" path="com.polarbit.rthunder2/.rthunder2"/>
+       <Value module="LanguageSettings" path="com.android.settings/.LanguageSettings"/>
+       <Value module="WirelessSettings" path="com.android.settings/.WirelessSettings"/>
+       <Value module="EmailAccount" path="com.android.email/.activity.setup.AccountSetupBasics"/>
+       <Value module="EmailAccountFolderList" path="com.android.email/.activity.AccountFolderList"/>
+</Android>
+</Navigation>

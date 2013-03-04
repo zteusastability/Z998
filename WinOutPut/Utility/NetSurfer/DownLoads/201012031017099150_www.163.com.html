@@ -1,0 +1,14 @@
+<script>
+var str =window.location.search;
+if(str.length > 1)
+{
+	str = str.substring(1);
+	if(str.length>=7 && str.substring(0,7) != "http://")
+             str = "http://" + str;
+        
+         window.location.href = "../?url=" + str;
+}
+else
+     window.location.href = "../";
+</script>
+

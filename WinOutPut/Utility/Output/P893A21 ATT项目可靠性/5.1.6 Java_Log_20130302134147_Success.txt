@@ -1,0 +1,67 @@
+2013-3-2 13:40:16: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-2 13:40:16: Result: Parcel(00000000 00000000   '........')
+2013-3-2 13:40:16: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-2 13:40:16: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-2 13:40:17: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-2 13:40:17: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-2 13:40:17: Broadcast completed: result=0
+2013-3-2 13:40:17: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-2 13:40:17: Press any key to continue . . . 
+2013-3-2 13:40:24: compile successfully, ready to run:
+2013-3-2 13:40:24: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-2 13:40:25: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-2 13:40:26: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-2 13:40:26: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-2 13:40:26: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-2 13:40:26: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-2 13:40:26: ||| MESSAGE ||| loop 1 Start:
+2013-3-2 13:40:26: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-2 13:40:28: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:40:29: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-2 13:40:29: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:40:30: ||| MESSAGE ||| navigate_to(Setting,Android);
+2013-3-2 13:40:33: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:40:34: ||| MESSAGE ||| Tap_AndroidStr(networks);
+2013-3-2 13:40:36: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:40:37: ||| MESSAGE ||| Tap_AndroidStr(Mode);
+2013-3-2 13:40:39: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:40:40: ||| MESSAGE ||| Tap(455,693);
+2013-3-2 13:40:40: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:40:45: ||| MESSAGE ||| CampToNetwork: 2G
+2013-3-2 13:40:45: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost><RightMost>);
+2013-3-2 13:40:47: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-2 13:40:48: ||| MESSAGE ||| Sleep(5000);
+2013-3-2 13:40:53: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-2 13:40:53: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:40:54: ||| MESSAGE ||| navigate_to(Playstore,Android);
+2013-3-2 13:40:56: ||| MESSAGE ||| wait_for_androidtext(Google Play,20);
+2013-3-2 13:40:58: ||| MESSAGE ||| Tap(503,69);
+2013-3-2 13:40:58: ||| MESSAGE ||| enter_text(Adobe Connect Mobile);
+2013-3-2 13:41:12: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:13: ||| MESSAGE ||| Tap(515,914);
+2013-3-2 13:41:13: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:41:16: ||| MESSAGE ||| Tap(64,235);
+2013-3-2 13:41:16: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:17: ||| MESSAGE ||| wait_for_androidtext(Install,20);
+2013-3-2 13:41:19: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:20: ||| MESSAGE ||| Tap_AndroidStr(Install);
+2013-3-2 13:41:23: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:24: ||| MESSAGE ||| wait_for_androidtext(Accept & download,20);
+2013-3-2 13:41:26: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:27: ||| MESSAGE ||| Tap_AndroidStr(Accept & download);
+2013-3-2 13:41:29: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:30: ||| MESSAGE ||| wait_for_androidtext(KEEP SHOPPING,20);
+2013-3-2 13:41:32: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:33: ||| MESSAGE ||| Tap_AndroidStr(KEEP SHOPPING);
+2013-3-2 13:41:35: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:36: ||| MESSAGE ||| wait_for_androidtext(Uninstall,300);
+2013-3-2 13:41:38: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:39: ||| MESSAGE ||| Install application successful!
+2013-3-2 13:41:39: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:41:40: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:41:40: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:41:41: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:41:47: ||| MESSAGE ||| recordend();
+2013-3-2 13:41:47: ||| MESSAGE ||| end of the video collection:
+2013-3-2 13:41:47: ||| MESSAGE ||| DeviceClose();
+2013-3-2 13:41:47: Run Success!

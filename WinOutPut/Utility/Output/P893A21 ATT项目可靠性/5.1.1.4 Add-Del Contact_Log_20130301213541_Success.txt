@@ -1,0 +1,756 @@
+2013-3-1 21:18:30: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-1 21:18:30: Result: Parcel(00000000 00000000   '........')
+2013-3-1 21:18:30: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-1 21:18:30: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-1 21:18:30: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-1 21:18:31: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-1 21:18:31: Broadcast completed: result=0
+2013-3-1 21:18:31: C:\Documents and Settings\ZTE\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-1 21:18:31: Press any key to continue . . . 
+2013-3-1 21:18:38: compile successfully, ready to run:
+2013-3-1 21:18:38: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-1 21:18:38: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-1 21:18:39: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-1 21:18:39: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-1 21:18:39: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-1 21:18:39: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-1 21:18:40: ||| MESSAGE ||| loop 1 Start:
+2013-3-1 21:18:40: ||| MESSAGE ||| ==== 5.1.1.4 Delete contact : Start!
+2013-3-1 21:18:40: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 21:18:41: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 21:18:41: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-1 21:18:43: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:18:46: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:18:48: ||| MESSAGE ||| ==== Count ==>1
+2013-3-1 21:18:48: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:18:48: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:18:49: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:18:49: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:18:50: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:18:50: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:18:52: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:18:54: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:18:56: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:18:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:18:58: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:19:00: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:19:02: ||| MESSAGE ||| ==== Count ==>2
+2013-3-1 21:19:02: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:19:03: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:04: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:19:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:05: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:19:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:07: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:19:09: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:19:11: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:19:11: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:13: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:19:15: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:19:17: ||| MESSAGE ||| ==== Count ==>3
+2013-3-1 21:19:17: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:19:17: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:18: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:19:19: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:20: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:19:20: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:22: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:19:24: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:19:26: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:19:26: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:28: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:19:30: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:19:32: ||| MESSAGE ||| ==== Count ==>4
+2013-3-1 21:19:32: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:19:32: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:33: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:19:33: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:34: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:19:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:36: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:19:39: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:19:41: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:19:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:43: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:19:45: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:19:47: ||| MESSAGE ||| ==== Count ==>5
+2013-3-1 21:19:47: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:19:47: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:48: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:19:48: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:19:49: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:19:49: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:51: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:19:53: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:19:56: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:19:56: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:19:58: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:20:00: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:20:02: ||| MESSAGE ||| ==== Count ==>6
+2013-3-1 21:20:02: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:20:02: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:03: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:20:03: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:04: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:20:04: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:06: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:20:08: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:20:10: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:20:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:12: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:20:14: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:20:17: ||| MESSAGE ||| ==== Count ==>7
+2013-3-1 21:20:17: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:20:17: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:18: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:20:18: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:19: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:20:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:21: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:20:23: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:20:25: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:20:25: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:27: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:20:29: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:20:31: ||| MESSAGE ||| ==== Count ==>8
+2013-3-1 21:20:31: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:20:31: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:32: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:20:33: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:34: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:20:34: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:36: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:20:38: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:20:40: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:20:40: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:42: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:20:44: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:20:46: ||| MESSAGE ||| ==== Count ==>9
+2013-3-1 21:20:46: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:20:46: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:47: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:20:47: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:20:48: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:20:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:50: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:20:53: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:20:55: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:20:55: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:20:57: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:20:59: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:21:01: ||| MESSAGE ||| ==== Count ==>10
+2013-3-1 21:21:01: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:21:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:02: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:21:02: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:03: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:21:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:05: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:21:07: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:21:10: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:21:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:12: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:21:14: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:21:16: ||| MESSAGE ||| ==== Count ==>11
+2013-3-1 21:21:16: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:21:16: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:17: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:21:17: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:18: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:21:18: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:20: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:21:22: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:21:24: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:21:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:26: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:21:28: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:21:31: ||| MESSAGE ||| ==== Count ==>12
+2013-3-1 21:21:31: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:21:31: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:32: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:21:32: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:33: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:21:33: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:35: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:21:37: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:21:39: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:21:39: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:41: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:21:43: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:21:45: ||| MESSAGE ||| ==== Count ==>13
+2013-3-1 21:21:45: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:21:45: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:46: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:21:47: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:21:48: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:21:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:50: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:21:52: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:21:54: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:21:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:21:56: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:21:58: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:22:00: ||| MESSAGE ||| ==== Count ==>14
+2013-3-1 21:22:00: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:22:00: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:01: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:22:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:02: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:22:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:05: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:22:07: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:22:09: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:22:09: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:11: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:22:13: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:22:15: ||| MESSAGE ||| ==== Count ==>15
+2013-3-1 21:22:15: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:22:15: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:16: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:22:16: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:17: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:22:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:19: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:22:21: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:22:24: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:22:24: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:26: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:22:28: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:22:30: ||| MESSAGE ||| ==== Count ==>16
+2013-3-1 21:22:30: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:22:30: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:31: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:22:31: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:32: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:22:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:34: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:22:36: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:22:38: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:22:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:40: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:22:43: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:22:45: ||| MESSAGE ||| ==== Count ==>17
+2013-3-1 21:22:45: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:22:45: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:46: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:22:46: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:22:47: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:22:47: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:49: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:22:51: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:22:53: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:22:53: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:22:55: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:22:57: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:22:59: ||| MESSAGE ||| ==== Count ==>18
+2013-3-1 21:22:59: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:23:00: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:01: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:23:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:02: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:23:02: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:23:04: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:23:06: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:23:08: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:23:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:23:10: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:23:12: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:23:14: ||| MESSAGE ||| ==== Count ==>19
+2013-3-1 21:23:14: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:23:14: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:15: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:23:15: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:16: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:23:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:23:19: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:23:21: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:23:23: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:23:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:23:25: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:23:27: ||| MESSAGE ||| wait_for_androidtext(Contacts,10);
+2013-3-1 21:23:29: ||| MESSAGE ||| ==== Count ==>20
+2013-3-1 21:23:29: ||| MESSAGE ||| StylusDown(199,362);
+2013-3-1 21:23:29: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:30: ||| MESSAGE ||| StylusUp();
+2013-3-1 21:23:30: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:31: ||| MESSAGE ||| Tap(458,907);
+2013-3-1 21:23:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:23:33: ||| MESSAGE ||| wait_for_androidtext(OK,3);
+2013-3-1 21:23:35: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:23:38: ||| MESSAGE ||| Delete a contact: successful!
+2013-3-1 21:23:38: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:23:40: ||| MESSAGE ||| ==== All Case:20     Failed Case:0
+2013-3-1 21:23:40: ||| MESSAGE ||| ==== 5.1.1.4 Delete contact : Finished!
+2013-3-1 21:23:40: ||| MESSAGE ||| ==== 5.1.1.4 Add contact : Start!
+2013-3-1 21:23:40: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 21:23:41: ||| MESSAGE ||| press_keys(<Home>);
+2013-3-1 21:23:41: ||| MESSAGE ||| navigate_to(Contacts,Android);
+2013-3-1 21:23:44: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:23:46: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:23:48: ||| MESSAGE ||| ==== Count ==>1
+2013-3-1 21:23:48: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:23:48: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:23:50: ||| MESSAGE ||| enter_text(name50);
+2013-3-1 21:23:53: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:54: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:23:55: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:56: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:23:56: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:57: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:23:57: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:23:58: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:24:03: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:04: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:24:07: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:24:11: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:24:13: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:24:18: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:24:18: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:19: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:24:19: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:24:19: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:24:21: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:24:23: ||| MESSAGE ||| ==== Count ==>2
+2013-3-1 21:24:23: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:24:23: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:24:25: ||| MESSAGE ||| enter_text(name51);
+2013-3-1 21:24:29: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:30: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:24:30: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:31: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:24:31: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:32: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:24:32: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:33: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:24:39: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:40: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:24:42: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:24:47: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:24:49: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:24:53: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:24:53: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:24:54: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:24:55: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:24:55: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:24:57: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:24:59: ||| MESSAGE ||| ==== Count ==>3
+2013-3-1 21:24:59: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:24:59: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:25:01: ||| MESSAGE ||| enter_text(name52);
+2013-3-1 21:25:05: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:06: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:25:06: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:07: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:25:07: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:08: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:25:08: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:09: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:25:14: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:15: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:25:18: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:25:22: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:25:24: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:25:29: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:25:29: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:30: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:25:30: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:25:30: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:25:32: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:25:34: ||| MESSAGE ||| ==== Count ==>4
+2013-3-1 21:25:34: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:25:35: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:25:37: ||| MESSAGE ||| enter_text(name53);
+2013-3-1 21:25:40: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:41: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:25:41: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:42: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:25:42: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:43: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:25:43: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:44: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:25:50: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:25:51: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:25:53: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:25:58: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:26:00: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:26:04: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:26:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:05: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:26:06: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:26:06: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:26:08: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:26:10: ||| MESSAGE ||| ==== Count ==>5
+2013-3-1 21:26:10: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:26:10: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:26:12: ||| MESSAGE ||| enter_text(name54);
+2013-3-1 21:26:16: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:17: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:26:17: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:18: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:26:18: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:19: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:26:19: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:20: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:26:26: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:27: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:26:29: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:26:33: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:26:36: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:26:40: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:26:40: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:41: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:26:41: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:26:41: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:26:44: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:26:46: ||| MESSAGE ||| ==== Count ==>6
+2013-3-1 21:26:46: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:26:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:26:48: ||| MESSAGE ||| enter_text(name55);
+2013-3-1 21:26:51: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:52: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:26:52: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:53: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:26:53: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:54: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:26:55: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:26:56: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:27:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:02: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:27:05: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:27:09: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:27:11: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:27:16: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:27:16: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:17: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:27:17: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:27:17: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:27:19: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:27:21: ||| MESSAGE ||| ==== Count ==>7
+2013-3-1 21:27:21: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:27:21: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:27:23: ||| MESSAGE ||| enter_text(name56);
+2013-3-1 21:27:27: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:28: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:27:28: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:29: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:27:29: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:30: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:27:30: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:31: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:27:37: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:38: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:27:40: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:27:44: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:27:46: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:27:51: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:27:51: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:27:52: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:27:52: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:27:52: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:27:55: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:27:57: ||| MESSAGE ||| ==== Count ==>8
+2013-3-1 21:27:57: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:27:57: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:27:59: ||| MESSAGE ||| enter_text(name57);
+2013-3-1 21:28:02: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:03: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:28:03: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:04: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:28:04: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:05: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:28:05: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:06: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:28:12: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:13: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:28:15: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:28:20: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:28:22: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:28:26: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:28:26: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:27: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:28:28: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:28:28: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:28:30: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:28:32: ||| MESSAGE ||| ==== Count ==>9
+2013-3-1 21:28:32: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:28:32: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:28:34: ||| MESSAGE ||| enter_text(name58);
+2013-3-1 21:28:38: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:39: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:28:39: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:40: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:28:40: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:41: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:28:41: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:42: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:28:48: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:28:49: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:28:51: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:28:55: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:28:57: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:29:02: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:29:02: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:03: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:29:03: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:29:03: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:29:06: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:29:08: ||| MESSAGE ||| ==== Count ==>10
+2013-3-1 21:29:08: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:29:08: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:29:10: ||| MESSAGE ||| enter_text(name59);
+2013-3-1 21:29:13: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:14: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:29:14: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:15: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:29:16: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:17: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:29:17: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:18: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:29:23: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:24: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:29:27: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:29:31: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:29:33: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:29:38: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:29:38: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:39: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:29:39: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:29:39: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:29:41: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:29:43: ||| MESSAGE ||| ==== Count ==>11
+2013-3-1 21:29:43: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:29:43: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:29:45: ||| MESSAGE ||| enter_text(name60);
+2013-3-1 21:29:49: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:50: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:29:50: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:51: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:29:51: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:52: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:29:52: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:29:53: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:29:59: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:00: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:30:02: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:30:06: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:30:09: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:30:13: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:30:13: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:14: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:30:15: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:30:15: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:30:17: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:30:19: ||| MESSAGE ||| ==== Count ==>12
+2013-3-1 21:30:19: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:30:19: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:30:21: ||| MESSAGE ||| enter_text(name61);
+2013-3-1 21:30:24: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:25: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:30:25: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:26: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:30:27: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:28: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:30:28: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:29: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:30:34: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:35: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:30:38: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:30:42: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:30:44: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:30:49: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:30:49: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:30:50: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:30:50: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:30:50: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:30:52: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:30:54: ||| MESSAGE ||| ==== Count ==>13
+2013-3-1 21:30:54: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:30:54: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:30:56: ||| MESSAGE ||| enter_text(name62);
+2013-3-1 21:31:00: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:01: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:31:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:02: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:31:02: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:03: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:31:03: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:04: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:31:10: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:11: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:31:13: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:31:17: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:31:20: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:31:24: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:31:24: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:25: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:31:26: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:31:26: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:31:28: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:31:30: ||| MESSAGE ||| ==== Count ==>14
+2013-3-1 21:31:30: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:31:30: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:31:32: ||| MESSAGE ||| enter_text(name63);
+2013-3-1 21:31:35: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:36: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:31:36: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:37: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:31:38: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:39: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:31:39: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:40: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:31:45: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:31:46: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:31:49: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:31:53: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:31:55: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:32:00: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:32:00: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:01: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:32:01: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:32:01: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:32:03: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:32:05: ||| MESSAGE ||| ==== Count ==>15
+2013-3-1 21:32:05: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:32:05: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:32:07: ||| MESSAGE ||| enter_text(name64);
+2013-3-1 21:32:11: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:12: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:32:12: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:13: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:32:13: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:14: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:32:14: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:15: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:32:21: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:22: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:32:24: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:32:29: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:32:31: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:32:35: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:32:35: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:36: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:32:37: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:32:37: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:32:39: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:32:41: ||| MESSAGE ||| ==== Count ==>16
+2013-3-1 21:32:41: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:32:41: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:32:43: ||| MESSAGE ||| enter_text(name65);
+2013-3-1 21:32:47: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:48: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:32:48: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:49: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:32:49: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:50: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:32:50: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:51: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:32:57: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:32:58: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:33:00: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:33:04: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:33:06: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:33:11: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:33:11: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:12: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:33:12: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:33:12: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:33:14: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:33:17: ||| MESSAGE ||| ==== Count ==>17
+2013-3-1 21:33:17: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:33:17: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:33:19: ||| MESSAGE ||| enter_text(name66);
+2013-3-1 21:33:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:23: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:33:23: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:24: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:33:24: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:25: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:33:26: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:27: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:33:32: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:33: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:33:36: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:33:40: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:33:42: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:33:47: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:33:47: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:48: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:33:48: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:33:48: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:33:50: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:33:52: ||| MESSAGE ||| ==== Count ==>18
+2013-3-1 21:33:52: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:33:52: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:33:54: ||| MESSAGE ||| enter_text(name67);
+2013-3-1 21:33:58: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:33:59: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:33:59: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:00: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:34:00: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:01: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:34:01: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:02: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:34:08: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:09: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:34:11: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:34:15: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:34:17: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:34:22: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:34:22: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:23: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:34:23: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:34:23: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:34:25: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:34:27: ||| MESSAGE ||| ==== Count ==>19
+2013-3-1 21:34:27: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:34:28: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:34:30: ||| MESSAGE ||| enter_text(name68);
+2013-3-1 21:34:33: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:34: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:34:34: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:35: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:34:35: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:36: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:34:36: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:37: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:34:43: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:44: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:34:46: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:34:51: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:34:53: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:34:57: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:34:57: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:34:58: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:34:59: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:34:59: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:35:01: ||| MESSAGE ||| wait_for_androidtext(Contacts,5);
+2013-3-1 21:35:03: ||| MESSAGE ||| ==== Count ==>20
+2013-3-1 21:35:03: ||| MESSAGE ||| Tap(273,907);
+2013-3-1 21:35:03: ||| MESSAGE ||| Sleep(2000);
+2013-3-1 21:35:05: ||| MESSAGE ||| enter_text(name69);
+2013-3-1 21:35:09: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:35:10: ||| MESSAGE ||| Tap(273,223);
+2013-3-1 21:35:10: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:35:11: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:35:11: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:35:12: ||| MESSAGE ||| Tap(217,353);
+2013-3-1 21:35:12: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:35:13: ||| MESSAGE ||| enter_text(4255807887);
+2013-3-1 21:35:19: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:35:20: ||| MESSAGE ||| Tap_AndroidStr(Done);
+2013-3-1 21:35:22: ||| MESSAGE ||| wait_for_androidtext(Save,3);
+2013-3-1 21:35:26: ||| MESSAGE ||| Tap_AndroidStr(OK);
+2013-3-1 21:35:29: ||| MESSAGE ||| wait_for_androidtext(Edit,3);
+2013-3-1 21:35:33: ||| MESSAGE ||| Create one contact:Successful!
+2013-3-1 21:35:33: ||| MESSAGE ||| Sleep(1000);
+2013-3-1 21:35:34: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-1 21:35:34: ||| MESSAGE ||| Add a contact: successful!
+2013-3-1 21:35:34: ||| MESSAGE ||| press_keys(<RightMost><RightMost><RightMost>);
+2013-3-1 21:35:36: ||| MESSAGE ||| ==== All Case:20     Failed Case:0
+2013-3-1 21:35:36: ||| MESSAGE ||| ==== 5.1.1.4 Delete contact : Finished!
+2013-3-1 21:35:36: ||| MESSAGE ||| ==== All Case:20     Failed Case:0
+2013-3-1 21:35:36: ||| MESSAGE ||| ==== 5.1.1.4 Add contact : Finished!
+2013-3-1 21:35:41: ||| MESSAGE ||| recordend();
+2013-3-1 21:35:41: ||| MESSAGE ||| end of the video collection:
+2013-3-1 21:35:41: ||| MESSAGE ||| DeviceClose();
+2013-3-1 21:35:41: Run Success!

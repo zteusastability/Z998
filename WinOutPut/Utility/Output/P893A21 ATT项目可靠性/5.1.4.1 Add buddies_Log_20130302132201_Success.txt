@@ -1,0 +1,76 @@
+2013-3-2 13:20:06: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell service call window 1 i32 8888 
+2013-3-2 13:20:06: Result: Parcel(00000000 00000000   '........')
+2013-3-2 13:20:06: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:4408  tcp:8888 
+2013-3-2 13:20:06: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 forward tcp:2408  tcp:1324 
+2013-3-2 13:20:06: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s P893A21 shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 960 --ei height 540 --ei delay 0 --ei bpp 2 
+2013-3-2 13:20:07: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-3-2 13:20:07: Broadcast completed: result=0
+2013-3-2 13:20:07: C:\Documents and Settings\zte\Desktop\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1for challenger by zhaolei 0124\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-3-2 13:20:07: Press any key to continue . . . 
+2013-3-2 13:20:14: compile successfully, ready to run:
+2013-3-2 13:20:14: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-3-2 13:20:14: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-3-2 13:20:16: ||| MESSAGE ||| AddMo phone connecting.......
+2013-3-2 13:20:16: ||| MESSAGE ||| AddMo phone connected!!!
+2013-3-2 13:20:16: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-2 13:20:16: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-2 13:20:16: ||| MESSAGE ||| loop 1 Start:
+2013-3-2 13:20:16: ||| MESSAGE ||| ==== 5.1.4 IM Stability
+2013-3-2 13:20:16: ||| MESSAGE ||| ==== Not support IM, Skip Testcase 5.1.4.1!
+2013-3-2 13:20:16: ||| MESSAGE ||| navigate_to(talk,Android);
+2013-3-2 13:20:18: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:20:21: ||| MESSAGE ||| Tap(35,57);
+2013-3-2 13:20:21: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:20:24: ||| MESSAGE ||| Tap(223,158);
+2013-3-2 13:20:24: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:20:27: ||| MESSAGE ||| Tap(503,71);
+2013-3-2 13:20:27: ||| MESSAGE ||| wait_for_androidtext(CANCEL,20);
+2013-3-2 13:20:31: ||| MESSAGE ||| enter_text(zteusatest107@gmail.com);
+2013-3-2 13:20:44: ||| MESSAGE ||| Tap_AndroidStr(DONE);
+2013-3-2 13:20:46: ||| MESSAGE ||| Sleep(2000);
+2013-3-2 13:20:48: ||| MESSAGE ||| switch_target_num(AddMo);
+2013-3-2 13:20:48: ||| MESSAGE ||| switch to AddMo phone:
+2013-3-2 13:20:48: ||| MESSAGE ||| navigate_to(talk,Android);
+2013-3-2 13:20:50: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:20:53: ||| MESSAGE ||| Tap(22,48);
+2013-3-2 13:20:53: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:20:56: ||| MESSAGE ||| Tap(114,92);
+2013-3-2 13:20:57: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:00: ||| MESSAGE ||| Tap_AndroidStr(Chat invitation);
+2013-3-2 13:21:02: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:05: ||| MESSAGE ||| Tap(259,313);
+2013-3-2 13:21:05: ||| MESSAGE ||| Add friend successful!
+2013-3-2 13:21:05: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:08: ||| MESSAGE ||| Tap(22,48);
+2013-3-2 13:21:08: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:21:09: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:21:10: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-2 13:21:10: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-2 13:21:10: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:13: ||| MESSAGE ||| Tap(503,71);
+2013-3-2 13:21:13: ||| MESSAGE ||| wait_for_androidtext(CANCEL,20);
+2013-3-2 13:21:16: ||| MESSAGE ||| enter_text(zteusatest305@gmail.com);
+2013-3-2 13:21:29: ||| MESSAGE ||| Tap_AndroidStr(DONE);
+2013-3-2 13:21:31: ||| MESSAGE ||| Sleep(2000);
+2013-3-2 13:21:33: ||| MESSAGE ||| switch_target_num(AddMo);
+2013-3-2 13:21:34: ||| MESSAGE ||| switch to AddMo phone:
+2013-3-2 13:21:34: ||| MESSAGE ||| navigate_to(talk,Android);
+2013-3-2 13:21:36: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:39: ||| MESSAGE ||| Tap(22,48);
+2013-3-2 13:21:39: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:42: ||| MESSAGE ||| Tap(150,162);
+2013-3-2 13:21:42: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:45: ||| MESSAGE ||| Tap_AndroidStr(Chat invitation);
+2013-3-2 13:21:47: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:50: ||| MESSAGE ||| Tap(259,313);
+2013-3-2 13:21:50: ||| MESSAGE ||| Add friend successful!
+2013-3-2 13:21:50: ||| MESSAGE ||| Sleep(3000);
+2013-3-2 13:21:53: ||| MESSAGE ||| Tap(22,48);
+2013-3-2 13:21:53: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-3-2 13:21:54: ||| MESSAGE ||| Sleep(1000);
+2013-3-2 13:21:55: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-3-2 13:21:55: ||| MESSAGE ||| switch to BaseMo phone:
+2013-3-2 13:22:00: ||| MESSAGE ||| recordend();
+2013-3-2 13:22:00: ||| MESSAGE ||| end of the video collection:
+2013-3-2 13:22:00: ||| MESSAGE ||| DeviceClose();
+2013-3-2 13:22:00: Run Success!

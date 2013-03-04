@@ -1,0 +1,41 @@
+2013-1-24 星期四 21:52:36: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? shell service call window 1 i32 8888 
+2013-1-24 星期四 21:52:36: Result: Parcel(00000000 00000000   '........')
+2013-1-24 星期四 21:52:36: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? forward tcp:4063  tcp:8888 
+2013-1-24 星期四 21:52:36: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? forward tcp:2063  tcp:1324 
+2013-1-24 星期四 21:52:36: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>adb -s ? shell am broadcast -a AgentServiceStart --ei port 1324 --ei width 320 --ei height 480 --ei delay 0 --ei bpp 2 
+2013-1-24 星期四 21:52:36: Broadcasting: Intent { act=AgentServiceStart (has extras) }
+2013-1-24 星期四 21:52:36: Broadcast completed: result=0
+2013-1-24 星期四 21:52:37: F:\EasyTest2.0.4.1zhaolei121\EasyTest2.0.4.1\WinOutPut\Utility\adb>pause
+2013-1-24 星期四 21:52:37: 请按任意键继续. . . 
+2013-1-24 星期四 21:52:43: compile successfully, ready to run:
+2013-1-24 星期四 21:52:43: ||| MESSAGE ||| BaseMo phone connecting.......
+2013-1-24 星期四 21:52:44: ||| MESSAGE ||| BaseMo phone connected!!!
+2013-1-24 星期四 21:52:44: ||| MESSAGE ||| AddMo phone connecting.......
+2013-1-24 星期四 21:52:44: ||| MESSAGE ||| switch_target_num(BaseMo);
+2013-1-24 星期四 21:52:44: ||| MESSAGE ||| switch to BaseMo phone:
+2013-1-24 星期四 21:52:44: ||| MESSAGE ||| loop 1 Start:
+2013-1-24 星期四 21:52:44: ||| MESSAGE ||| navigate_to(Filer,Android);
+2013-1-24 星期四 21:52:47: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:52:49: ||| MESSAGE ||| Tap_AndroidStr(DCIM);
+2013-1-24 星期四 21:52:51: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:52:53: ||| MESSAGE ||| Tap_AndroidStr(Camera);
+2013-1-24 星期四 21:52:55: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:52:57: ||| MESSAGE ||| Tap(298,117);
+2013-1-24 星期四 21:52:57: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:52:59: ||| MESSAGE ||| Tap(176,163);
+2013-1-24 星期四 21:52:59: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:53:01: ||| MESSAGE ||| Tap(243,319);
+2013-1-24 星期四 21:53:01: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:53:03: ||| MESSAGE ||| Delete a video successfully****
+2013-1-24 星期四 21:53:03: ||| MESSAGE ||| Sleep(500);
+2013-1-24 星期四 21:53:04: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-1-24 星期四 21:53:04: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:53:06: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-1-24 星期四 21:53:07: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:53:09: ||| MESSAGE ||| press_keys(<RightMost>);
+2013-1-24 星期四 21:53:09: ||| MESSAGE ||| Sleep(2000);
+2013-1-24 星期四 21:53:11: ||| MESSAGE ||| press_keys(<Home>);
+2013-1-24 星期四 21:53:13: ||| MESSAGE ||| recordend();
+2013-1-24 星期四 21:53:13: ||| MESSAGE ||| end of the video collection:
+2013-1-24 星期四 21:53:13: ||| MESSAGE ||| DeviceClose();
+2013-1-24 星期四 21:53:13: Run Success!

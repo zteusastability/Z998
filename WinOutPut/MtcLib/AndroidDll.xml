@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- ZTE MTC Dll Define File -->
+<MtcDll>
+  <ConfigVer version="1.0">
+  </ConfigVer>
+  <DLL name="Android2_V8DV1.dll">
+    <GUID val="ZTE-MTC-20100204" />
+    <ITYPE val="2" inf="" />
+    <OPERATIONS>
+      <Item val="0x01" info="Basic Operation" />
+      <Item val="0x02" info="TouchScreen Operation" />
+    </OPERATIONS>
+    <INFO val="" />
+  </DLL>
+  <CONFIG>
+    <PARAMETERS>
+      <Item name="PORT" val="2468" inf="" />
+      <Item name="IP" val="127.0.0.1" inf="" />
+      <Item name="RESPONSE" val="OKAY" inf="" />
+      <item name="SYSFLAG" val="host:transport:P726N" inf="" />
+    </PARAMETERS>
+  </CONFIG>
+</MtcDll>
